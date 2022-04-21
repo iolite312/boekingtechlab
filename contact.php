@@ -13,11 +13,12 @@
 	<script src="JS/showPassword.js"></script> -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="/css/all.css">
-</head> 
+</head>
 
 <body>
 	<header>
-		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
+		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' 
+		?>
 	</Header>
 
 	<main>
@@ -50,12 +51,12 @@
 
 					<label for="Subject">lokaal deel</label>
 					<input type="text" name="classroompart" placeholder="Subject (required)">
-					
+
 					<label for="Subject">materiaal</label>
 					<input type="text" name="material" placeholder="Subject (required)">
 
 					<label for="Message">tijd</label>
-					<textarea id="Message" name="time" placeholder="Write your Message (required)" style="height:200px"></textarea>
+					<input type="datetime-local" name="time" placeholder="Subject (required)">
 
 					<input type="submit" name="submit" value="Send">
 				</form>
