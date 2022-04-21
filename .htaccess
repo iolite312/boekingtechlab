@@ -3,9 +3,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
-ErrorDocument 404 /boekingtechlab/pagenotfound
+ErrorDocument 404 /pagenotfound
 
 # Disable Directory Browsing
 Options All -Indexes
 
-ErrorDocument 403 '<meta http-equiv = "refresh" content = "0; url = /boekingtechlab" />'
+ErrorDocument 403 '<meta http-equiv = "refresh" content = "0; url = /" />'
