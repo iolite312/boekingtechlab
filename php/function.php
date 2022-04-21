@@ -111,7 +111,7 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #103'];
-        header('Location: /contact.php');
+        header('Location: /index.php');
         exit;
     }
 
