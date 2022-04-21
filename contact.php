@@ -1,4 +1,7 @@
-<?php $page = 'contact' ?>
+<?php
+session_start();
+$page = 'contact'
+?>
 
 <!DOCTYPE html>
 <html lang="en">
