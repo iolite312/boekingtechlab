@@ -111,7 +111,7 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #103'];
-        header('Location: /Contact.php');
+        header('Location: /contact.php');
         exit;
     }
 
@@ -120,6 +120,6 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
     mysqli_stmt_close($stmt);
 
     $_SESSION['messages'][] = ["success", 'your message was successfully sent!'];
-    header('Location: /Contact.php');
+    header('Location: /contact.php');
     exit;
 }

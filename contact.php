@@ -1,4 +1,4 @@
-<?php $page = 'Contact' ?>
+<?php $page = 'contact' ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,10 +9,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
 	<!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="/CSS/All.css">
 	<link rel="stylesheet" href="/CSS/Contact.css">
 	<script src="JS/showPassword.js"></script> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="/css/all.css">
 </head> 
 
 <body>
@@ -22,7 +22,7 @@
 
 	<main>
 		<section>
-			<?php #require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
+			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 		</section>
 
 		<section class="contact">
