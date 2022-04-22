@@ -35,31 +35,31 @@ $page = 'contact'
 				<h2>Contact</h2>
 				<form action="/php/contact.php" method="post" required>
 					<label for="name">organisatienaam:</label>
-					<input type="text" name="organization_name" placeholder="Your full name (required)">
+					<input type="text" name="organization_name" placeholder="Your full name (required)"><br>
 
 					<label for="email">organisatie email</label>
-					<input type="email" name="organization_email" placeholder="Email (required)">
+					<input type="email" name="organization_email" placeholder="Email (required)"><br>
 
 					<label for="name">organisatie telefoon</label>
-					<input type="text" name="organization_tel" placeholder="Your tel num (required)">
+					<input type="text" name="organization_tel" placeholder="Your tel num (required)"><br>
 
 					<label for="name">naam</label>
-					<input type="text" name="name" placeholder="Your full name (required)">
+					<input type="text" name="name" placeholder="Your full name (required)"><br>
 
 					<label for="email">email</label>
-					<input type="email" name="email" placeholder="Email (required)">
+					<input type="email" name="email" placeholder="Email (required)"><br>
 
 					<label for="name">telefoon</label>
-					<input type="text" name="tel" placeholder="Your tel num (required)">
+					<input type="text" name="tel" placeholder="Your tel num (required)"><br>
 
 					<label for="Subject">lokaal deel</label>
-					<input type="text" name="classroompart" placeholder="Subject (required)">
+					<input type="text" name="classroompart" placeholder="Subject (required)"><br>
 
 					<label for="Subject">materiaal</label>
-					<input type="text" name="material" placeholder="Subject (required)">
+					<input type="text" name="material" placeholder="Subject (required)"><br>
 
 					<label for="Message">tijd</label>
-					<input type="datetime-local" name="time" placeholder="Subject (required)">
+					<input type="datetime-local" name="time" placeholder="Subject (required)"><br>
 
 					<input type="submit" name="submit" value="Send">
 				</form>
