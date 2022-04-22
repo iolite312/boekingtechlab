@@ -17,7 +17,7 @@ function uidExists($email)
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #101'];
-        header('Location: /LoginPage');
+        header('Location: /loginpage');
         exit;
     }
 
@@ -46,7 +46,7 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #102'];
-        header('Location: /LoginPage');
+        header('Location: /loginpage');
         exit;
     }
 
@@ -57,7 +57,7 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
     mysqli_stmt_close($stmt);
 
     $_SESSION['messages'][] = ["success", 'You have successfully sign up!'];
-    header('Location: /LoginPage');
+    header('Location: /loginpage');
     exit;
 }
 
@@ -68,7 +68,7 @@ function loginUser($email, $password)
 
     if ($uidExists === false) {
         $_SESSION['messages'][] = ["warning", 'Wrong Email or Password!'];
-        header('Location: /LoginPage');
+        header('Location: /loginpage');
         exit;
     }
 
@@ -77,7 +77,7 @@ function loginUser($email, $password)
 
     if ($checkpwd === false) {
         $_SESSION['messages'][] = ["warning", 'Wrong Email or Password!'];
-        header('Location: /LoginPage');
+        header('Location: /loginpage');
         exit;
     } else if ($checkpwd === true) {
         $_SESSION['UId'] = $uidExists["id"];

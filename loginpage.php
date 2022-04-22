@@ -22,7 +22,7 @@ $page = 'LoginPage'
 	<!-- <link rel="icon" type="image/png" href="/apo_ahmad/Assets/LOGO/LOGO.png" /> -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="/css/all.css">
-	<link rel="stylesheet" href="/css/LoginPage.css">
+	<link rel="stylesheet" href="/css/loginpage.css">
 	<!-- <script src="/apo_ahmad/JS/showPassword.js"></script> -->
 </head>
 
