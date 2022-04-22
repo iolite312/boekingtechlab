@@ -31,13 +31,13 @@ if (isset($_POST["submit"])) {
         empty($time)
     ) {
         $_SESSION['messages'][] = ["warning", 'Please fill all required fields!'];
-        header('Location: /contact.php');
+        header('Location: /contact');
         exit;
     }
 
     //log user in
     sendForm($organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time);
 } else {
-    header("Location: /contact.php");
+    header("Location: /contact");
     exit;
 }

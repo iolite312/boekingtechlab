@@ -17,13 +17,13 @@ if (isset($_POST["submit"])) {
         empty($password)
     ) {
         $_SESSION['messages'][] = ["warning", 'Please fill all required fields!'];
-        header('Location: /loginpage.php');
+        header('Location: /loginpage');
         exit;
     }
 
     //log user in
     loginUser($email, $password);
 } else {
-    header("Location: /");
+    header("Location: /index");
     exit;
 }
