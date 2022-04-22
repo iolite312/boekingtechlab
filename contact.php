@@ -15,25 +15,25 @@ $page = 'contact'
 	<link rel="stylesheet" href="/CSS/Contact.css">
 	<script src="JS/showPassword.js"></script> -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="/boekingtechlabhlab/css/all.css">
+	<link rel="stylesheet" href="/css/all.css">
 </head>
 
 <body>
 	<header>
-		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/boekingtechlabhlab/php/inc/header.inc.php' 
+		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' 
 		?>
 	</Header>
 
 	<main>
 		<section>
-			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/boekingtechlabhlab/php/inc/messages.inc.php' ?>
+			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 		</section>
 
 		<section class="contact">
 			<!-- Contact Form Start -->
 			<div id="contact">
 				<h2>Contact</h2>
-				<form action="/boekingtechlab/php/contact.php" method="post" required>
+				<form action="/php/contact.php" method="post" required>
 					<label for="name">organisatienaam:</label>
 					<input type="text" name="organization_name" placeholder="Your full name (required)"><br>
 
