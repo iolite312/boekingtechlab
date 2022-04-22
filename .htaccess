@@ -3,6 +3,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
+RewriteCond %{REQUEST_URI} !^/boekingtechlab/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ boekingtechlab/$1 [L]
+
 ErrorDocument 404 /pagenotfound
 
 # Disable Directory Browsing
