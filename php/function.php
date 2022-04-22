@@ -115,7 +115,7 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
         exit;
     }
 
-    mysqli_stmt_bind_param($stmt, "ssississi", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time);
+    mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
