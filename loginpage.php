@@ -25,7 +25,7 @@ $page = 'LoginPage'
 
 <body>
 	<header>
-		<?php include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
+		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
 	</Header>
 
 	<main>
