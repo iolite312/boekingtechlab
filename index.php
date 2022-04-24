@@ -20,7 +20,7 @@
             <h1>LOGO HERE</h1>
             <div class="btn">
                 <a href="#">Reserveren</a>
-                <a href="#">Contact</a>
+                <a href="#">booking</a>
                 <a href="#">Login</a>
             </div> -->
     </header>
