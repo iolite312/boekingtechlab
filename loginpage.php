@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (!isset($_SESSION)) {
+	session_start();
+}
 if (!isset($_SESSION['first_name'])) {
 } else {
 	if ($_SESSION['user_level'] === 0) {
@@ -25,7 +27,8 @@ $page = 'LoginPage'
 
 <body>
 	<header>
-		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
+		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' 
+		?>
 	</Header>
 
 	<main>
