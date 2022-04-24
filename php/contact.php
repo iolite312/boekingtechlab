@@ -1,12 +1,12 @@
 <?php
 if (isset($_POST["submit"])) {
 
-    //connect to functions.php
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
-
     if (!isset($_SESSION)) {
         session_start();
     }
+
+    //connect to functions.php
+    require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
     //get user data from form
     $organization_name = $_POST['organization_name'];

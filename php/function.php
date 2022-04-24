@@ -110,14 +110,25 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        $_SESSION['messages'][] = ["error", 'Error unkown #103'];
+        $_SESSION['messages'][] = ["error", 'Error unkown #103.1'];
         header('Location: /index');
         exit;
     }
-
-    mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+    if (!mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #103.2'];
+        header('Location: /index');
+        exit;
+    }
+    if (!mysqli_stmt_execute($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #103.3'];
+        header('Location: /index');
+        exit;
+    }
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #103.4'];
+        header('Location: /index');
+        exit;
+    }
 
     $_SESSION['messages'][] = ["success", 'your message was successfully sent!'];
     header('Location: /contact');
