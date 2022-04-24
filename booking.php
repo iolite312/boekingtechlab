@@ -16,7 +16,7 @@ $page = 'booking'
 	<!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" />
 	<link rel="stylesheet" href="/css/booking.css">-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="/css/all.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
