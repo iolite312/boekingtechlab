@@ -16,22 +16,18 @@ $page = 'booking'
 	<!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" />
 	<link rel="stylesheet" href="/css/booking.css">-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/boekingtechlab/css/style.css">
+	<link rel="stylesheet" href="/boekingtechlab/css/booking.css">
 </head>
 
 <body>
 	<header>
-		<?php #include $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' 
-		?>
-	</Header>
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/boekingtechlab/php/inc/header.inc.php' ?>
+	</header>
 
 	<main>
-		<header>
-			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
-		</header>
-
 		<section>
-			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
+			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/boekingtechlab/php/inc/messages.inc.php' ?>
 		</section>
 
 		<section class="booking">
