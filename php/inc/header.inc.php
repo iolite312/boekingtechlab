@@ -1,5 +1,5 @@
-<nav class="headernavigation">
-    <ul id='expand-menu'><span class="material-icons md-36">menu</span></ul>
+<nav id="headernavigation" class="headernavigation">
+    <ul id='expand-menu' onclick="togglemenu()"><span class="material-icons md-36">menu</span></ul>
     <ul id='btnContainer'>
         <li class='LOGO_li'>
             <a href='/apo_ahmad'><img src='/apo_ahmad/Assets/LOGO/LOGO.png' alt='LOGO' class='LOGO'></a>
