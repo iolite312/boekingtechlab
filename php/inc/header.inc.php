@@ -1,4 +1,3 @@
-    <ul id='expand-menu' onclick="togglemenu()"><span class="material-icons md-36">menu</span></ul>
     <h1>Techlab Regius College</h1>
     <div class="btn">
     	<a class="<?php if ($page == 'home') {echo 'active';}; ?>" href="index.php">Home</a>
