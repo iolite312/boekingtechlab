@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +11,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Techlab Regius College</title>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>booking</title>
+    <!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" />
+	<link rel="stylesheet" href="/css/booking.css">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/alerts.css">
+    <script src="/js/expand_menu.js"></script>
 </head>
 
 <body>
@@ -23,7 +30,7 @@
             <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
         </section>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quod ab fuga amet nemo iste aliquam reprehenderit illo temporibus ullam! Cumque, facere quae? Unde, excepturi vero? Enim non rerum aliquid harum dignissimos?</p>
+        hello there
     </main>
 </body>
 

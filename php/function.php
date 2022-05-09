@@ -91,11 +91,11 @@ function loginUser($email, $password)
 
         if (!$_SESSION['user_level'] == 1) {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
-            header('Location: /MijnApo');
+            header('Location: /index');
             exit;
         } else {
-            $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
-            header('Location: /AdminPage');
+            $_SESSION['messages'][] = ["success", 'You have successfully logged in as a admin user'];
+            header('Location: /adminpage');
             exit;
         }
     }
