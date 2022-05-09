@@ -24,6 +24,7 @@
         </section>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quod ab fuga amet nemo iste aliquam reprehenderit illo temporibus ullam! Cumque, facere quae? Unde, excepturi vero? Enim non rerum aliquid harum dignissimos?</p>
+    </main>
 </body>
 
 </html>
