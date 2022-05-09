@@ -21,6 +21,7 @@
 			</li>";
 		} else {
 			if($page =='LoginPage'){$active = 'active';} else {$active='';}
+			echo $_SESSION['first_name'];
 			echo
 			"<li><a href='/loginpage' class='btn dropbtn $active'>Login</a></li>";
 		}
