@@ -27,8 +27,12 @@ function uidExists($email)
     $result = mysqli_stmt_get_result($stmt);
 
     if ($row = mysqli_fetch_assoc($result)) {
+        echo 101;
+        exit;
         return $row;
     } else {
+        echo 102;
+        exit;
         $result = false;
         return $result;
     }
@@ -88,10 +92,11 @@ function loginUser($email, $password)
         $_SESSION['user_level'] = $uidExists["user_level"];
         $_SESSION['date_created'] = $uidExists["date_created"];
         $_SESSION['status'] = $uidExists["status"];
+        echo $_SESSION['first_name'];
 
         if (!$_SESSION['user_level'] == 1) {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
-            header('Location: /index');   
+            header('Location: /index');
             exit;
         } else {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in as a admin user'];
