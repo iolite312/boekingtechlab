@@ -88,8 +88,6 @@ function loginUser($email, $password)
         $_SESSION['user_level'] = $uidExists["user_level"];
         $_SESSION['date_created'] = $uidExists["date_created"];
         $_SESSION['status'] = $uidExists["status"];
-        echo $_SESSION['first_name'];
-        exit;
 
         if (!$_SESSION['user_level'] == 1) {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
