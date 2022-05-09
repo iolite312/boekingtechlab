@@ -10,6 +10,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/alerts.css">
 </head>
 
 <body>

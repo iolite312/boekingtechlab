@@ -23,6 +23,7 @@ $page = 'LoginPage'
 	<title>Login</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/alerts.css">
 </head>
 
 <body>
