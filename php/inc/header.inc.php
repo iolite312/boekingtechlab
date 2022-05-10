@@ -3,7 +3,6 @@
     	<a class="<?php if ($page == 'home') {echo 'active';}; ?>" href="index.php">Home</a>
     	<a class="" href="#">Reserveren</a>
     	<a class="" href="booking">Booking</a>
-    </div>
     <?php if (isset($_SESSION['first_name'])) {
 		echo
 		"<li class='dropdown'>
@@ -23,6 +22,7 @@
 		}
 		echo $_SESSION['first_name'];
 		echo
-		"<li><a href='/loginpage' class='btn dropbtn $active'>Login</a></li>";
+		"<li><a href='/loginpage' class='$active'>Login</a></li>";
 	}
 	?>
+	</div>
