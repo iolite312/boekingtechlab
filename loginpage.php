@@ -40,9 +40,9 @@ $page = 'LoginPage'
 			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 		</section>
 
-		<section id="account">
+		<section class="loginpage">
 			<!-- Login Form Start -->
-			<div id="Login">
+			<div class="login">
 				<h2>Login</h2>
 				<form action="/php/login.php" method="post">
 					<input type="email" name="email" placeholder="Email" required>
@@ -55,7 +55,7 @@ $page = 'LoginPage'
 			</div>
 			<!-- Login Form Start -->
 			<!-- Register Form Start -->
-			<div id="SignUp">
+			<div class="signup">
 				<h2>Sign Up</h2>
 				<form action="/php/register.php" method="post">
 					<input type="text" name="firstname" placeholder="Firstname *" required>
