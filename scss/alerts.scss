@@ -1,51 +1,33 @@
-.errorContainer {
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
-    margin-bottom: 25px;
-    padding: 10px;
-    width: 75%;
-    background-color: pink;
-    border-style: solid;
-    border-width: 0px 0px 0px 15px;
-    border-color: red;
-}
-
-.warningContainer {
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
-    margin-bottom: 25px;
-    padding: 10px;
-    width: 75%;
-    background-color: rgb(250, 123, 84);
-    border-style: solid;
-    border-width: 0px 0px 0px 15px;
-    border-color: #f0541e;
-}
-
-.successContainer {
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
-    margin-bottom: 25px;
-    padding: 10px;
-    width: 75%;
-    background-color: rgb(150, 255, 150);
-    border-style: solid;
-    border-width: 0px 0px 0px 15px;
-    border-color: lime;
-}
-
-.errorContainer svg {
-    margin-right: 10px;
-}
-
-/* Section Start*/
-
 section {
     margin-block: 50px;
 }
 
+.error {
+    background-color: hsl(0, 100%, 35%);
+    border-color: hsl(0, 100%, 40%);
+}
 
-/* Section End*/
+.warning {
+    background-color: hsl(19, 80%, 48%);
+    border-color: hsl(19, 80%, 43%);
+}
+
+.success {
+    background-color: hsl(120, 65%, 28%);
+    border-color: hsl(120, 65%, 23%);
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 25px;
+    padding: 4rem;
+    width: 75%;
+    border-style: solid;
+    border-width: 0px 0px 0px 3em;
+
+    svg {
+        margin-right: 10px;
+    }
+}
