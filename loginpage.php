@@ -10,7 +10,7 @@ if (!isset($_SESSION['first_name'])) {
 		header('Location: /admin');
 	}
 }
-$page = 'LoginPage'
+$page = 'login'
 ?>
 
 <!DOCTYPE html>
