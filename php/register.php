@@ -2,7 +2,7 @@
 if (isset($_POST["submit"])) {
 
     //start database connection
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/php/db_connection.php';
+    require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
 
     //connect to functions.php
     require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';

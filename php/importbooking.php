@@ -1,6 +1,6 @@
 <?php
     //start database connection
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/php/db_connection.php';
+    require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
 
     $sql = "SELECT * from bookings";
 
