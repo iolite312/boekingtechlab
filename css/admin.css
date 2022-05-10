@@ -10,3 +10,8 @@ tr:nth-of-type(odd) {
 tr {
   border: none;
 }
+
+td button {
+  background-color: red;
+  color: var(--text-color-neutral);
+}
