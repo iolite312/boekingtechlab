@@ -7,7 +7,7 @@ if (!isset($_SESSION['first_name'])) {
 	if ($_SESSION['user_level'] === 0) {
 		header('Location: /userpage');
 	} else {
-		header('Location: /adminpage');
+		header('Location: /admin');
 	}
 }
 $page = 'LoginPage'
