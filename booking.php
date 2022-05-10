@@ -2,7 +2,7 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
-$page = 'booking'
+$page = 'reserveren'
 ?>
 
 <!DOCTYPE html>
