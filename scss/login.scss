@@ -2,7 +2,7 @@ input {
     color: var(--text-color-neutral);
 }
 
-input::after {
+input[required]::after {
     content: "*";
 }
 
