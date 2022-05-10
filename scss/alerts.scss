@@ -2,6 +2,11 @@ section {
     margin-block: 50px;
 }
 
+.success {
+    background-color: hsl(120, 65%, 28%);
+    border-color: hsl(120, 65%, 23%);
+}
+
 .error {
     background-color: hsl(0, 100%, 35%);
     border-color: hsl(0, 100%, 40%);
@@ -10,11 +15,6 @@ section {
 .warning {
     background-color: hsl(19, 80%, 48%);
     border-color: hsl(19, 80%, 43%);
-}
-
-.success {
-    background-color: hsl(120, 65%, 28%);
-    border-color: hsl(120, 65%, 23%);
 }
 
 div.container {
