@@ -91,7 +91,7 @@ function loginUser($email, $password)
 
         if (!$_SESSION['user_level'] == 1) {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
-            header('Location: /index');
+            header('Location: /user');
             exit;
         } else {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in as a admin user'];
