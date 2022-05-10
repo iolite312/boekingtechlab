@@ -52,6 +52,7 @@ if (!isset($_SESSION)) {
                     <td><button type="submit">Delete</button></td>
                 </tr>
             </table>
+            <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.php" ?>
         </section>
     </main>
 </body>
