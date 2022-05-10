@@ -2,6 +2,10 @@ input {
     color: var(--text-color-neutral);
 }
 
+input::after {
+    content: "*";
+}
+
 .loginpage {
     display: flex;
     flex-direction: row;
