@@ -21,10 +21,10 @@
 /* ICON SIZES END */
 
 :root {
-    --bg-color: rgb(16, 0, 72);
-    --text-color: white;
-    --hili-1: rgb(149, 191, 11);
-    --hili-1-dark: rgb(226, 128, 36);
+    --bg-color: hsl(280, 100%, 30%);
+    --text-color: hsl(0, 0%, 100%);
+    --highlight-1: hsl(36, 100%, 50%);
+    --highlight-1-dark: hsl(36, 100%, 40%);
 }
 
 body {
@@ -54,20 +54,20 @@ header {
     a:focus {
         font-size: 1rem;
         text-decoration: none;
-        background-color: var(--hili-1);
+        background-color: var(--highlight-1);
         padding: 1em;
         border-radius: .5em;
-        box-shadow: .25em .25em var(--hili-1-dark);
+        box-shadow: .25em .25em var(--highlight-1-dark);
         transition: box-shadow 100ms linear, transform 100ms linear;
         transform: none;
     }
     a:hover,
     a:focus:hover {
-        box-shadow: .6em .6em var(--hili-1-dark);
+        box-shadow: .6em .6em var(--highlight-1-dark);
         transform: translate(-.2em,-.2em);
     }
     a.active {
-        box-shadow: .6em .6em var(--hili-1-dark);
+        box-shadow: .6em .6em var(--highlight-1-dark);
         transform: translate(-.2em,-.2em);
     }
 }

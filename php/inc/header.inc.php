@@ -1,8 +1,7 @@
     <h1>Techlab Regius College</h1>
     <div class="btn">
     	<a class="<?php if ($page == 'home') {echo 'active';}; ?>" href="index.php">Home</a>
-    	<a class="" href="#">Reserveren</a>
-    	<a class="" href="booking">Booking</a>
+    	<a class="<?php if ($page == 'reserveren') {echo 'active';}; ?>" href="#">Reserveren</a>
     <?php if (isset($_SESSION['first_name'])) {
 		echo
 		"<li class='dropdown'>
