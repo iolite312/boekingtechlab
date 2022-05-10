@@ -5,7 +5,7 @@ if (!isset($_SESSION)) {
 if (!isset($_SESSION['first_name'])) {
 } else {
 	if ($_SESSION['user_level'] === 0) {
-		header('Location: /userpage');
+		header('Location: /user');
 	} else {
 		header('Location: /admin');
 	}
