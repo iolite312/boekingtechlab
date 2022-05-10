@@ -1,5 +1,6 @@
 input {
   color: var(--text-color-neutral);
+  border: none;
 }
 
 input[required]::after {
