@@ -35,7 +35,7 @@ $page = 'booking'
 		<section class="booking">
 			<!-- booking Form Start -->
 			<div id="booking">
-				<h2>booking</h2>
+				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
 					<label for="name">organisatienaam:</label>
 					<input type="text" name="organization_name" placeholder="Your full name (required)"><br>
