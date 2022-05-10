@@ -21,9 +21,13 @@ $page = 'LoginPage'
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/booking.css">
 	<link rel="stylesheet" href="/css/alerts.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
