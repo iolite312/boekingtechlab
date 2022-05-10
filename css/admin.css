@@ -15,4 +15,5 @@ td button {
   background-color: red;
   color: var(--text-color-neutral);
   border-radius: 0.5em;
+  cursor: pointer;
 }
