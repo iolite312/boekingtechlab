@@ -19,3 +19,7 @@ input[required]::after {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+
+.signup, .login {
+  background-color: var(--highlight-1-dark);
+}

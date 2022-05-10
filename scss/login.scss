@@ -12,3 +12,7 @@ input[required]::after {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.signup, .login {
+    background-color: var(--highlight-1-dark);
+}
