@@ -35,6 +35,7 @@ if (!isset($_SESSION)) {
                     <th>ID</th>
                     <th>Naam</th>
                     <th>Email</th>
+                    <th>Telefoon</th>
                     <th>Organisatie</th>
                     <th>Lokaal</th>
                     <th>Materiaal</th>
@@ -42,6 +43,7 @@ if (!isset($_SESSION)) {
                     <th>Verwijderen</th>
                 </tr>
                 <tr>
+                    <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.php" ?>
                     <td>1</td>
                     <td>menner hello</td>
                     <td>email@email.com</td>
@@ -52,7 +54,6 @@ if (!isset($_SESSION)) {
                     <td><button type="submit">Delete</button></td>
                 </tr>
             </table>
-            <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.php" ?>
         </section>
     </main>
 </body>
