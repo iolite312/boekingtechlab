@@ -22,7 +22,7 @@
 		}
 		echo $_SESSION['first_name'];
 		echo
-		"<li><a href='/loginpage' class='$active'>Login</a></li>";
+		"<a href='/loginpage' class='$active'>Login</a>";
 	}
 	?>
 	</div>
