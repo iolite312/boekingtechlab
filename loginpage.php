@@ -59,11 +59,11 @@ $page = 'LoginPage'
 			<div class="signup">
 				<h2>Sign Up</h2>
 				<form action="/php/register.php" method="post">
-					<input type="text" name="firstname" placeholder="Voornaam" required>
+					<input type="text" name="firstname" placeholder="Voornaam*" required>
 					<input type="text" name="infixes" placeholder="Tussenvoegsels">
-					<input type="text" name="lastname" placeholder="Achternaam" required>
-					<input type="email" name="email" placeholder="Email" required>
-					<input id="Registerpassword" minlength="8" type="password" name="password" placeholder="Wachtwoord" required>
+					<input type="text" name="lastname" placeholder="Achternaam*" required>
+					<input type="email" name="email" placeholder="Email*" required>
+					<input id="Registerpassword" minlength="8" type="password" name="password" placeholder="Wachtwoord*" required>
 					<div>
 						<input type="checkbox" onclick="showPassword('Registerpassword')"><label for="ShowPassword">Show Password</label>
 					</div>
