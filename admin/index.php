@@ -16,6 +16,7 @@ if (!isset($_SESSION)) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/alerts.css">
+    <link rel="stylesheet" href="/css/admin.css">
     <script src="/js/expand_menu.js"></script>
 </head>
 
