@@ -42,9 +42,7 @@ if (!isset($_SESSION)) {
                     <th>Tijd</th>
                     <th>Verwijderen</th>
                 </tr>
-                <tr>
-                    <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.php" ?>
-                </tr>
+                <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.php" ?>
             </table>
         </section>
     </main>
