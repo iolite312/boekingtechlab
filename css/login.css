@@ -2,6 +2,10 @@ input {
   color: var(--text-color-neutral);
 }
 
+input::after {
+  content: "*";
+}
+
 .loginpage {
   display: -webkit-box;
   display: -ms-flexbox;
