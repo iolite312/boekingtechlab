@@ -2,26 +2,5 @@
     <div class="btn">
     	<a class="<?php if ($page == 'home') {echo 'active';}; ?>" href="index.php">Home</a>
     	<a class="<?php if ($page == 'reserveren') {echo 'active';}; ?>" href="#">Reserveren</a>
-    <?php if (isset($_SESSION['first_name'])) {
-		echo
-		"<li class='dropdown'>
-				<a href='/myaccount' class='dropbtn'>placeholder ($_SESSION[first_name])</a>
-				<div class='dropdown-content'>
-					<a href='#'>placeholder</a>
-					<a href='#'>placeholder</a>
-					<a href='#'>placeholder</a>
-					<a href='/php/logout'>Log out</a>
-				</div>
-			</li>";
-	} else {
-		if ($page == 'LoginPage') {
-			$active = 'active';
-		} else {
-			$active = '';
-		}
-		echo $_SESSION['first_name'];
-		echo
-		"<a href='/loginpage' class='$active'>Login</a>";
-	}
-	?>
+    	<a href="/loginpage" class="<?php if ($page == 'login') {echo 'active';}; ?>">Login</a>
 	</div>
