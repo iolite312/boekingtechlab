@@ -2,8 +2,7 @@
     <div class="btn">
     	<a class="<?php if ($page == 'home') {echo 'active';}; ?>" href="index.php">Home</a>
     	<a class="" href="#">Reserveren</a>
-    	<a class="" href="#">Booking</a>
-    	<a class="" href="#">Login</a>
+    	<a class="" href="booking">Booking</a>
     </div>
     <?php if (isset($_SESSION['first_name'])) {
 		echo
