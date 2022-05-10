@@ -7,13 +7,12 @@ tr:nth-of-type(odd) {
     background-color: var(--bg-color-dark);   
 }
 
-tr {
+tr, td button {
     border: none
 }
 
 td button {
     background-color: hsl(0, 100%, 50%);
     color: var(--text-color-neutral);
-    border: none;
     border-radius: 0.5em;
 }
