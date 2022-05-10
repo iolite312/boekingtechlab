@@ -1,0 +1,13 @@
+input {
+    color: var(--text-color-neutral);
+}
+
+input[required]::after {
+    content: "*";
+}
+
+.loginpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

@@ -12,7 +12,7 @@ unset($_SESSION['messages']);
         switch ($message[0]) {
             case "error":
     ?>
-                <div class="errorContainer">
+                <div class="error container">
                     <span class="material-icons md-48">dangerous</span>
                     <h2><?php echo $message[1]; ?></h2>
                 </div>
@@ -20,7 +20,7 @@ unset($_SESSION['messages']);
                 break;
             case "warning":
             ?>
-                <div class="warningContainer">
+                <div class="warning container">
                     <span class="material-icons md-48">warning</span>
                     <h2><?php echo $message[1]; ?></h2>
                 </div>
@@ -28,7 +28,7 @@ unset($_SESSION['messages']);
                 break;
             case "success":
             ?>
-                <div class="successContainer">
+                <div class="success container">
                     <span class="material-icons md-48">done</span>
                     <h2><?php echo $message[1]; ?></h2>
                 </div>
@@ -36,7 +36,7 @@ unset($_SESSION['messages']);
                 break;
             default:
             ?>
-                <div class="errorContainer">
+                <div class="error container">
                     <span class="material-icons md-48">error</span>
                     <h2><?php echo "code " . "\"" . $message[0] . "\"" . " is unknown"; ?></h2>
                 </div>

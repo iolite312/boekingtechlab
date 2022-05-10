@@ -18,10 +18,11 @@
 
 /* ICON SIZES END */
 :root {
-  --bg-color: rgb(16, 0, 72);
-  --text-color: white;
-  --hili-1: rgb(149, 191, 11);
-  --hili-1-dark: rgb(226, 128, 36);
+  --bg-color: hsl(280, 100%, 30%);
+  --text-color: hsl(0, 0%, 100%);
+  --text-color-neutral: hsl(0, 0%, 0%);
+  --highlight-1: hsl(36, 100%, 50%);
+  --highlight-1-dark: hsl(36, 100%, 40%);
 }
 
 body {
@@ -63,11 +64,11 @@ header {
 .btn a:focus {
   font-size: 1rem;
   text-decoration: none;
-  background-color: var(--hili-1);
+  background-color: var(--highlight-1);
   padding: 1em;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0.25em 0.25em var(--hili-1-dark);
-          box-shadow: 0.25em 0.25em var(--hili-1-dark);
+  -webkit-box-shadow: 0.25em 0.25em var(--highlight-1-dark);
+          box-shadow: 0.25em 0.25em var(--highlight-1-dark);
   -webkit-transition: -webkit-box-shadow 100ms linear, -webkit-transform 100ms linear;
   transition: -webkit-box-shadow 100ms linear, -webkit-transform 100ms linear;
   transition: box-shadow 100ms linear, transform 100ms linear;
@@ -77,21 +78,20 @@ header {
 }
 .btn a:hover,
 .btn a:focus:hover {
-  -webkit-box-shadow: 0.6em 0.6em var(--hili-1-dark);
-          box-shadow: 0.6em 0.6em var(--hili-1-dark);
+  -webkit-box-shadow: 0.6em 0.6em var(--highlight-1-dark);
+          box-shadow: 0.6em 0.6em var(--highlight-1-dark);
   -webkit-transform: translate(-0.2em, -0.2em);
           transform: translate(-0.2em, -0.2em);
 }
 .btn a.active {
-  -webkit-box-shadow: 0.6em 0.6em var(--hili-1-dark);
-          box-shadow: 0.6em 0.6em var(--hili-1-dark);
+  -webkit-box-shadow: 0.6em 0.6em var(--highlight-1-dark);
+          box-shadow: 0.6em 0.6em var(--highlight-1-dark);
   -webkit-transform: translate(-0.2em, -0.2em);
           transform: translate(-0.2em, -0.2em);
 }
 
 main {
   margin: 0px 7vw;
-  background-color: orange;
   height: 100vh;
 }
 

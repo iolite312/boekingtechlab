@@ -7,7 +7,7 @@ if (!isset($_SESSION['first_name'])) {
 	if ($_SESSION['user_level'] === 0) {
 		header('Location: /userpage');
 	} else {
-		header('Location: /adminpage');
+		header('Location: /admin');
 	}
 }
 $page = 'LoginPage'
@@ -21,9 +21,14 @@ $page = 'LoginPage'
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/booking.css">
 	<link rel="stylesheet" href="/css/alerts.css">
+	<link rel="stylesheet" href="/css/login.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -36,11 +41,11 @@ $page = 'LoginPage'
 			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 		</section>
 
-		<section id="account">
+		<section class="loginpage">
 			<!-- Login Form Start -->
-			<div id="Login">
+			<div class="login">
 				<h2>Login</h2>
-				<form action="/php/Login.php" method="post">
+				<form action="/php/login.php" method="post">
 					<input type="email" name="email" placeholder="Email" required>
 					<input id="Loginpassword" type="password" name="password" placeholder="Password" required>
 					<div>
@@ -51,14 +56,14 @@ $page = 'LoginPage'
 			</div>
 			<!-- Login Form Start -->
 			<!-- Register Form Start -->
-			<div id="SignUp">
+			<div class="signup">
 				<h2>Sign Up</h2>
-				<form action="/php/Register.php" method="post">
-					<input type="text" name="firstname" placeholder="Firstname *" required>
-					<input type="text" name="infixes" placeholder="Infixes">
-					<input type="text" name="lastname" placeholder="Lastname *" required>
-					<input type="email" name="email" placeholder="Email *" required>
-					<input id="Registerpassword" type="password" name="password" placeholder="Password *" required>
+				<form action="/php/register.php" method="post">
+					<input type="text" name="firstname" placeholder="Voornaam*" required>
+					<input type="text" name="infixes" placeholder="Tussenvoegsels">
+					<input type="text" name="lastname" placeholder="Achternaam*" required>
+					<input type="email" name="email" placeholder="Email*" required>
+					<input id="Registerpassword" minlength="8" type="password" name="password" placeholder="Wachtwoord*" required>
 					<div>
 						<input type="checkbox" onclick="showPassword('Registerpassword')"><label for="ShowPassword">Show Password</label>
 					</div>
