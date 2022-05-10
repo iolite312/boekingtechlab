@@ -95,7 +95,7 @@ function loginUser($email, $password)
             exit;
         } else {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in as a admin user'];
-            header('Location: /adminpage');
+            header('Location: /admin');
             exit;
         }
     }
