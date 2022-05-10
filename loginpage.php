@@ -44,7 +44,7 @@ $page = 'LoginPage'
 			<!-- Login Form Start -->
 			<div id="Login">
 				<h2>Login</h2>
-				<form action="/php/Login.php" method="post">
+				<form action="/php/login.php" method="post">
 					<input type="email" name="email" placeholder="Email" required>
 					<input id="Loginpassword" type="password" name="password" placeholder="Password" required>
 					<div>
@@ -57,7 +57,7 @@ $page = 'LoginPage'
 			<!-- Register Form Start -->
 			<div id="SignUp">
 				<h2>Sign Up</h2>
-				<form action="/php/Register.php" method="post">
+				<form action="/php/register.php" method="post">
 					<input type="text" name="firstname" placeholder="Firstname *" required>
 					<input type="text" name="infixes" placeholder="Infixes">
 					<input type="text" name="lastname" placeholder="Lastname *" required>
