@@ -26,6 +26,7 @@ $page = 'LoginPage'
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/booking.css">
 	<link rel="stylesheet" href="/css/alerts.css">
+	<link rel="stylesheet" href="/css/login.css">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
