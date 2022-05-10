@@ -22,7 +22,7 @@ if (!isset($_SESSION)) {
 
 <body>
     <header>
-        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
+        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/adminpage/php/inc/adheader.inc.php' ?>
     </header>
 
     <main>
