@@ -1,4 +1,8 @@
 tr:nth-of-type(odd),
 th:nth-of-type(odd) {
-    background-color: var(--bg-color-dark);
+    background-color: var(--bg-color-dark);   
+}
+
+tr {
+    border: none
 }
