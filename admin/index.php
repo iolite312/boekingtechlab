@@ -44,14 +44,6 @@ if (!isset($_SESSION)) {
                 </tr>
                 <tr>
                     <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.php" ?>
-                    <td>1</td>
-                    <td>menner hello</td>
-                    <td>email@email.com</td>
-                    <td>ROC</td>
-                    <td>Lokaal 1</td>
-                    <td>PC en VR</td>
-                    <td>12:30-01:30</td>
-                    <td><button type="submit">Delete</button></td>
                 </tr>
             </table>
         </section>
