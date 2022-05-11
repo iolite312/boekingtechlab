@@ -1,7 +1,9 @@
 <?php
-if (isset($_POST["submit"])) {
-    echo 132;
-    exit;
+echo $_SESSION['user_level'];
+if ($_SESSION['user_level'] === 1)
+echo 2;
+exit;
+if (isset($_POST["submit"]) && $_SESSION['user_level'] === 1) {
 
     //start database connection
     require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
