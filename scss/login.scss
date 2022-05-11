@@ -15,4 +15,5 @@ input[required]::after {
 
 .signup, .login {
     background-color: var(--green);
+    box-shadow: .25em .25em var(--green-dark);
 }
