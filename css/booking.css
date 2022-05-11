@@ -21,16 +21,16 @@ input {
   margin-top: 1em;
 }
 
+select {
+  display: none;
+}
+
 input[value="ROC Kop van Noord-Holland"]:checked > select#rockopnh {
   display: block;
 }
 
 input[value="Regius College"]:checked > select#regius {
   display: block;
-}
-
-select {
-  display: none;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
