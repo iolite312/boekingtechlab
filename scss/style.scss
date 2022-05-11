@@ -21,18 +21,20 @@
 /* ICON SIZES END */
 
 :root {
-    --bg-color: hsl(280, 100%, 30%);
-    --bg-color-dark: hsl(280, 100%, 20%);
-    --text-color: hsl(0, 0%, 100%);
     --text-color-neutral: hsl(0, 0%, 0%);
-    --highlight-1: hsl(36, 100%, 50%);
-    --highlight-1-dark: hsl(36, 100%, 40%);
+    --text-color: hsl(0, 0%, 100%);
+    --purple: hsl(280, 100%, 30%);
+    --purple-dark: hsl(280, 100%, 20%);
+    --orange: hsl(36, 100%, 50%);
+    --orange-dark: hsl(36, 100%, 40%);
+    --green: hsl(79, 60%, 50%);
+    --green-dark: hsl(79, 60%, 40%);
 }
 
 body {
     margin: 0;
     min-height: 100%;
-    background-color: var(--bg-color);
+    background-color: var(--purple);
     font-family: 'Rubik', sans-serif;
 }
 
@@ -56,20 +58,20 @@ header {
     a:focus {
         font-size: 1rem;
         text-decoration: none;
-        background-color: var(--highlight-1);
+        background-color: var(--orange);
         padding: 1em;
         border-radius: .5em;
-        box-shadow: .25em .25em var(--highlight-1-dark);
+        box-shadow: .25em .25em var(--orange-dark);
         transition: box-shadow 100ms linear, transform 100ms linear;
         transform: none;
     }
     a:hover,
     a:focus:hover {
-        box-shadow: .6em .6em var(--highlight-1-dark);
+        box-shadow: .6em .6em var(--orange-dark);
         transform: translate(-.2em,-.2em);
     }
     a.active {
-        box-shadow: .6em .6em var(--highlight-1-dark);
+        box-shadow: .6em .6em var(--orange-dark);
         transform: translate(-.2em,-.2em);
     }
 }

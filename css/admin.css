@@ -4,7 +4,7 @@ table {
 }
 
 tr:nth-of-type(odd) {
-  background-color: var(--bg-color-dark);
+  background-color: var(--purple-dark);
 }
 
 tr, td button {
