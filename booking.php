@@ -37,14 +37,16 @@ $page = 'reserveren'
 			<div id="booking">
 				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
-					<label for="name">Organisatie</label>
-					<input type="radio" name="ROC" checked><br>
+					<h3>Organisatie</h3>
+					<label for="ROC">ROC Kop van Noord-Holland</label><br>
+					<input type="radio" name="ROC" value="ROC Kop van Noord-Holland" checked><br>
 					<select name="" id="rockopnh">
 						<option value=""></option>
 						<option value=""></option>
 						<option value=""></option>
 					</select>
-					<input type="radio" name="regiuscollege"><br>
+					<label for="regiuscollege">Regius College</label><br>
+					<input type="radio" name="regiuscollege" value="Regius College"><br>
 					<select name="" id="regius">
 						<option value=""></option>
 						<option value=""></option>
