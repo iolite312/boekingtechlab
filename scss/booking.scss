@@ -23,6 +23,15 @@ select {
     display: none;
 }
 
+select, option {
+    background-color: var(--purple-dark);
+    transition: background-color 100ms linear;
+
+    option:hover {
+        background-color: var(--purple-light);
+    }
+}
+
 input[value="ROC Kop van Noord-Holland"]:checked ~ select#rockopnh {
     display: block;
 }
