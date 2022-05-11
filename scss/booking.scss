@@ -7,11 +7,12 @@
     width: 50%;
 }
 
-label, input {
+label,
+input {
     font-size: 1rem;
 }
 
-input {
+input:not([type="radio"]) {
     width: 100%;
     color: var(--text-color-neutral);
     display: block;
@@ -24,7 +25,8 @@ select {
     border-radius: .5em;
 }
 
-select, option {
+select,
+option {
     background-color: var(--purple-dark);
     transition: background-color 100ms linear;
     font-family: 'Rubik', sans-serif;
@@ -34,11 +36,12 @@ select, option {
     }
 }
 
-input[value="ROC Kop van Noord-Holland"]:checked ~ select#rockopnh {
+
+input[value="ROC Kop van Noord-Holland"]:checked~select#rockopnh {
     display: block;
 }
 
-input[value="Regius College"]:checked ~ select#regius {
+input[value="Regius College"]:checked~select#regius {
     display: block;
 }
 
