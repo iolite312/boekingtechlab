@@ -38,9 +38,9 @@ $page = 'reserveren'
 				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
 					<h3>Organisatie</h3>
-					<input type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
+					<input id="ROC" type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
 					<label for="ROC">ROC Kop van Noord-Holland</label><br>
-					<input type="radio" name="organisatie" value="Regius College">
+					<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
 					<label for="regiuscollege">Regius College</label><br>
 					<select name="" id="rockopnh">
 						<option value=""></option>
