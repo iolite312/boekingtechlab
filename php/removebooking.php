@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST["submit"]) && $_SESSION['user_level'] === 1) {
+if (isset($_POST["submit"])) {
     echo 132;
     exit;
 
