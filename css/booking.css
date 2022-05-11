@@ -23,12 +23,14 @@ input {
 
 select {
   display: none;
+  border-radius: 0.5em;
 }
 
 select, option {
   background-color: var(--purple-dark);
   -webkit-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
+  font-family: "Rubik", sans-serif;
 }
 select option:hover, option option:hover {
   background-color: var(--purple-light);

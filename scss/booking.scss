@@ -21,11 +21,13 @@ input {
 
 select {
     display: none;
+    border-radius: .5em;
 }
 
 select, option {
     background-color: var(--purple-dark);
     transition: background-color 100ms linear;
+    font-family: 'Rubik', sans-serif;
 
     option:hover {
         background-color: var(--purple-light);
