@@ -12,11 +12,11 @@ td:last-child {
     text-align: center;
 }
 
-tr, td button {
+tr, td .button {
     border: none
 }
 
-td button {
+td .button {
     background-color: hsl(0, 100%, 50%);
     color: var(--text-color-neutral);
     border-radius: 0.5em;
