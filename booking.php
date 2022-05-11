@@ -37,32 +37,23 @@ $page = 'reserveren'
 			<div id="booking">
 				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
-					<label for="name">organisatienaam:</label>
-					<input type="text" name="organization_name" placeholder="Your full name (required)"><br>
+					<label for="name">Organisatie</label>
+					<select name="organisatie">
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+					</select><br>
 
-					<label for="email">organisatie email</label>
-					<input type="email" name="organization_email" placeholder="Email (required)"><br>
+					<!-- <label for="email">organisatie email</label> -->
+					<input type="email" name="organization_email" placeholder="Email"><br>
 
-					<label for="name">organisatie telefoon</label>
-					<input type="text" name="organization_tel" placeholder="Your tel num (required)"><br>
+					<!-- <label for="name">organisatie telefoon</label> -->
+					<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 
-					<label for="name">naam</label>
-					<input type="text" name="name" placeholder="Your full name (required)"><br>
-
-					<label for="email">email</label>
+					<!-- <label for="email">email</label> -->
 					<input type="email" name="email" placeholder="Email (required)"><br>
-
-					<label for="name">telefoon</label>
-					<input type="text" name="tel" placeholder="Your tel num (required)"><br>
-
-					<label for="Subject">lokaal deel</label>
-					<input type="text" name="classroompart" placeholder="Subject (required)"><br>
-
-					<label for="Subject">materiaal</label>
-					<input type="text" name="material" placeholder="Subject (required)"><br>
-
-					<label for="Message">tijd</label>
-					<input type="datetime-local" name="time" placeholder="Subject (required)"><br>
 
 					<input type="submit" name="submit" value="Send">
 				</form>
