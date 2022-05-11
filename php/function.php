@@ -115,7 +115,7 @@ function loginUser($email, $password)
         $_SESSION['date_created'] = $uidExists["date_created"];
         $_SESSION['status'] = $uidExists["status"];
 
-        if (!$_SESSION['user_level'] == 1) {
+        if (!$_SESSION['user_level'] === 1) {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
             header('Location: /user');
             exit;
