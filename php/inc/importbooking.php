@@ -21,7 +21,7 @@ if (mysqli_num_rows($result) > 0) {
                     <td>" . $row['classroompart'] . "</td>
                     <td>" . $row['material'] . "</td>
                     <td>" . $row['time'] . "</td>
-                    <td><button type='submit' name='submit'>Delete</button></td> 
+                    <td><input type='submit' name='submit' value='Delete'></td> 
                 </tr>
             </form>
         ";
