@@ -7,6 +7,11 @@ tr:nth-of-type(odd) {
     background-color: var(--purple-dark);   
 }
 
+td:last-child {
+    width: fit-content;
+    text-align: center;
+}
+
 tr, td button {
     border: none
 }
