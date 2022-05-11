@@ -108,7 +108,7 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
 
     $sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?,?,?,?)";
     $stmt = mysqli_stmt_init($conn);
-
+    
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #103.1'];
         header('Location: /booking');
@@ -129,8 +129,36 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
         header('Location: /booking');
         exit;
     }
-
+    
     $_SESSION['messages'][] = ["success", 'your message was successfully sent!'];
     header('Location: /booking');
     exit;
+}
+
+function removebooking($bookingID) {
+    global $conn;
+    
+    $sql = "DELETE FROM bookings WHERE id = (?)";
+    $stmt = mysqli_stmt_init($conn);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.1'];
+        header('Location: /booking');
+        exit;
+    }
+    if (!mysqli_stmt_bind_param($stmt, "i", $bookingID)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.2'];
+        header('Location: /booking');
+        exit;
+    }
+    if (!mysqli_stmt_execute($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.3'];
+        header('Location: /booking');
+        exit;
+    }
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.4'];
+        header('Location: /booking');
+        exit;
+    }
 }
