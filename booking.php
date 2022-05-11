@@ -37,29 +37,31 @@ $page = 'reserveren'
 			<div id="booking">
 				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
-					<h3>Organisatie</h3>
-					<input id="ROC" type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
-					<label for="ROC">ROC Kop van Noord-Holland</label><br>
-					<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
-					<label for="regiuscollege">Regius College</label><br>
-					<select name="ROCKopNH" id="rockopnh">
-						<option value="hofstraat">Hofstraat</option>
-						<option value="denhelder">Den Helder</option>
-					</select>
-					<select name="RegiusCollege" id="regius">
-						<option value="">Wilheminalaan</option>
-						<option value="">Oranjelaan</option>
-						<option value="">Emmalaan</option>
-						<option value="">Hofstraat</option>
-					</select>
-
-					<!-- <label for="email">organisatie email</label> -->
+					<div class="organisatie">
+						<h3>Organisatie</h3>
+						<div class="left">
+							<input id="ROC" type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
+							<label for="ROC">ROC Kop van Noord-Holland</label><br>
+							<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
+							<label for="regiuscollege">Regius College</label><br>
+						</div>
+						<div class="right">
+							<select name="ROCKopNH" id="rockopnh">
+								<option value="hofstraat">Hofstraat</option>
+								<option value="denhelder">Den Helder</option>
+							</select>
+							<select name="RegiusCollege" id="regius">
+								<option value="">Wilheminalaan</option>
+								<option value="">Oranjelaan</option>
+								<option value="">Emmalaan</option>
+								<option value="">Hofstraat</option>
+							</select>
+						</div>
+					</div>
 					<input type="email" name="organization_email" placeholder="Email"><br>
 
-					<!-- <label for="name">organisatie telefoon</label> -->
 					<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 
-					<!-- <label for="email">email</label> -->
 					<input type="email" name="email" placeholder="Email (required)"><br>
 
 					<input type="submit" name="submit" value="Send">
