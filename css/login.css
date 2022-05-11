@@ -26,4 +26,5 @@ input[required]::after {
           box-shadow: 0.75em 0.75em var(--green-dark);
   padding: 1em;
   border-radius: 0.5em;
+  width: 20vw;
 }
