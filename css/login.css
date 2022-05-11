@@ -21,5 +21,10 @@ input[required]::after {
 }
 
 .signup, .login {
-  background-color: var(--orange-dark);
+  background-color: var(--green);
+  -webkit-box-shadow: 0.75em 0.75em var(--green-dark);
+          box-shadow: 0.75em 0.75em var(--green-dark);
+  padding: 3em;
+  border-radius: 0.5em;
+  width: 20vw;
 }
