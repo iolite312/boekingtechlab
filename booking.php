@@ -40,13 +40,13 @@ $page = 'reserveren'
 					<h3>Organisatie</h3>
 					<label for="ROC">ROC Kop van Noord-Holland</label><br>
 					<input type="radio" name="ROC" value="ROC Kop van Noord-Holland" checked><br>
+					<label for="regiuscollege">Regius College</label><br>
+					<input type="radio" name="regiuscollege" value="Regius College"><br>
 					<select name="" id="rockopnh">
 						<option value=""></option>
 						<option value=""></option>
 						<option value=""></option>
 					</select>
-					<label for="regiuscollege">Regius College</label><br>
-					<input type="radio" name="regiuscollege" value="Regius College"><br>
 					<select name="" id="regius">
 						<option value=""></option>
 						<option value=""></option>
