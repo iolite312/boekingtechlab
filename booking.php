@@ -38,13 +38,18 @@ $page = 'reserveren'
 				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
 					<label for="name">Organisatie</label>
-					<select name="organisatie">
+					<input type="radio" name="ROC" checked><br>
+					<select name="" id="rockopnh">
 						<option value=""></option>
 						<option value=""></option>
 						<option value=""></option>
+					</select>
+					<input type="radio" name="regiuscollege"><br>
+					<select name="" id="regius">
 						<option value=""></option>
 						<option value=""></option>
-					</select><br>
+						<option value=""></option>
+					</select>
 
 					<!-- <label for="email">organisatie email</label> -->
 					<input type="email" name="organization_email" placeholder="Email"><br>

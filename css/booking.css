@@ -2,27 +2,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  place-content: center;
 }
 
 #booking {
   width: 50%;
 }
 
-form > label {
-  font-size: 18px;
+label, input {
+  font-size: 1rem;
 }
 
-form > input {
+input {
   width: 100%;
-  height: 50px;
-  color: black;
+  color: var(--text-color-neutral);
   display: block;
-  border-radius: 5px;
-  font-size: 18px;
-  margin-top: 5px;
+  border-radius: 0.5em;
+  margin-top: 1em;
+}
+
+input[name=ROC]:checked > select#rockopnh {
+  display: block;
+}
+
+input[name=regiuscollege]:checked > select#regius {
+  display: block;
+}
+
+input[type=radio] {
+  display: none;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
