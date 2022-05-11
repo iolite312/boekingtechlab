@@ -12,7 +12,8 @@ if (isset($_POST["submit"]) || $_SESSION['user_level'] == 1) {
     }
 
     $bookingID = $_POST['bookingID'];
-
+    echo 132;
+    exit;
     removebooking($bookingID);
 
     //end database connection

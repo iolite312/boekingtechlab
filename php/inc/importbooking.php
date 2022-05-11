@@ -2,7 +2,7 @@
 //start database connection
 require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
 
-$sql = "SELECT * from bookings";
+$sql = "SELECT * FROM bookings";
 
 $result = mysqli_query($conn, $sql);
 
@@ -23,6 +23,7 @@ if (mysqli_num_rows($result) > 0) {
                     <td>" . $row['time'] . "</td>
                     <td><button type='submit'>Delete</button></td> 
                 </tr>
-            </form>";
+            </form>
+        ";
     }
 }
