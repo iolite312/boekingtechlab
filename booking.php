@@ -42,15 +42,15 @@ $page = 'reserveren'
 					<label for="ROC">ROC Kop van Noord-Holland</label><br>
 					<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
 					<label for="regiuscollege">Regius College</label><br>
-					<select name="" id="rockopnh">
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
+					<select name="ROCKopNH" id="rockopnh">
+						<option value="hofstraat">Hofstraat</option>
+						<option value="denhelder">Den Helder</option>
 					</select>
-					<select name="" id="regius">
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
+					<select name="RegiusCollege" id="regius">
+						<option value="">Wilheminalaan</option>
+						<option value="">Oranjelaan</option>
+						<option value="">Emmalaan</option>
+						<option value="">Hofstraat</option>
 					</select>
 
 					<!-- <label for="email">organisatie email</label> -->
