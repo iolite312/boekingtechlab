@@ -1,25 +1,50 @@
 .booking {
     display: flex;
-    justify-content: space-evenly;
+    place-content: center;
 }
 
 #booking {
     width: 50%;
 }
 
-form>label {
-    font-size: 18px;
+label,
+input {
+    font-size: 1rem;
 }
 
-form>input {
+input:not([type="radio"]) {
     width: 100%;
-    height: 50px;
-    color: black;
+    color: var(--text-color-neutral);
     display: block;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 5px;
+    border-radius: .5em;
+    margin-top: 1em;
 }
+
+select {
+    display: none;
+    border-radius: .5em;
+}
+
+select,
+option {
+    background-color: var(--purple-dark);
+    transition: background-color 100ms linear;
+    font-family: 'Rubik', sans-serif;
+
+    option:hover {
+        background-color: var(--purple-light);
+    }
+}
+
+
+input[value="ROC Kop van Noord-Holland"]:checked~select#rockopnh {
+    display: block;
+}
+
+input[value="Regius College"]:checked~select#regius {
+    display: block;
+}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}

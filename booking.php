@@ -37,32 +37,28 @@ $page = 'reserveren'
 			<div id="booking">
 				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
-					<label for="name">organisatienaam:</label>
-					<input type="text" name="organization_name" placeholder="Your full name (required)"><br>
+					<div class="organisatie">
+						<h3>Organisatie</h3>
+						<input id="ROC" type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
+						<label for="ROC">ROC Kop van Noord-Holland</label><br>
+						<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
+						<label for="regiuscollege">Regius College</label><br>
+						<select name="ROCKopNH" id="rockopnh">
+							<option value="hofstraat">Schagen</option>
+							<option value="denhelder">Den Helder</option>
+						</select>
+						<select name="RegiusCollege" id="regius">
+							<option value="">Wilheminalaan</option>
+							<option value="">Oranjelaan</option>
+							<option value="">Emmalaan</option>
+							<option value="">Hofstraat</option>
+						</select>
+					</div>
+					<input type="email" name="organization_email" placeholder="Email"><br>
 
-					<label for="email">organisatie email</label>
-					<input type="email" name="organization_email" placeholder="Email (required)"><br>
+					<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 
-					<label for="name">organisatie telefoon</label>
-					<input type="text" name="organization_tel" placeholder="Your tel num (required)"><br>
-
-					<label for="name">naam</label>
-					<input type="text" name="name" placeholder="Your full name (required)"><br>
-
-					<label for="email">email</label>
 					<input type="email" name="email" placeholder="Email (required)"><br>
-
-					<label for="name">telefoon</label>
-					<input type="text" name="tel" placeholder="Your tel num (required)"><br>
-
-					<label for="Subject">lokaal deel</label>
-					<input type="text" name="classroompart" placeholder="Subject (required)"><br>
-
-					<label for="Subject">materiaal</label>
-					<input type="text" name="material" placeholder="Subject (required)"><br>
-
-					<label for="Message">tijd</label>
-					<input type="datetime-local" name="time" placeholder="Subject (required)"><br>
 
 					<input type="submit" name="submit" value="Send">
 				</form>
