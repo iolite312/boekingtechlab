@@ -24,8 +24,8 @@
   --purple-dark: hsl(280, 100%, 20%);
   --orange: hsl(36, 100%, 50%);
   --orange-dark: hsl(36, 100%, 40%);
-  --green: hsl(79, 60%, 50%);
-  --green-dark: hsl(79, 60%, 40%);
+  --green: hsl(79, 60%, 45%);
+  --green-dark: hsl(79, 60%, 35%);
 }
 
 body {
