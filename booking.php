@@ -74,6 +74,9 @@ $page = 'reserveren'
 			<!-- booking Form END -->
 		</section>
 	</main>
+	<footer>
+    <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
+    </footer>
 </body>
 
 </html>
