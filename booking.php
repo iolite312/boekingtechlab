@@ -41,7 +41,7 @@ $page = 'reserveren'
 						<h1>Reserveren</h1>
 						<div class="userinput">
 							<div class="organisation">
-								<h3>organisatie</h3>
+								<h3>Organisatie</h3>
 								<select name="organisatie" id="organisatie">
 									<option value="">Regius College</option>
 									<option value="">ROC Kop van Noord-Holland</option>
@@ -52,14 +52,18 @@ $page = 'reserveren'
 							</div>
 							<div class="contact">
 								<h3>Contact</h3>
+								<label for="organization_email">Email</label><br>
 								<input type="email" name="organization_email" placeholder="Email"><br>
+								<label for="organization_tel">Telefoon</label><br>
 								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
-								<input type="email" name="email" placeholder="Email (required)"><br>
+								<label for="organization_name">Name</label><br>
+								<input type="text" name="organization_name" placeholder="Naam"><br>
 							</div>
 						</div>
 					</div>
 					<div class="materials">
-						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.php'; ?>
+						<h3>Gegevens</h3>
+						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.inc.php'; ?>
 					</div>
 					<input type="submit" name="submit" value="Send">
 				</form>

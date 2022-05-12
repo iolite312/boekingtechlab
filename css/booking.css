@@ -58,15 +58,36 @@ option {
   text-align: center;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #booking {
-    width: 80%;
-  }
+.item {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.item h3 {
+  text-align: center;
+}
+.item img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+.plus-minus-input {
+  align-items: center;
+}
+.plus-minus-input .input-group-field {
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+.plus-minus-input .input-group-field::-webkit-inner-spin-button,
+.plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+  appearance: none;
+}
+.plus-minus-input .input-group-button .circle {
+  border-radius: 50%;
+  padding: 0.25em 0.8em;
 }
 
 /*# sourceMappingURL=booking.css.map */
