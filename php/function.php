@@ -41,7 +41,7 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
     global $conn;
 
     //send user data to database
-    $sql = "INSERT INTO users VALUES (NULL,?,?,?,?,?,NULL,current_timestamp(),NULL)";
+    $sql = "INSERT INTO users VALUES (NULL,?,?,?,?,?,DEFAULT,current_timestamp(),DEFAULT)";
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
