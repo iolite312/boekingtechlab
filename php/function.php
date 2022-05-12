@@ -71,7 +71,7 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
         exit;
     }
     if (!mysqli_stmt_execute($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unkown #102.3'];
+        $_SESSION['messages'][] = ["error", 'Error unkown #102.3 - ' . mysqli_stmt_error($stmt)];
         header('Location: /loginpage');
         exit;
     }
