@@ -2,6 +2,7 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
+
 if (!isset($_SESSION['first_name'])) {
 } else {
 	if ($_SESSION['user_level'] === 0) {

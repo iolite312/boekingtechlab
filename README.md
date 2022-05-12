@@ -6,6 +6,7 @@ UN: `boekingtechlab`
 
 WW Database: `OieMVT]Om)-(TD5c`
 
-Admin Acc: `Test@account.com` `WW:Test-123456`
+User Acc: `User@account.com` `WW:User-123456`
+Admin Acc: `Admin@account.com` `WW:Admin-123456`
 
 Watch SASS Files `sass -w scss:css`
