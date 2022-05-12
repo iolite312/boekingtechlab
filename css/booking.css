@@ -38,15 +38,15 @@ option option:hover {
   background-color: var(--purple-light);
 }
 
-input[value="ROC Kop van Noord-Holland"]:checked ~ .answers select#rockopnh {
+div.questions input[value="ROC Kop van Noord-Holland"]:checked ~ div.answers select#rockopnh {
   display: block;
 }
 
-input[value="Regius College"]:checked ~ .answers select#regius {
+div.questions input[value="Regius College"]:checked ~ div.answers select#regius {
   display: block;
 }
 
-input[value=anders-vraag]:checked ~ .answers input#anders-antwoord {
+div.questions input[value=anders-vraag]:checked ~ div.answers input#anders-antwoord {
   display: block;
 }
 

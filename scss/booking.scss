@@ -39,18 +39,21 @@ option {
 }
 
 
+div.questions
 input[value="ROC Kop van Noord-Holland"]:checked
-~ .answers select#rockopnh {
+~ div.answers select#rockopnh {
     display: block;
 }
 
+div.questions
 input[value="Regius College"]:checked
-~ .answers select#regius {
+~ div.answers select#regius {
     display: block;
 }
 
+div.questions
 input[value="anders-vraag"]:checked
-~ .answers input#anders-antwoord {
+~ div.answers input#anders-antwoord {
     display: block;
 }
 
