@@ -38,36 +38,27 @@ $page = 'reserveren'
 			<div id="booking">
 				<h2>Reserveren</h2>
 				<form action="/php/booking.php" method="post" required>
-					<div class="organisatie">
-						<h3>Organisatie</h3>
-						<div class="questions">
-							<input id="ROC" type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
-							<label for="ROC">ROC Kop van Noord-Holland</label><br>
-							<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
-							<label for="regiuscollege">Regius College</label><br>
-							<input id="anders-vraag" type="radio" name="organisatie" value="anders-vraag">
-							<label for="anders-vraag">Anders</label><br>
+					<div class="questions">
+						<div class="organisation">
+							<h3>organisatie</h3>
+							<select name="organisatie" id="organisatie">
+								<option value="">Regius College</option>
+								<option value="">ROC Kop van Noord-Holland</option>
+								<option value="">Anders</option>
+							</select>
+							<label for="anders">Vul in als u "anders" selecteerd</label><br>
+							<input type="text" name="anders" id="anders">
 						</div>
-						<div class="answers">
-							<select name="ROCKopNH" id="rockopnh">
-								<option value="hofstraat">Schagen</option>
-								<option value="denhelder">Den Helder</option>
-							</select>
-							<select name="RegiusCollege" id="regius">
-								<option value="">Wilheminalaan</option>
-								<option value="">Oranjelaan</option>
-								<option value="">Emmalaan</option>
-								<option value="">Hofstraat</option>
-							</select>
-							<input type="text" name="anders_antwoord" id="anders-antwoord" placeholder="Anders">
+						<div class="contact">
+							<h3>Contact</h3>
+							<input type="email" name="organization_email" placeholder="Email"><br>
+							<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
+							<input type="email" name="email" placeholder="Email (required)"><br>
 						</div>
 					</div>
-					<input type="email" name="organization_email" placeholder="Email"><br>
-
-					<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
-
-					<input type="email" name="email" placeholder="Email (required)"><br>
-
+					<div class="materials">
+						
+					</div>
 					<input type="submit" name="submit" value="Send">
 				</form>
 			</div>
@@ -75,8 +66,8 @@ $page = 'reserveren'
 		</section>
 	</main>
 	<footer>
-    <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
-    </footer>
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
+	</footer>
 </body>
 
 </html>

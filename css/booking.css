@@ -21,33 +21,15 @@ input:not([type=radio]) {
   margin-top: 1em;
 }
 
-select,
-input#anders-antwoord {
-  display: none;
-  border-radius: 0.5em;
+.questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
-select,
-option {
-  background-color: var(--purple-dark);
-  transition: background-color 100ms linear;
-  font-family: "Rubik", sans-serif;
-}
-select option:hover,
-option option:hover {
-  background-color: var(--purple-light);
-}
-
-div.questions input[value="ROC Kop van Noord-Holland"]:checked ~ div.answers select#rockopnh {
-  display: block;
-}
-
-div.questions input[value="Regius College"]:checked ~ div.answers select#regius {
-  display: block;
-}
-
-div.questions input[value=anders-vraag]:checked ~ div.answers input#anders-antwoord {
-  display: block;
+.questions .organisation,
+.questions .contact {
+  background-color: var(--purple-darker);
+  width: 40%;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
