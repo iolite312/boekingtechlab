@@ -5,9 +5,6 @@ if (!isset($_SESSION)) {
 
 if (isset($_POST["submit"])) {
 
-    //start database connection
-    require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
-
     //connect to functions.php
     require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
@@ -52,9 +49,6 @@ if (isset($_POST["submit"])) {
     }
 
     createuser($firstname, $infixes, $lastname, $email, $password);
-
-    //end database connection
-    mysqli_close($conn);
 } else {
     header("Location: /index");
     exit;

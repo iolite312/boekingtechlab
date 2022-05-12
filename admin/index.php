@@ -2,7 +2,9 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-
+if (!$_SESSION['user_level'] === 1) {
+    header('Location: /user');
+}
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +46,7 @@ if (!isset($_SESSION)) {
                     <th>Tijd</th>
                     <th>Verwijderen</th>
                 </tr>
-                <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.php" ?>
+                <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.inc.php" ?>
             </table>
         </section>
     </main>
