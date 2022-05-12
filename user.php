@@ -1,5 +1,5 @@
 <?php
-if ($_SESSION['user_level'] === 1) {
+if ($_SESSION['user_level'] == 1) {
     header('Location: /admin');
 } else {
     echo 2;
