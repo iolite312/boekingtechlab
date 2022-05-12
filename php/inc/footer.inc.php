@@ -6,5 +6,5 @@
     </p>
 </div>
 <div>
-    <p>text over techlab</p>
+    <p>Over het Techlab <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae autem animi saepe id cumque illum delectus debitis nemo eos.</p>
 </div>
