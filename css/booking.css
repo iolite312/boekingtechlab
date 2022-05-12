@@ -4,7 +4,11 @@
 }
 
 #booking {
-  width: 50%;
+  width: 70%;
+}
+
+h1 {
+  text-align: center;
 }
 
 label,
@@ -25,11 +29,16 @@ input:not([type=radio]) {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: var(--purple-dark);
+  padding: 2em;
+  border-radius: 0.5em;
 }
 .questions .organisation,
 .questions .contact {
   background-color: var(--purple-darker);
   width: 40%;
+  padding: 2em;
+  border-radius: 0.5em;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
