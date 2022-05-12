@@ -10,9 +10,11 @@
 		";
 	} else {
 		if ($page == 'user' || $page == 'admin') {$active = 'active';}
-		echo "
-		<a class='$active'href='/user'>User</a>
-		";
+		if ($page == 'user' || $page == 'admin') {
+			echo "<a class='$active'href='/php/logout'>Logout</a>";
+		} else {
+			echo "<a class='$active'href='/user'>User</a>";
+		}
 	}
 	?>
 </div>
