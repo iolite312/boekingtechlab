@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if ($_SESSION['user_level'] === 1) {
     echo 1;
 } else {
