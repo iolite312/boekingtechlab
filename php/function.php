@@ -45,7 +45,22 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        $_SESSION['messages'][] = ["error", 'Error unkown #102'];
+        $_SESSION['messages'][] = ["error", 'Error unkown #102.1'];
+        header('Location: /loginpage');
+        exit;
+    }
+    if (!mysqli_stmt_bind_param($stmt, "sssss", $firstname, $infixes, $lastname, $email, $hash)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #102.2'];
+        header('Location: /loginpage');
+        exit;
+    }
+    if (!mysqli_stmt_execute($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #102.3 - ' . mysqli_stmt_error($stmt)];
+        header('Location: /loginpage');
+        exit;
+    }
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #102.4'];
         header('Location: /loginpage');
         exit;
     }
