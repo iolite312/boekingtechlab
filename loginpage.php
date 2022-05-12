@@ -3,8 +3,7 @@ if (!isset($_SESSION)) {
 	session_start();
 }
 
-if (!isset($_SESSION['first_name'])) {
-} else {
+if (isset($_SESSION['first_name'])) {
 	if ($_SESSION['user_level'] === 0) {
 		header('Location: /user');
 	} else {
