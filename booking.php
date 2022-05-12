@@ -36,7 +36,7 @@ $page = 'reserveren'
 		<section class="booking">
 			<!-- booking Form Start -->
 			<div id="booking">
-				<h2>Reserveren</h2>
+				<h1>Reserveren</h1>
 				<form action="/php/booking.php" method="post" required>
 					<div class="questions">
 						<div class="organisation">
@@ -57,7 +57,7 @@ $page = 'reserveren'
 						</div>
 					</div>
 					<div class="materials">
-						
+						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.php' ;?>
 					</div>
 					<input type="submit" name="submit" value="Send">
 				</form>
