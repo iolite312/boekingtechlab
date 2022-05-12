@@ -1,10 +1,11 @@
 <?php
-if (isset($_SESSION['first_name'])) {
-    if (!$_SESSION['user_level'] === 0) {
-        header('Location: /admin');
-    } exit;
+if ($_SESSION['user_level'] === 1) {
+    echo 1;
 } else {
-    header('Location: /loginpage');
+    echo 2;
 }
-$page = 'user';
-echo "test";
+if ($_SESSION['user_level'] === 0) {
+    echo 3;
+} else {
+    echo 4;
+}
