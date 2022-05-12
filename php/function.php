@@ -133,7 +133,8 @@ function loginUser($email, $password)
         $_SESSION['status'] = $uidExists["status"];
 
         if (!$_SESSION['user_level'] === 1) {
-            $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
+            // $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
+            $_SESSION['messages'][] = ["success", $_SESSION['UId'], $_SESSION['first_name'], $_SESSION['infixes'], $_SESSION['last_name'], $_SESSION['email'], $_SESSION['user_level'], $_SESSION['date_created'], $_SESSION['status']];
             header('Location: /user');
             exit;
         } else {
