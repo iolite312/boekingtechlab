@@ -36,28 +36,30 @@ $page = 'reserveren'
 		<section class="booking">
 			<!-- booking Form Start -->
 			<div id="booking">
-				<h1>Reserveren</h1>
 				<form action="/php/booking.php" method="post" required>
 					<div class="questions">
-						<div class="organisation">
-							<h3>organisatie</h3>
-							<select name="organisatie" id="organisatie">
-								<option value="">Regius College</option>
-								<option value="">ROC Kop van Noord-Holland</option>
-								<option value="">Anders</option>
-							</select>
-							<label for="anders">Vul in als u "anders" selecteerd</label><br>
-							<input type="text" name="anders" id="anders">
-						</div>
-						<div class="contact">
-							<h3>Contact</h3>
-							<input type="email" name="organization_email" placeholder="Email"><br>
-							<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
-							<input type="email" name="email" placeholder="Email (required)"><br>
+						<h1>Reserveren</h1>
+						<div class="userinput">
+							<div class="organisation">
+								<h3>organisatie</h3>
+								<select name="organisatie" id="organisatie">
+									<option value="">Regius College</option>
+									<option value="">ROC Kop van Noord-Holland</option>
+									<option value="">Anders</option>
+								</select><br>
+								<label for="anders">Vul in als u "anders" selecteerd</label><br>
+								<input type="text" name="anders" id="anders">
+							</div>
+							<div class="contact">
+								<h3>Contact</h3>
+								<input type="email" name="organization_email" placeholder="Email"><br>
+								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
+								<input type="email" name="email" placeholder="Email (required)"><br>
+							</div>
 						</div>
 					</div>
 					<div class="materials">
-						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.php' ;?>
+						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.php'; ?>
 					</div>
 					<input type="submit" name="submit" value="Send">
 				</form>
