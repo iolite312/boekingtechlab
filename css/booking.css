@@ -10,6 +10,7 @@
 label,
 input {
   font-size: 1rem;
+  border: none;
 }
 
 input:not([type=radio]) {
@@ -37,15 +38,15 @@ option option:hover {
   background-color: var(--purple-light);
 }
 
-input[value="ROC Kop van Noord-Holland"]:checked ~ select#rockopnh {
+input[value="ROC Kop van Noord-Holland"]:checked ~ .answers select#rockopnh {
   display: block;
 }
 
-input[value="Regius College"]:checked ~ select#regius {
+input[value="Regius College"]:checked ~ .answers select#regius {
   display: block;
 }
 
-input[value=anders-vraag]:checked ~ input#anders-antwoord {
+input[value=anders-vraag]:checked ~ .answers input#anders-antwoord {
   display: block;
 }
 

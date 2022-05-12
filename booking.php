@@ -40,23 +40,27 @@ $page = 'reserveren'
 				<form action="/php/booking.php" method="post" required>
 					<div class="organisatie">
 						<h3>Organisatie</h3>
-						<input id="ROC" type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
-						<label for="ROC">ROC Kop van Noord-Holland</label><br>
-						<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
-						<label for="regiuscollege">Regius College</label><br>
-						<input id="anders-vraag" type="radio" name="organisatie" value="anders-vraag">
-						<label for="anders-vraag">Anders</label><br>
-						<select name="ROCKopNH" id="rockopnh">
-							<option value="hofstraat">Schagen</option>
-							<option value="denhelder">Den Helder</option>
-						</select>
-						<select name="RegiusCollege" id="regius">
-							<option value="">Wilheminalaan</option>
-							<option value="">Oranjelaan</option>
-							<option value="">Emmalaan</option>
-							<option value="">Hofstraat</option>
-						</select>
-						<input type="text" name="anders-antwoord" id="anders-antwoord">
+						<div class="questions">
+							<input id="ROC" type="radio" name="organisatie" value="ROC Kop van Noord-Holland" checked>
+							<label for="ROC">ROC Kop van Noord-Holland</label><br>
+							<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
+							<label for="regiuscollege">Regius College</label><br>
+							<input id="anders-vraag" type="radio" name="organisatie" value="anders-vraag">
+							<label for="anders-vraag">Anders</label><br>
+						</div>
+						<div class="answers">
+							<select name="ROCKopNH" id="rockopnh">
+								<option value="hofstraat">Schagen</option>
+								<option value="denhelder">Den Helder</option>
+							</select>
+							<select name="RegiusCollege" id="regius">
+								<option value="">Wilheminalaan</option>
+								<option value="">Oranjelaan</option>
+								<option value="">Emmalaan</option>
+								<option value="">Hofstraat</option>
+							</select>
+							<input type="text" name="anders_antwoord" id="anders-antwoord" placeholder="Anders">
+						</div>
 					</div>
 					<input type="email" name="organization_email" placeholder="Email"><br>
 
