@@ -138,7 +138,8 @@ function loginUser($email, $password)
             header('Location: /user');
             exit;
         } else {
-            $_SESSION['messages'][] = ["success", 'You have successfully logged in as a admin user'];
+            // $_SESSION['messages'][] = ["success", 'You have successfully logged in as a admin user'];
+            $_SESSION['messages'][] = ["success", $_SESSION['UId'], $_SESSION['first_name'], $_SESSION['infixes'], $_SESSION['last_name'], $_SESSION['email'], $_SESSION['user_level'], $_SESSION['date_created'], $_SESSION['status']];
             header('Location: /admin');
             exit;
         }
