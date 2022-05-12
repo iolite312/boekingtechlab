@@ -1,5 +1,4 @@
 <?php
-
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -16,15 +15,25 @@ function uidExists($email)
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        $_SESSION['messages'][] = ["error", 'Error unkown #101'];
+        $_SESSION['messages'][] = ["error", 'Error unkown #101.1'];
         header('Location: /loginpage');
         exit;
     }
-
-    mysqli_stmt_bind_param($stmt, "s", $email);
-    mysqli_stmt_execute($stmt);
-
-    $result = mysqli_stmt_get_result($stmt);
+    if (!mysqli_stmt_bind_param($stmt, "s", $email)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #101.2'];
+        header('Location: /loginpage');
+        exit;
+    }
+    if (!mysqli_stmt_execute($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #101.3'];
+        header('Location: /loginpage');
+        exit;
+    }
+    if (!$result = mysqli_stmt_get_result($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #101.4'];
+        header('Location: /loginpage');
+        exit;
+    }
 
     if ($row = mysqli_fetch_assoc($result)) {
         return $row;
@@ -32,13 +41,20 @@ function uidExists($email)
         $result = false;
         return $result;
     }
-    mysqli_stmt_close($stmt);
+
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #101.4'];
+        header('Location: /loginpage');
+        exit;
+    }
 }
 
 
 function createuser($firstname, $infixes, $lastname, $email, $password)
 {
     global $conn;
+
+    $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 10]);
 
     //send user data to database
     $sql = "INSERT INTO users VALUES (NULL,?,?,?,?,?,DEFAULT,current_timestamp(),DEFAULT)";
@@ -64,12 +80,6 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
         header('Location: /loginpage');
         exit;
     }
-
-    $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 10]);
-
-    mysqli_stmt_bind_param($stmt, "sssss", $firstname, $infixes, $lastname, $email, $hash);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
 
     $_SESSION['messages'][] = ["success", 'You have successfully sign up!'];
     header('Location: /loginpage');
@@ -104,7 +114,7 @@ function loginUser($email, $password)
         $_SESSION['date_created'] = $uidExists["date_created"];
         $_SESSION['status'] = $uidExists["status"];
 
-        if (!$_SESSION['user_level'] == 1) {
+        if (!$_SESSION['user_level'] === 1) {
             $_SESSION['messages'][] = ["success", 'You have successfully logged in'];
             header('Location: /user');
             exit;
@@ -147,5 +157,38 @@ function sendForm($organization_name, $organization_email, $organization_tel, $n
 
     $_SESSION['messages'][] = ["success", 'your message was successfully sent!'];
     header('Location: /booking');
+    exit;
+}
+
+function removebooking($bookingID)
+{
+    global $conn;
+
+    $sql = "DELETE FROM bookings WHERE id = ?";
+    $stmt = mysqli_stmt_init($conn);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.1'];
+        header('Location: /admin/index');
+        exit;
+    }
+    if (!mysqli_stmt_bind_param($stmt, "i", $bookingID)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.2'];
+        header('Location: /admin/index');
+        exit;
+    }
+    if (!mysqli_stmt_execute($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.3'];
+        header('Location: /admin/index');
+        exit;
+    }
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unkown #104.4'];
+        header('Location: /admin/index');
+        exit;
+    }
+
+    $_SESSION['messages'][] = ["success", 'your have successfully removed a booking!'];
+    header('Location: /admin/index');
     exit;
 }
