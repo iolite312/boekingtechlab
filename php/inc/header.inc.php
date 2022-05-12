@@ -1,4 +1,4 @@
-<h1>Techlab Regius College</h1>
+<img src="/assets/Techlab Logo.svg" alt="">
 <div class="btn">
 	<a class="<?php if ($page == 'home') {echo 'active';} ?>" href="/index">Home</a>
 	<a class="<?php if ($page == 'reserveren') {echo 'active';} ?>" href="/booking">Reserveren</a>
