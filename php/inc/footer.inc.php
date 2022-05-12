@@ -1,7 +1,8 @@
 <div>
     <p>Contact</p>
-    <p>email@email.com <br>
-    tel nummer
+    <p>placeholder@placeholder.com <br>
+    06-123456789 <br>
+    Adres Placeholder
     </p>
 </div>
 <div>
