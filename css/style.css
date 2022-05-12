@@ -41,28 +41,16 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .btn {
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .btn a,
 .btn a:focus {
@@ -71,27 +59,18 @@ header {
   background-color: var(--orange);
   padding: 1em;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0.25em 0.25em var(--orange-dark);
-          box-shadow: 0.25em 0.25em var(--orange-dark);
-  -webkit-transition: -webkit-box-shadow 100ms linear, -webkit-transform 100ms linear;
-  transition: -webkit-box-shadow 100ms linear, -webkit-transform 100ms linear;
+  box-shadow: 0.25em 0.25em var(--orange-dark);
   transition: box-shadow 100ms linear, transform 100ms linear;
-  transition: box-shadow 100ms linear, transform 100ms linear, -webkit-box-shadow 100ms linear, -webkit-transform 100ms linear;
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 .btn a:hover,
 .btn a:focus:hover {
-  -webkit-box-shadow: 0.6em 0.6em var(--orange-dark);
-          box-shadow: 0.6em 0.6em var(--orange-dark);
-  -webkit-transform: translate(-0.2em, -0.2em);
-          transform: translate(-0.2em, -0.2em);
+  box-shadow: 0.6em 0.6em var(--orange-dark);
+  transform: translate(-0.2em, -0.2em);
 }
 .btn a.active {
-  -webkit-box-shadow: 0.6em 0.6em var(--orange-dark);
-          box-shadow: 0.6em 0.6em var(--orange-dark);
-  -webkit-transform: translate(-0.2em, -0.2em);
-          transform: translate(-0.2em, -0.2em);
+  box-shadow: 0.6em 0.6em var(--orange-dark);
+  transform: translate(-0.2em, -0.2em);
 }
 
 main {
@@ -101,4 +80,9 @@ main {
 
 footer {
   height: none;
+  background-color: var(--purple-dark);
+  display: flex;
+  flex-direction: row;
 }
+
+/*# sourceMappingURL=style.css.map */
