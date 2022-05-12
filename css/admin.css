@@ -14,11 +14,11 @@ td:last-child {
   text-align: center;
 }
 
-tr, td button {
+tr, td .button {
   border: none;
 }
 
-td button {
+td .button {
   background-color: red;
   color: var(--text-color-neutral);
   border-radius: 0.5em;
