@@ -45,7 +45,7 @@ $page = 'reserveren'
 						<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
 						<label for="regiuscollege">Regius College</label><br>
 						<input id="anders" type="radio" name="organisatie" value="anders">
-						<label for="anders">Regius College</label><br>
+						<label for="anders">Anders</label><br>
 						<select name="ROCKopNH" id="rockopnh">
 							<option value="hofstraat">Schagen</option>
 							<option value="denhelder">Den Helder</option>
