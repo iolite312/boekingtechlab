@@ -3,27 +3,23 @@ section {
 }
 
 .success {
-  background-color: #197619;
-  border-color: #156115;
+  background-color: hsl(120deg, 65%, 28%);
+  border-color: hsl(120deg, 65%, 23%);
 }
 
 .error {
-  background-color: #b30000;
-  border-color: #cc0000;
+  background-color: hsl(0deg, 100%, 35%);
+  border-color: hsl(0deg, 100%, 40%);
 }
 
 .warning {
-  background-color: #dc5618;
-  border-color: #c54d16;
+  background-color: hsl(19deg, 80%, 48%);
+  border-color: hsl(19deg, 80%, 43%);
 }
 
 div.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-inline: auto;
   margin-bottom: 25px;
   padding: 2em;
@@ -31,6 +27,8 @@ div.container {
   border-style: solid;
   border-width: 0px 0px 0px 3em;
 }
-div.container svg {
-  margin-right: 10px;
+div.container span {
+  margin-right: 0.2em;
 }
+
+/*# sourceMappingURL=alerts.css.map */

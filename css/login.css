@@ -8,25 +8,19 @@ input[required]::after {
 }
 
 .loginpage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .signup, .login {
   background-color: var(--green);
-  -webkit-box-shadow: 0.75em 0.75em var(--green-dark);
-          box-shadow: 0.75em 0.75em var(--green-dark);
+  box-shadow: 0.75em 0.75em var(--green-dark);
   padding: 1em;
   padding-left: 3em;
   padding-right: 3em;
   border-radius: 0.5em;
   width: 20vw;
 }
+
+/*# sourceMappingURL=login.css.map */
