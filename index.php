@@ -17,9 +17,13 @@ $page = 'home'
     <meta name="description" content="">
     <title>Techlab Regius College</title>
 
+    <!-- Slideshow script -->
+    <script src="js/slideshow.js" defer></script>
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/alerts.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
