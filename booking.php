@@ -2,6 +2,7 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
+
 $page = 'reserveren'
 ?>
 
@@ -43,6 +44,8 @@ $page = 'reserveren'
 						<label for="ROC">ROC Kop van Noord-Holland</label><br>
 						<input id="regiuscollege" type="radio" name="organisatie" value="Regius College">
 						<label for="regiuscollege">Regius College</label><br>
+						<input id="anders" type="radio" name="organisatie" value="anders">
+						<label for="anders">Regius College</label><br>
 						<select name="ROCKopNH" id="rockopnh">
 							<option value="hofstraat">Schagen</option>
 							<option value="denhelder">Den Helder</option>
@@ -53,6 +56,7 @@ $page = 'reserveren'
 							<option value="">Emmalaan</option>
 							<option value="">Hofstraat</option>
 						</select>
+						<input type="text" name="anders" id="anders">
 					</div>
 					<input type="email" name="organization_email" placeholder="Email"><br>
 
