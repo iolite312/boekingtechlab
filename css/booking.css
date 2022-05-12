@@ -45,7 +45,7 @@ input[value="Regius College"]:checked ~ select#regius {
   display: block;
 }
 
-input[value=anders]:checked ~ input#anders {
+input[value=anders]:checked ~ input#anders-antwoord {
   display: block;
 }
 
