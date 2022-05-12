@@ -1,9 +1,11 @@
 <?php
-if (!isset($_SESSION)) {
-    session_start();
-}
-if (!$_SESSION['user_level'] === 1) {
-    header('Location: /user');
+session_start();
+if (!isset($_SESSION['first_name'])) {
+    header('Location: /loginpage');
+} else {
+    if ($_SESSION['user_level'] === 0) {
+        header('Location: /user');
+    }
 }
 $page = 'admin'
 ?>
