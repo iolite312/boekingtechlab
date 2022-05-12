@@ -2,6 +2,7 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
+
 if (!isset($_SESSION['first_name'])) {
 } else {
 	if ($_SESSION['user_level'] === 0) {
@@ -10,7 +11,7 @@ if (!isset($_SESSION['first_name'])) {
 		header('Location: /admin');
 	}
 }
-$page = 'login'
+$page = 'loginpage'
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ $page = 'login'
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login</title>
+	<title>Loginpage</title>
 	
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/css/style.css">

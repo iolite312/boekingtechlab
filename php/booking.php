@@ -1,9 +1,10 @@
 <?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 if (isset($_POST["submit"])) {
 
-    if (!isset($_SESSION)) {
-        session_start();
-    }
 
     //connect to functions.php
     require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';

@@ -1,5 +1,4 @@
 <?php
-
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -17,22 +16,22 @@ function uidExists($email)
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #101.1'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
     if (!mysqli_stmt_bind_param($stmt, "s", $email)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #101.2'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
     if (!mysqli_stmt_execute($stmt)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #101.3'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
     if (!$result = mysqli_stmt_get_result($stmt)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #101.4'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
 
@@ -45,7 +44,7 @@ function uidExists($email)
 
     if (!mysqli_stmt_close($stmt)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #101.4'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
 }
@@ -63,27 +62,27 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #102.1'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
     if (!mysqli_stmt_bind_param($stmt, "sssss", $firstname, $infixes, $lastname, $email, $hash)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #102.2'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
     if (!mysqli_stmt_execute($stmt)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #102.3'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
     if (!mysqli_stmt_close($stmt)) {
         $_SESSION['messages'][] = ["error", 'Error unkown #102.4'];
-        header('Location: /login');
+        header('Location: /loginpage');
         exit;
     }
 
     $_SESSION['messages'][] = ["success", 'You have successfully sign up!'];
-    header('Location: /login');
+    header('Location: /loginpage');
     exit;
 }
 

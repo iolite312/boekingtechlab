@@ -2,6 +2,7 @@
 if (!isset($_SESSION)) {
     session_start();
 }
+
 if (isset($_POST["submit"]) && $_SESSION['user_level'] === 1) {
 
     //start database connection
