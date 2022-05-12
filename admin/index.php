@@ -46,7 +46,7 @@ if (!$_SESSION['user_level'] === 1) {
                     <th>Tijd</th>
                     <th>Verwijderen</th>
                 </tr>
-                <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/importbooking.inc.php" ?>
+                <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importbooking.inc.php" ?>
             </table>
         </section>
     </main>
