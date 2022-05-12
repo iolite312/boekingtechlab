@@ -46,6 +46,7 @@ img {
   height: 15px;
   width: 15px;
   margin: 0 2px;
+  width: 33%;
   background-color: #bbb;
   display: inline-block;
   transition: background-color 0.6s ease;
