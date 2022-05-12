@@ -33,14 +33,14 @@ option {
 
 .userinput {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
 }
 
 .questions {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--purple-dark);
     padding: 2em;
     border-radius: .5em;
