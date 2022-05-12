@@ -5,6 +5,7 @@ if (!isset($_SESSION)) {
 if (!$_SESSION['user_level'] === 1) {
     header('Location: /user');
 }
+$page = 'admin'
 ?>
 
 <!DOCTYPE html>

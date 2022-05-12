@@ -1,8 +1,15 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+$page = 'home'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php $page = 'home' ;?>
+    <?php $page = 'home'; ?>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +36,7 @@
     </main>
 
     <footer>
-    <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
+        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
     </footer>
 </body>
 
