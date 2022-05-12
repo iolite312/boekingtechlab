@@ -1,4 +1,8 @@
 <?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 if (isset($_POST["submit"])) {
 
     //start database connection
@@ -7,9 +11,6 @@ if (isset($_POST["submit"])) {
     //connect to functions.php
     require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
-    if (!isset($_SESSION)) {
-        session_start();
-    }
 
     //get user data from form
     $firstname = $_POST['firstname'];
