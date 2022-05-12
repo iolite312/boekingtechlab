@@ -2,10 +2,7 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-if ($_SESSION['user_level'] == 1) {
-    header('Location: /admin/index.php');
-    exit;
-} else {
+if (!$_SESSION['user_level'] == 1) {
     header('Location: /loginpage');
     exit;
 }
