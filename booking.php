@@ -56,7 +56,7 @@ $page = 'reserveren'
 							<option value="">Emmalaan</option>
 							<option value="">Hofstraat</option>
 						</select>
-						<input type="text" name="anders" id="anders">
+						<input type="text" name="anders" id="anders-antwoord">
 					</div>
 					<input type="email" name="organization_email" placeholder="Email"><br>
 
