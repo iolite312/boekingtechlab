@@ -84,6 +84,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  max-width: 20vw;
 }
 
 /*# sourceMappingURL=style.css.map */
