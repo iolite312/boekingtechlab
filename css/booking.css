@@ -1,6 +1,4 @@
 .booking {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: center;
 }
@@ -30,7 +28,6 @@ select {
 select,
 option {
   background-color: var(--purple-dark);
-  -webkit-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
   font-family: "Rubik", sans-serif;
 }
@@ -57,3 +54,5 @@ input[value="Regius College"]:checked ~ select#regius {
     width: 80%;
   }
 }
+
+/*# sourceMappingURL=booking.css.map */

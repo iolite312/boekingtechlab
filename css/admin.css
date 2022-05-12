@@ -8,19 +8,19 @@ tr:nth-of-type(odd) {
 }
 
 td:last-child {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
 }
 
-tr, td .button {
+tr, td button {
   border: none;
 }
 
-td .button {
-  background-color: red;
+td button {
+  background-color: hsl(0deg, 100%, 50%);
   color: var(--text-color-neutral);
   border-radius: 0.5em;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=admin.css.map */

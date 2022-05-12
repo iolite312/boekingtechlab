@@ -1,5 +1,1 @@
-<footer>
-    <div>
-        <p>Contact</p>
-    </div>
-</footer>
+<p>test</p>
