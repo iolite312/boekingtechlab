@@ -8,8 +8,6 @@ tr:nth-of-type(odd) {
 }
 
 td:last-child {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
 }
@@ -24,3 +22,5 @@ td .button {
   border-radius: 0.5em;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=admin.css.map */
