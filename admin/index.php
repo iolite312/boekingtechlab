@@ -2,7 +2,7 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-if (!$_SESSION['user_level'] === 1) {
+if (!$_SESSION['user_level'] == 1) {
     exit;
 } else {
     header('Location: /loginpage');
