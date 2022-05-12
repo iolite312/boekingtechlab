@@ -23,6 +23,7 @@
   --purple: hsl(280, 100%, 40%);
   --purple: hsl(280, 100%, 30%);
   --purple-dark: hsl(280, 100%, 20%);
+  --purple-darker: hsl(280, 100%, 10%);
   --orange: hsl(36, 100%, 50%);
   --orange-dark: hsl(36, 100%, 40%);
   --green: hsl(79, 60%, 45%);
@@ -84,6 +85,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-top: 2px var(--purple-darker);
+}
+
+.footercontent {
+  max-width: 20vw;
 }
 
 /*# sourceMappingURL=style.css.map */
