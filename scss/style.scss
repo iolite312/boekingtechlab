@@ -84,4 +84,7 @@ main {
 
 footer {
     height: none;
+    background-color: var(--purple-dark);
+    display: flex;
+    flex-direction: row;
 }
