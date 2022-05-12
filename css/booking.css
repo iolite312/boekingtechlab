@@ -35,7 +35,7 @@ option {
   display: flex;
   flex-direction: row;
   text-align: center;
-  gap: 2em;
+  justify-content: space-between;
 }
 
 .questions {
