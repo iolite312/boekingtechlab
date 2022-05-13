@@ -2,67 +2,16 @@
 <div class="item">
   <h3>PLACEHOLDER NAME</h3>
   <img src="/assets/images/placeholder.png" alt="">
-  <div class="input-group plus-minus-input">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-        <i class="fa fa-minus" aria-hidden="true"></i>
+  <div class="input-group">
+    <div class="input-button">
+      <button type="button" class="circle" data-quantity="minus" data-field="quantity">
+        <i aria-hidden="true"></i>
       </button>
     </div>
-    <input class="input-group-field" type="number" name="quantity" value="0">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-        <i class="fa fa-plus" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-</div>
-<div class="item">
-  <h3>PLACEHOLDER NAME</h3>
-  <img src="/assets/images/placeholder.png" alt="">
-  <div class="input-group plus-minus-input">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-        <i class="fa fa-minus" aria-hidden="true"></i>
-      </button>
-    </div>
-    <input class="input-group-field" type="number" name="quantity" value="0">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-        <i class="fa fa-plus" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-</div>
-<div class="item">
-  <h3>PLACEHOLDER NAME</h3>
-  <img src="/assets/images/placeholder.png" alt="">
-  <div class="input-group plus-minus-input">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-        <i class="fa fa-minus" aria-hidden="true"></i>
-      </button>
-    </div>
-    <input class="input-group-field" type="number" name="quantity" value="0">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-        <i class="fa fa-plus" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-</div>
-<div class="item">
-  <h3>PLACEHOLDER NAME</h3>
-  <img src="/assets/images/placeholder.png" alt="">
-  <div class="input-group plus-minus-input">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-        <i class="fa fa-minus" aria-hidden="true"></i>
-      </button>
-    </div>
-    <input class="input-group-field" type="number" name="quantity" value="0">
-    <div class="input-group-button">
-      <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-        <i class="fa fa-plus" aria-hidden="true"></i>
+    <input class="material-input" type="number" name="quantity" value="0">
+    <div class="input-button">
+      <button type="button" class="circle" data-quantity="plus" data-field="quantity">
+        <i aria-hidden="true"></i>
       </button>
     </div>
   </div>

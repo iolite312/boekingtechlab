@@ -67,7 +67,7 @@ option {
 
 .materials {
     display: grid;
-    gap: 10%;
+    gap: 3%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 }
@@ -77,6 +77,8 @@ option {
     flex-direction: column;
     place-content: center;
     max-width: 30%;
+    background-color: var(--purple-dark);
+    border-radius: .5em;
 
 
     h3 {
@@ -93,12 +95,20 @@ option {
 .input-group {
     display: flex;
     flex-direction: row;
-}
-
-.plus-minus-input {
+    background-color: var(--purple-darker);
+    border-radius: .5em;
     align-items: center;
 
-    .input-group-field {
+    .input-button {
+        width: fit-content;
+
+        .circle {
+            border-radius: 50%;
+            padding: 0.25em 0.8em;
+        }
+    }
+
+    .material-input {
         text-align: center;
         margin: 0 0.5em;
         padding: 1rem;
@@ -107,15 +117,6 @@ option {
         &::-webkit-inner-spin-button,
         ::-webkit-outer-spin-button {
             appearance: none;
-        }
-    }
-
-    .input-group-button {
-        width: fit-content;
-
-        .circle {
-            border-radius: 50%;
-            padding: 0.25em 0.8em;
         }
     }
 }

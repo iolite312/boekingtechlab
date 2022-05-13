@@ -66,7 +66,7 @@ option {
 
 .materials {
   display: grid;
-  gap: 10%;
+  gap: 3%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
@@ -76,6 +76,8 @@ option {
   flex-direction: column;
   place-content: center;
   max-width: 30%;
+  background-color: var(--purple-dark);
+  border-radius: 0.5em;
 }
 .item h3 {
   text-align: center;
@@ -89,27 +91,26 @@ option {
 .input-group {
   display: flex;
   flex-direction: row;
-}
-
-.plus-minus-input {
+  background-color: var(--purple-darker);
+  border-radius: 0.5em;
   align-items: center;
 }
-.plus-minus-input .input-group-field {
+.input-group .input-button {
+  width: fit-content;
+}
+.input-group .input-button .circle {
+  border-radius: 50%;
+  padding: 0.25em 0.8em;
+}
+.input-group .material-input {
   text-align: center;
   margin: 0 0.5em;
   padding: 1rem;
   min-width: 50%;
 }
-.plus-minus-input .input-group-field::-webkit-inner-spin-button,
-.plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+.input-group .material-input::-webkit-inner-spin-button,
+.input-group .material-input ::-webkit-outer-spin-button {
   appearance: none;
-}
-.plus-minus-input .input-group-button {
-  width: fit-content;
-}
-.plus-minus-input .input-group-button .circle {
-  border-radius: 50%;
-  padding: 0.25em 0.8em;
 }
 
 /*# sourceMappingURL=booking.css.map */
