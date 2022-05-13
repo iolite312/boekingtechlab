@@ -66,7 +66,7 @@ $page = 'reserveren'
 						</div>
 					</div>
 					<div class="materials">
-						<h3>Gegevens</h3>
+						<h3>Materialen</h3>
 						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.inc.php'; ?>
 					</div>
 					<input type="submit" name="submit" value="Send">

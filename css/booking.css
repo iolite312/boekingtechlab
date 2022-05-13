@@ -62,6 +62,7 @@ option {
   display: flex;
   flex-direction: column;
   place-content: center;
+  max-width: 30%;
 }
 .item h3 {
   text-align: center;
