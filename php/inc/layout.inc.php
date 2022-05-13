@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="map.css">
+<link rel="stylesheet" href="/css/map.css">
 <img src="/assets/images/layout.png" usemap="#image_map">
 <map name="image_map">
   <area alt="Lab 1" title="Lab 1" href="#" coords="611,47 611,47 611,427 836,428 836,374 878,322 940,304 943,49 943,49 943,49 " shape="polygon">
