@@ -23,6 +23,7 @@ $page = 'reserveren'
 	
 	<!-- Scripts -->
 	<script src="/js/expand_menu.js"></script>
+	<script src="/js/jquery.js"></script>
 	<script src="/js/materials.js"></script>
 </head>
 
