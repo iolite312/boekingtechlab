@@ -17,13 +17,17 @@ $page = 'admin'
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>booking</title>
     <!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" /> -->
+    <title>booking</title>
+
+    <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/alerts.css">
     <link rel="stylesheet" href="/css/admin.css">
-    <script src="/js/expand_menu.js"></script>
+
+    <!-- Scripts -->
+    <script src="/js/messagestimer.js" defer></script>
 </head>
 
 <body>

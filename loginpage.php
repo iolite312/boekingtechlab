@@ -2,7 +2,6 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
-
 if (isset($_SESSION['first_name'])) {
 	if ($_SESSION['user_level'] === 0) {
 		header('Location: /user');
@@ -23,13 +22,15 @@ $page = 'login'
 	<title>Login</title>
 
 	<!-- Stylesheets -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/booking.css">
 	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/login.css">
-	<script src="/js/showPassword.js"></script>
 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Scripts -->
+	<script src="/js/showPassword.js" defer></script>
+	<script src="/js/messagestimer.js" defer></script>
 </head>
 
 <body>
