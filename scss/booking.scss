@@ -93,10 +93,15 @@ option {
 .plus-minus-input {
     align-items: center;
 
+    input {
+        width: 40%;
+    }
+
     .input-group-field {
+        display: flex;
+        flex-direction: row;
         text-align: center;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin: 0 0.5em;
         padding: 1rem;
 
         &::-webkit-inner-spin-button,
@@ -106,6 +111,8 @@ option {
     }
 
     .input-group-button {
+        width: fit-content;
+
         .circle {
             border-radius: 50%;
             padding: 0.25em 0.8em;

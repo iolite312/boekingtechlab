@@ -89,15 +89,22 @@ option {
 .plus-minus-input {
   align-items: center;
 }
+.plus-minus-input input {
+  width: 40%;
+}
 .plus-minus-input .input-group-field {
+  display: flex;
+  flex-direction: row;
   text-align: center;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin: 0 0.5em;
   padding: 1rem;
 }
 .plus-minus-input .input-group-field::-webkit-inner-spin-button,
 .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
   appearance: none;
+}
+.plus-minus-input .input-group-button {
+  width: fit-content;
 }
 .plus-minus-input .input-group-button .circle {
   border-radius: 50%;
