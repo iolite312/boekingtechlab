@@ -124,10 +124,10 @@ option {
     // The actual input field.
     .material-input {
         text-align: center;
-        margin: 0 0.5em;
         padding: 0.3rem 1rem;
         margin: 0.7rem 1.5rem;
         max-width: 30%;
+        min-width: 20%;
         background-color: var(--green);
         border: solid 0.25em var(--green-dark);
 
