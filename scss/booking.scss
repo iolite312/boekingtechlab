@@ -59,6 +59,12 @@ option {
     }
 }
 
+.material-wrap {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
 .materials {
     display: grid;
     gap: 10%;
