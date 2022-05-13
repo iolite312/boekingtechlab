@@ -24,6 +24,7 @@ $page = 'reserveren'
 	<!-- Scripts -->
 	<script src="/js/expand_menu.js"></script>
 	<script src="/js/materials.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
 </head>
 
 <body>
