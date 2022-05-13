@@ -1,4 +1,4 @@
-area:focus {
+area:where(:hover, :focus) {
   opacity: 0.5;
 }
 
