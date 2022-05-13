@@ -1,4 +1,4 @@
-img {
+img, canvas {
   width: 1000px;
   aspect-ratio: 16/9;
 }
