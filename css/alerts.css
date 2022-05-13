@@ -26,7 +26,6 @@ div.container {
   width: 75%;
   border-style: solid;
   border-width: 0px 0px 0px 3em;
-  transition: opacity 500ms linear;
   opacity: 1;
 }
 div.container span {
@@ -35,6 +34,7 @@ div.container span {
 
 .fade {
   opacity: 0;
+  transition: opacity 1000ms linear;
 }
 
 /*# sourceMappingURL=alerts.css.map */
