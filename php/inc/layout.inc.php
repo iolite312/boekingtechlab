@@ -119,7 +119,7 @@ canvas
 <body onload='myInit()'>
     <canvas id='myCanvas'></canvas>     <!-- gets re-positioned in myInit(); -->
 <center>
-<img src='http://dailyaeen.com.pk/epaper/wp-content/uploads/2012/09/27+Sep+2012-1.jpg?1349003469874' usemap='#imgmap_css_container_imgmap201293016112' class='imgmap_css_container' title='imgmap201293016112' alt='imgmap201293016112' id='img-imgmap201293016112' />
+<img src='/assets/images/layout.png' usemap='#imgmap_css_container_imgmap201293016112' class='imgmap_css_container' title='imgmap201293016112' alt='imgmap201293016112' id='img-imgmap201293016112' />
 <map id='imgmap201293016112' name='imgmap_css_container_imgmap201293016112'>
     <area shape="poly" onmouseover='myHover(this);' onmouseout='myLeave();' coords="2,0,604,-3,611,-3,611,166,346,165,345,130,-2,130,-2,124,1,128,1,126" href="" alt="imgmap201293016112-0" title="imgmap201293016112-0" class="imgmap201293016112-area" id="imgmap201293016112-area-0" />
     <area shape="rect" onmouseover='myHover(this);' onmouseout='myLeave();' coords="1,131,341,213" href="" alt="imgmap201293016112-1" title="imgmap201293016112-1" class="imgmap201293016112-area" id="imgmap201293016112-area-1" />
