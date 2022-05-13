@@ -104,6 +104,9 @@ option {
 
     // The button to click.
     .input-button {
+        border: none;
+        background-color: var(--orange);
+        box-shadow: .25em .25em var(--orange-dark);
 
         .circle {
             border-radius: 50%;
