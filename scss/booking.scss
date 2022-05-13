@@ -77,7 +77,7 @@ option {
     flex-direction: column;
     place-content: center;
     max-width: 30%;
-    
+
 
     h3 {
         text-align: center;
@@ -90,6 +90,11 @@ option {
     }
 }
 
+.input-group {
+    display: flex;
+    flex-direction: row;
+}
+
 .plus-minus-input {
     align-items: center;
 
@@ -98,8 +103,6 @@ option {
     }
 
     .input-group-field {
-        display: flex;
-        flex-direction: row;
         text-align: center;
         margin: 0 0.5em;
         padding: 1rem;
