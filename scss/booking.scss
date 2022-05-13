@@ -76,7 +76,6 @@ option {
     display: flex;
     flex-direction: column;
     place-content: center;
-    max-width: 30%;
     background-color: var(--purple-dark);
     border-radius: .5em;
 
@@ -99,6 +98,7 @@ option {
     border-radius: .5em;
     align-items: center;
 
+    // The button to click.
     .input-button {
         width: fit-content;
 
@@ -108,6 +108,7 @@ option {
         }
     }
 
+    // The actual input field.
     .material-input {
         text-align: center;
         margin: 0 0.5em;
