@@ -62,9 +62,11 @@ $page = 'reserveren'
 							</div>
 						</div>
 					</div>
-					<div class="materials">
+					<div class="material-wrap">
 						<h3>Materialen</h3>
-						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.inc.php'; ?>
+						<div class="materials">
+							<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.inc.php'; ?>
+						</div>
 					</div>
 					<input type="submit" name="submit" value="Send">
 				</form>

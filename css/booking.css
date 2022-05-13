@@ -58,6 +58,19 @@ option {
   text-align: center;
 }
 
+.material-wrap {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.materials {
+  display: grid;
+  gap: 10%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
 .item {
   display: flex;
   flex-direction: column;
