@@ -98,14 +98,11 @@ option {
 .plus-minus-input {
     align-items: center;
 
-    input {
-        width: 40%;
-    }
-
     .input-group-field {
         text-align: center;
         margin: 0 0.5em;
         padding: 1rem;
+        min-width: 50%;
 
         &::-webkit-inner-spin-button,
         ::-webkit-outer-spin-button {
