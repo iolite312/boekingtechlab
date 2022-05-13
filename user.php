@@ -32,9 +32,7 @@ $page = 'user';
     </header>
 
     <main>
-        <section>
-            <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-        </section>
+        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
     </main>
 </body>
 
