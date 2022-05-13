@@ -99,6 +99,8 @@ option {
     background-color: var(--purple-darker);
     border-radius: .5em;
     align-items: center;
+    justify-content: center;
+    margin: 0.2em 0.5em 0.4em;
 
     // The button to click.
     .input-button {
