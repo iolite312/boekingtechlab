@@ -10,7 +10,7 @@
         </svg>
       </button>
     </div>
-    <input class="material-input" type="number" name="quantity" value="0">
+    <input class="material-input" type="number" name="quantity" step="1" min="0" value="0">
     <div class="input-button">
       <button type="button" class="circle right" data-quantity="plus" data-field="quantity">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
