@@ -15,11 +15,12 @@ $page = 'home'
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    
+
     <title>Techlab Regius College</title>
 
     <!-- Slideshow script -->
     <script src="js/slideshow.js" defer></script>
+    <script src="js/messagestimer.js" defer></script>
 
     <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -34,9 +35,7 @@ $page = 'home'
     </header>
 
     <main>
-        <section>
-            <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-        </section>
+        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/indexcontent.inc.php' ?>
     </main>

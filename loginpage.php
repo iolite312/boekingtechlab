@@ -21,7 +21,7 @@ $page = 'login'
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/booking.css">
@@ -38,9 +38,7 @@ $page = 'login'
 	</Header>
 
 	<main>
-		<section>
-			<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-		</section>
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
 		<section class="loginpage">
 			<!-- Login Form Start -->
@@ -83,8 +81,8 @@ $page = 'login'
 		</section>
 	</main>
 	<footer>
-    <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
-    </footer>
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
+	</footer>
 </body>
 
 </html>
