@@ -2,4 +2,9 @@
   opacity: 0.5;
 }
 
+img {
+  width: 35vw;
+  aspect-ratio: 16/9;
+}
+
 /*# sourceMappingURL=map.css.map */

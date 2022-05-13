@@ -1,3 +1,7 @@
 .hover:where(:hover, :focus){
     opacity: 0.5;
 }
+img {
+    width: 35vw;
+    aspect-ratio: 16/9;
+}
