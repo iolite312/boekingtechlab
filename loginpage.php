@@ -30,7 +30,7 @@ $page = 'login'
 
 	<!-- Scripts -->
 	<script src="/js/showPassword.js" defer></script>
-	<script src="js/messagestimer.js" defer></script>
+	<script src="/js/messagestimer.js" defer></script>
 </head>
 
 <body>

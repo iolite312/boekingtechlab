@@ -27,8 +27,7 @@ $page = 'user';
     <link rel="stylesheet" href="/css/admin.css">
 
     <!-- Scripts -->
-    <script src="js/messagestimer.js" defer></script>
-    <script src="js/messagestimer.js" defer></script>
+    <script src="/js/messagestimer.js" defer></script>
 </head>
 
 <body>

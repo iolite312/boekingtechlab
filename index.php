@@ -19,13 +19,13 @@ $page = 'home'
 
     <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/alerts.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/alerts.css">
+    <link rel="stylesheet" href="/css/index.css">
 
     <!-- Scripts -->
-    <script src="js/slideshow.js" defer></script>
-    <script src="js/messagestimer.js" defer></script>
+    <script src="/js/slideshow.js" defer></script>
+    <script src="/js/messagestimer.js" defer></script>
 </head>
 
 <body>

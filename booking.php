@@ -23,7 +23,7 @@ $page = 'reserveren'
 	<!-- Scripts -->
 	<script src="/js/jquery.js" defer></script>
 	<script src="/js/materials.js" defer></script>
-	<script src="js/messagestimer.js" defer></script>
+	<script src="/js/messagestimer.js" defer></script>
 </head>
 
 <body>
