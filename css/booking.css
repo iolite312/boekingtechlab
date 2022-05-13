@@ -96,8 +96,7 @@ option {
   display: flex;
   flex-direction: row;
   text-align: center;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin: 0 0.5em;
   padding: 1rem;
 }
 .plus-minus-input .input-group-field::-webkit-inner-spin-button,
