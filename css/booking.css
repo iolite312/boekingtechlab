@@ -89,6 +89,9 @@ option {
 .plus-minus-input {
   align-items: center;
 }
+.plus-minus-input input {
+  width: 40%;
+}
 .plus-minus-input .input-group-field {
   text-align: center;
   margin-left: 0.5rem;
@@ -98,6 +101,9 @@ option {
 .plus-minus-input .input-group-field::-webkit-inner-spin-button,
 .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
   appearance: none;
+}
+.plus-minus-input .input-group-button {
+  width: fit-content;
 }
 .plus-minus-input .input-group-button .circle {
   border-radius: 50%;

@@ -93,6 +93,10 @@ option {
 .plus-minus-input {
     align-items: center;
 
+    input {
+        width: 40%;
+    }
+
     .input-group-field {
         text-align: center;
         margin-left: 0.5rem;
@@ -106,6 +110,8 @@ option {
     }
 
     .input-group-button {
+        width: fit-content;
+
         .circle {
             border-radius: 50%;
             padding: 0.25em 0.8em;
