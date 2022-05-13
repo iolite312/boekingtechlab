@@ -75,7 +75,6 @@ option {
   display: flex;
   flex-direction: column;
   place-content: center;
-  max-width: 30%;
   background-color: var(--purple-dark);
   border-radius: 0.5em;
 }
