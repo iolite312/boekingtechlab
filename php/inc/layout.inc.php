@@ -127,6 +127,9 @@ canvas
     <area shape="poly" onmouseover='myHover(this);' onmouseout='myLeave();' coords="1277,506 1154,506 1113,550 1111,689 1281,686 " href="" alt="imgmap201293016112-3" title="imgmap201293016112-3" class="imgmap201293016112-area" id="imgmap201293016112-area-3" />
     <area shape="rect" onmouseover='myHover(this);' onmouseout='myLeave();' coords="590,537 92,538 90,648 99,701 122,750 162,792 205,815 258,820 593,820 " href="" alt="imgmap201293016112-4" title="imgmap201293016112-4" class="imgmap201293016112-area" id="imgmap201293016112-area-4" />
     <area shape="rect" onmouseover='myHover(this);' onmouseout='myLeave();' coords="944,310 882,325 841,368 841,494 882,535 942,550 1002,540 1047,495 1059,431 1044,372 1004,328 946,310 " href="" alt="imgmap201293016112-5" title="imgmap201293016112-5" class="imgmap201293016112-area" id="imgmap201293016112-area-5" />
+    <area shape="poly" onmouseover='myHover(this);' onmouseout='myLeave();' coords="916,533,916,436,578,436,576,495,806,496,807,535" href="" alt="imgmap201293016112-6" title="imgmap201293016112-6" class="imgmap201293016112-area" id="imgmap201293016112-area-6" />
+    <area shape="rect" onmouseover='myHover(this);' onmouseout='myLeave();' coords="805,536,918,614" href="" alt="imgmap201293016112-7" title="imgmap201293016112-7" class="imgmap201293016112-area" id="imgmap201293016112-area-7" />
+    <area shape="rect" onmouseover='myHover(this);' onmouseout='myLeave();' coords="461,494,803,616" href="" alt="imgmap201293016112-8" title="imgmap201293016112-8" class="imgmap201293016112-area" id="imgmap201293016112-area-8" />
 </map>
 </center>
 
