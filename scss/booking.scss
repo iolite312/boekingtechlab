@@ -98,6 +98,8 @@ option {
     }
 
     .input-group-field {
+        display: flex;
+        flex-direction: row;
         text-align: center;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
