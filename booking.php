@@ -2,7 +2,6 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
-
 $page = 'reserveren'
 ?>
 
@@ -22,9 +21,9 @@ $page = 'reserveren'
 	<link rel="stylesheet" href="/css/booking.css">
 
 	<!-- Scripts -->
-	<script src="/js/expand_menu.js"></script>
-	<script src="/js/jquery.js"></script>
-	<script src="/js/materials.js"></script>
+	<script src="/js/jquery.js" defer></script>
+	<script src="/js/materials.js" defer></script>
+	<script src="js/messagestimer.js" defer></script>
 </head>
 
 <body>
