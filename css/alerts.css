@@ -26,9 +26,15 @@ div.container {
   width: 75%;
   border-style: solid;
   border-width: 0px 0px 0px 3em;
+  transition: opacity 500ms linear;
+  opacity: 1;
 }
 div.container span {
   margin-right: 0.2em;
+}
+
+.fade {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=alerts.css.map */
