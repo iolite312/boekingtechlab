@@ -86,18 +86,19 @@ option {
   object-fit: contain;
 }
 
+.input-group {
+  display: flex;
+  flex-direction: row;
+}
+
 .plus-minus-input {
   align-items: center;
 }
-.plus-minus-input input {
-  width: 40%;
-}
 .plus-minus-input .input-group-field {
-  display: flex;
-  flex-direction: row;
   text-align: center;
   margin: 0 0.5em;
   padding: 1rem;
+  min-width: 50%;
 }
 .plus-minus-input .input-group-field::-webkit-inner-spin-button,
 .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
