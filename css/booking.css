@@ -119,7 +119,7 @@ option {
   margin: 0.7rem 0;
   max-width: 30%;
   background-color: var(--green);
-  border: solid 0.125em var(--green-dark);
+  border: solid 0.25em var(--green-dark);
 }
 .input-group .material-input::-webkit-inner-spin-button,
 .input-group .material-input ::-webkit-outer-spin-button {
