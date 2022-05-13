@@ -2,7 +2,7 @@
   opacity: 0.5;
 }
 
-img {
+img, map {
   width: 35vw;
   aspect-ratio: 16/9;
 }
