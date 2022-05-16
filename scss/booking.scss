@@ -78,6 +78,7 @@ option {
     place-content: center;
     background-color: var(--purple-dark);
     border-radius: .5em;
+    gap: 0.3em;
 
 
     h3 {
@@ -88,6 +89,7 @@ option {
         max-width: 90%;
         height: auto;
         object-fit: contain;
+        align-self: center;
     }
 }
 
@@ -97,23 +99,37 @@ option {
     background-color: var(--purple-darker);
     border-radius: .5em;
     align-items: center;
+    justify-content: center;
+    margin: 0.2em 0.5em 0.4em;
 
     // The button to click.
     .input-button {
-        width: fit-content;
+        .left {
+            box-shadow: .25em .25em var(--orange-dark);
+        }
+        .right {
+            box-shadow: -.25em .25em var(--orange-dark);
+        }
 
         .circle {
             border-radius: 50%;
             padding: 0.25em 0.8em;
+            height: 3em;
+            width: 3em;
+            border: none;
+            background-color: var(--orange);
         }
     }
 
     // The actual input field.
     .material-input {
         text-align: center;
-        margin: 0 0.5em;
-        padding: 1rem;
-        min-width: 50%;
+        padding: 0.3rem 1rem;
+        margin: 0.7rem 1.5rem;
+        max-width: 30%;
+        min-width: 20%;
+        background-color: var(--green);
+        border: solid 0.25em var(--green-dark);
 
         &::-webkit-inner-spin-button,
         ::-webkit-outer-spin-button {
