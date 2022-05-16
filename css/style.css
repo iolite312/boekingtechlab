@@ -83,7 +83,7 @@ header {
 
 main {
   margin: 0px 7vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 footer {
@@ -97,8 +97,6 @@ footer {
 
 .footercontent {
   max-width: 20vw;
-  position: absolute;
-  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
