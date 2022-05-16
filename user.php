@@ -37,9 +37,19 @@ $page = 'user';
 
     <main>
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-        
-        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importuserbookings.inc.php' ?>
-        
+
+        <section>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>classroompart</th>
+                    <th>material</th>
+                    <th>time</th>
+                </tr>
+                <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importuserbookings.inc.php' ?>
+            </table>
+        </section>
+
     </main>
 </body>
 
