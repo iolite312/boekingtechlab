@@ -97,9 +97,11 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     border-top: 8px solid var(--purple-darker);
+
+    position: absolute;
+    bottom: 0;
 }
 
 .footercontent {
-    position: fixed;
-    bottom: 0;
+    max-width: 20vw;
 }
