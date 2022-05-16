@@ -1,10 +1,8 @@
 <?php
 //start database connection
-require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
+require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
-$sql = "SELECT * FROM bookings";
-
-$result = mysqli_query($conn, $sql);
+$result = fetchbooking($result);
 
 if (mysqli_num_rows($result) > 0) {
     //output data from every row selected and inserts it into the container
@@ -13,11 +11,6 @@ if (mysqli_num_rows($result) > 0) {
             <form action='/php/removebooking.php' method='post'>
                 <tr>
                     <input type='hidden' name='bookingID' value=" . $row['id'] . ">
-                    <td>" . $row['id'] . "</td>
-                    <td>" . $row['name'] . "</td>
-                    <td>" . $row['email'] . "</td>
-                    <td>" . $row['tel'] . "</td>
-                    <td>" . $row['organization_name'] . "</td>
                     <td>" . $row['classroompart'] . "</td>
                     <td>" . $row['material'] . "</td>
                     <td>" . $row['time'] . "</td>
@@ -27,5 +20,3 @@ if (mysqli_num_rows($result) > 0) {
         ";
     }
 }
-
-mysqli_close($conn);

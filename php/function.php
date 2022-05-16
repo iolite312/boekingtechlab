@@ -145,7 +145,7 @@ function loginUser($email, $password)
 }
 
 
-function sendForm($organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time)
+function addbooking($organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time)
 {
     global $conn;
 
@@ -225,4 +225,28 @@ function removebooking($bookingID)
     header('Location: /admin/index');
     mysqli_close($conn);
     exit;
+}
+
+function fetchbooking()
+{
+    global $conn;
+
+    $sql = "SELECT B.id B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id";
+    $stmt = mysqli_stmt_init($conn);
+
+    if ($row = mysqli_query($conn, $sql)) {
+        return $row;
+    } else {
+        $result = false;
+        return $result;
+    }
+
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #101.4'];
+        header('Location: /user');
+        mysqli_close($conn);
+        exit;
+    }
+
+    mysqli_close($conn);
 }

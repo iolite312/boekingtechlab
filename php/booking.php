@@ -9,7 +9,6 @@ if (isset($_POST["submit"])) {
     //connect to functions.php
     require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
-    //get user data from form
     $organization_name = $_POST['organization_name'];
     $organization_email = $_POST['organization_email'];
     $organization_tel = $_POST['organization_tel'];
@@ -36,8 +35,7 @@ if (isset($_POST["submit"])) {
         exit;
     }
 
-    //log user in
-    sendForm($organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time);
+    addbooking($organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time);
 } else {
     header("Location: /booking");
     exit;
