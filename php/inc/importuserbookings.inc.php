@@ -19,4 +19,6 @@ if (mysqli_num_rows($result) > 0) {
             </form>
         ";
     }
+} else {
+    echo "There werew no results found";
 }
