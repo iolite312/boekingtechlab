@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
         empty($email) ||
         empty($password)
     ) {
-        $_SESSION['messages'][] = ["warning", 'Please fill all required fields!'];
+        $_SESSION['messages'][] = ["warning", 'Vul alstublieft alle verplichte velden in!'];
         header('Location: /loginpage');
         exit;
     }

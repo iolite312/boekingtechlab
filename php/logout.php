@@ -5,6 +5,6 @@ if (!isset($_SESSION)) {
 
 session_unset();
 
-$_SESSION['messages'][] = ["success", 'You have successfully logged out!'];
+$_SESSION['messages'][] = ["success", 'U bent succesvol uitgelogd!'];
 header('Location: /loginpage');
 exit;

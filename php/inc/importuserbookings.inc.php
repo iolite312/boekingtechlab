@@ -17,11 +17,11 @@ if (mysqli_num_rows($result) > 0) {
                     <td>" . $row['classroompart'] . "</td>
                     <td>" . $row['material'] . "</td>
                     <td>" . $row['time'] . "</td>
-                    <td><input class='button' type='submit' name='submit' value='Delete'></td> 
+                    <td><input class='button' type='submit' name='submit' value='Verwijderen'></td> 
                 </tr>
             </form>
         ";
     }
 } else {
-    echo "There werew no results found";
+    echo "U hebt geen boekingen op dit moment";
 }
