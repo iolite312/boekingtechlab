@@ -67,7 +67,7 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
     $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 10]);
 
     //send user data to database
-    $sql = "INSERT INTO users VALUES (NULL,?,?,?,?,?,DEFAULT,current_timestamp(),DEFAULT)";
+    $sql = "INSERT INTO users VALUES (NULL,?,?,?,?,?,DEFAULT,current_timestamp(),DEFAULT,NULL)";
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
