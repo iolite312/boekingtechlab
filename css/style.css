@@ -87,7 +87,7 @@ main {
 }
 
 footer {
-  height: none;
+  height: auto;
   background-color: var(--purple-dark);
   display: flex;
   flex-direction: row;
