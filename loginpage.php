@@ -48,7 +48,7 @@ $page = 'login'
 				<form action="/php/login.php" method="post">
 					<input type="email" name="email" placeholder="Email" required>
 					<input id="Loginpassword" type="password" name="password" placeholder="Password" required>
-					<div>
+					<div style="display:flex; flex-direction:row-reverse;">
 						<input type="checkbox" onclick="showPassword('Loginpassword')"><label for="ShowPassword">Show Password</label>
 					</div>
 					<input type="submit" name="submit" value="Login">
@@ -64,7 +64,7 @@ $page = 'login'
 					<input type="text" name="lastname" placeholder="Achternaam*" required>
 					<input type="email" name="email" placeholder="Email*" required>
 					<input id="Registerpassword" minlength="8" type="password" name="password" placeholder="Wachtwoord*" required>
-					<div style="display: flex;flex-direction: row;">
+					<div style="display: flex;flex-direction: row-reverse;">
 						<input type="checkbox" onclick="showPassword('Registerpassword')"><label for="ShowPassword">Show Password</label>
 					</div>
 					<ul id="passReq">
