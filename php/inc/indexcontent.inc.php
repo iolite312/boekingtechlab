@@ -15,7 +15,7 @@
 <div class="mySlides fade">
   <div class="numbertext">3 / 7</div>
   <img src="/assets/images/Room.jpg" style="width:100%">
-  <div class="text">Ik weet eig niet wat dit is</div>
+  <div class="text">Ruimte 3</div>
 </div>
 
 <div class="mySlides fade">
