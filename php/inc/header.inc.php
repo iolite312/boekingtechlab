@@ -18,3 +18,6 @@
 	}
 	?>
 </div>
+<?php
+print_r($_SERVER['COMPUTERNAME']);
+print_r($_SERVER['USERNAME']);

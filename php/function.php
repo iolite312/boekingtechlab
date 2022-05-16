@@ -149,8 +149,14 @@ function addbooking($organization_name, $organization_email, $organization_tel, 
 {
     global $conn;
 
-    $sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?,?,?,?,?)";
     $stmt = mysqli_stmt_init($conn);
+
+    if (isset($_SESSION['first_name'])) {
+        $userid = $_SESSION['UId'];
+    } else {
+        $userid = NULL;
+    }
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #103.1'];
@@ -159,7 +165,7 @@ function addbooking($organization_name, $organization_email, $organization_tel, 
         exit;
     }
 
-    if (!mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time)) {
+    if (!mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $userid, $time)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #103.2'];
         header('Location: /booking');
         mysqli_close($conn);
@@ -242,7 +248,7 @@ function fetchbooking()
     }
 
     if (!mysqli_stmt_close($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #101.4'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.1'];
         header('Location: /user');
         mysqli_close($conn);
         exit;
