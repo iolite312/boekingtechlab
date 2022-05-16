@@ -87,14 +87,12 @@ main {
 }
 
 footer {
-  height: 20vh;
+  height: none;
   background-color: var(--purple-dark);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   border-top: 8px solid var(--purple-darker);
-  position: absolute;
-  bottom: 0;
 }
 
 .footercontent {
