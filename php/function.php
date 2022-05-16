@@ -231,7 +231,7 @@ function fetchbooking()
 {
     global $conn;
 
-    $sql = "SELECT B.id B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id";
+    $sql = "SELECT B.id B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
     $stmt = mysqli_stmt_init($conn);
 
     if ($row = mysqli_query($conn, $sql)) {
