@@ -83,7 +83,7 @@ header {
 
 main {
   margin: 0px 7vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 footer {
