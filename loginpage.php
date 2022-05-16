@@ -64,7 +64,7 @@ $page = 'login'
 					<input type="text" name="lastname" placeholder="Achternaam*" required>
 					<input type="email" name="email" placeholder="Email*" required>
 					<input id="Registerpassword" minlength="8" type="password" name="password" placeholder="Wachtwoord*" required>
-					<div>
+					<div style="display: flex;flex-direction: row;">
 						<input type="checkbox" onclick="showPassword('Registerpassword')"><label for="ShowPassword">Show Password</label>
 					</div>
 					<ul id="passReq">
