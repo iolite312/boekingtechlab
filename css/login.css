@@ -23,4 +23,17 @@ input[required]::after {
   width: 20vw;
 }
 
+form input:not([type=submit]) ~ #passReq {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+input[name=password]:not([type=submit]):hover ~ #passReq,
+input[name=password]:not([type=submit]):focus ~ #passReq,
+input[name=password]:not([type=submit]):active ~ #passReq {
+  max-height: 150px;
+  transition: max-height 0.5s ease-in-out;
+}
+
 /*# sourceMappingURL=login.css.map */

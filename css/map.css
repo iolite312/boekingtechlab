@@ -1,10 +1,3 @@
-.hover:where(:hover, :focus) {
-  opacity: 0.5;
-}
 
-img, map {
-  width: 35vw;
-  aspect-ratio: 16/9;
-}
 
 /*# sourceMappingURL=map.css.map */
