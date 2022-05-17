@@ -35,7 +35,7 @@ $page = 'reserveren'
 	<div id="pop-up-container">
         <div id="pop-up">
             <div id="cross" onclick="ClosePopUp();">
-                <img src = "cross.svg" alt="My Happy SVG"/>
+                <img src = "/assets/cross.svg" alt="My Happy SVG"/>
             </div>
             <p>It seems like your already logged in, Would you like to fill in your information?</p>
             <div id="pop-up-buttons">
