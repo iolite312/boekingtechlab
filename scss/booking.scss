@@ -41,6 +41,11 @@ option {
 @media only screen and (max-width: 1220px) {
     .userinput {
         flex-direction: column;
+
+        .organisation,
+        .contact {
+            margin: 0 10%;
+        }
     }
 }
 
@@ -55,7 +60,7 @@ option {
     .organisation,
     .contact {
         background-color: var(--purple-darker);
-        width: 40%;
+        margin: 0 20%;
         padding: 2em;
         border-radius: .5em;
 
