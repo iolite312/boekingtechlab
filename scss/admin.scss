@@ -23,12 +23,14 @@ td .button {
     color: var(--text-color-neutral);
     border-radius: 0.5em;
     cursor: pointer;
-}html {
+}
+html {
     height: 100%;
 }
 
 main {
     height: calc(100vh - 80px);
+    margin: 0;
 }
 
 .AdminNavigation {
