@@ -34,29 +34,9 @@ $page = 'admin'
     <header>
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
     </header>
-    <aside>
-        </aside>
-        
-        <main>
+    <main>
         <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/sidebar.inc.php' ?>
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-
-        <section>
-            <table class="bookings">
-                <tr>
-                    <th>ID</th>
-                    <th>Naam</th>
-                    <th>Email</th>
-                    <th>Telefoon</th>
-                    <th>Organisatie</th>
-                    <th>Lokaal</th>
-                    <th>Materiaal</th>
-                    <th>Tijd</th>
-                    <th>Acties</th>
-                </tr>
-                <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importbooking.inc.php" ?>
-            </table>
-        </section>
     </main>
 </body>
 
