@@ -62,7 +62,7 @@ $page = 'reserveren'
 								<label for="organization_tel">Telefoon</label><br>
 								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 								<label for="organization_name">Naam</label><br>
-								<input type="text" name="organization_name" placeholder="Naam"><br>
+								<input type="text" name="organization_name" placeholder="Naam" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION['first_name'] . $_SESSION['last_name'] .'"';}?>><br>
 							</div>
 						</div>
 					</div>
