@@ -34,9 +34,10 @@ $page = 'reserveren'
 	</header>
 		<!-- Pop Up -->
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/popup.inc.php' ?>
-	<main>
-		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
+		<!-- Alerts -->
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
+	<main>
 		<section class="booking">
 			<!-- booking Form Start -->
 			<div id="booking">
