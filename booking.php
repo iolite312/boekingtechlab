@@ -25,6 +25,7 @@ $page = 'reserveren'
 	<script src="/js/jquery.js" defer></script>
 	<script src="/js/materials.js" defer></script>
 	<script src="/js/messagestimer.js" defer></script>
+	<script src="/js/pop-up.js" defer></script>
 </head>
 
 <body>
@@ -35,9 +36,9 @@ $page = 'reserveren'
 	<div id="pop-up-container">
         <div id="pop-up">
             <div id="cross" onclick="ClosePopUp();">
-                <img src = "cross.svg" alt="My Happy SVG"/>
+                <img src = "/assets/cross.svg" alt="My Happy SVG"/>
             </div>
-            <p>It seems like your already logged in, Would you like to fill in your information?</p>
+            <p>Het lijkt erop dat je al ingelogt bent, Wil je jouw gegevens invullen?</p>
             <div id="pop-up-buttons">
                 <form id="pop-up-button" action="pop-up-button-yes" method="get">
                     <input type="button" id="pop-up-button-yes" class="pop-up-button" value="Yes">
