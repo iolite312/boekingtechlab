@@ -7,7 +7,7 @@ if (!isset($_SESSION['first_name'])) {
         header('Location: /user');
     }
 }
-$page = 'admin'
+$page = 'admindashboard'
 ?>
 
 <!DOCTYPE html>
@@ -35,10 +35,10 @@ $page = 'admin'
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
     </header>
     <aside>
+        </aside>
+        
+        <main>
         <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/sidebar.inc.php' ?>
-    </aside>
-
-    <main>
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
         <section>
