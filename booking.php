@@ -59,11 +59,11 @@ $page = 'reserveren'
 							<div class="contact">
 								<h3>Contact</h3>
 								<label for="organization_email">Email</label><br>
-								<input type="email" name="organization_email" placeholder="Email" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION['email'] .'"';}?>><br>
+								<input type="email" name="organization_email" placeholder="Email" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION["email"] .'"';}?>><br>
 								<label for="organization_tel">Telefoon</label><br>
 								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 								<label for="organization_name">Naam</label><br>
-								<input type="text" name="organization_name" placeholder="Naam" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION['first_name'] . $_SESSION['last_name'] .'"';}?>><br>
+								<input type="text" name="organization_name" placeholder="Naam" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION["first_name"] .''. $_SESSION["first_name"] .'"';}?>><br>
 							</div>
 						</div>
 					</div>
