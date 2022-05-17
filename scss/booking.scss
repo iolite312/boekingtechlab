@@ -59,6 +59,12 @@ option {
     }
 }
 
+@media only screen and (max-width: 1220px) {
+    .questions {
+        flex-direction: column;
+    }
+}
+
 .material-wrap {
     display: flex;
     text-align: center;
