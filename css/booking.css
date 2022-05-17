@@ -44,7 +44,7 @@ option {
   }
   .userinput .organisation,
 .userinput .contact {
-    margin: 0 10%;
+    width: 90%;
   }
 }
 .questions {
@@ -58,7 +58,7 @@ option {
 .questions .organisation,
 .questions .contact {
   background-color: var(--purple-darker);
-  margin: 0 20%;
+  width: 40%;
   padding: 2em;
   border-radius: 0.5em;
 }

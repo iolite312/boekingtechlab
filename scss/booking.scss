@@ -44,7 +44,7 @@ option {
 
         .organisation,
         .contact {
-            margin: 0 10%;
+            width: 90%;
         }
     }
 }
@@ -60,7 +60,7 @@ option {
     .organisation,
     .contact {
         background-color: var(--purple-darker);
-        margin: 0 20%;
+        width: 40%;
         padding: 2em;
         border-radius: .5em;
 
