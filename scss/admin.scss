@@ -1,6 +1,8 @@
 .bookings {
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
+    float: right;
+
 }
 
 .bookings tr:nth-of-type(odd) {
@@ -34,7 +36,7 @@ main {
 }
 
 .AdminNavigation {
-    width: 200px;
+    width: 10%;
     height: 100%;
     position: fixed;
     overflow-y: auto;
