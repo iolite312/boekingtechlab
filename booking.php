@@ -19,6 +19,7 @@ $page = 'reserveren'
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/booking.css">
+	<link rel="stylesheet" href="/css/popup.css">
 
 	<!-- Scripts -->
 	<script src="/js/jquery.js" defer></script>
