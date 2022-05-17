@@ -38,6 +38,17 @@ option {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 1220px) {
+  .userinput {
+    flex-direction: column;
+    align-items: center;
+  }
+  .userinput .organisation,
+.userinput .contact {
+    width: 70%;
+    margin-top: 3%;
+  }
+}
 .questions {
   display: flex;
   flex-direction: column;
