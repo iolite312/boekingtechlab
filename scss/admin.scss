@@ -37,11 +37,11 @@ main {
     position: fixed;
     overflow-y: auto;
     flex-basis: 300px;
-    color: var(--color-light);
+    color: var(--text-color);
     z-index: 1;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
+    background-color: green;
 }
 
 .AdminNavigation .item {
@@ -57,7 +57,7 @@ main {
 }
 
 .AdminNavigation .item:hover {
-    background: var(--color-dark-hover);
+    background: var(--orange-dark);
 }
 
 .AdminNavigation .item::after {
@@ -69,7 +69,7 @@ main {
 }
 
 .AdminNavigation .item.active {
-    background: var(--color-dark-hover);
+    background: var(--orange);
 }
 
 .AdminNavigation .item.active::after {
