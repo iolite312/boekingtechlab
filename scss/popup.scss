@@ -27,6 +27,7 @@ body{
 
 #pop-up p{
     margin-top: 75px;
+    margin-bottom: 0px;
 }
 
 #pop-up #cross{
@@ -47,6 +48,8 @@ body{
 }
 
 #pop-up .pop-up-button {
+    width: 100%;
+    border-radius: 0.5em;;
     background-color: #4CAF50;
     border: none;
     color: white;
