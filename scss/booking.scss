@@ -41,6 +41,13 @@ option {
 @media only screen and (max-width: 1220px) {
     .userinput {
         flex-direction: column;
+        align-items: center;
+        gap: 3%;
+
+        .organisation,
+        .contact {
+            width: 90%;
+        }
     }
 }
 
