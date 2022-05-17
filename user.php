@@ -39,7 +39,7 @@ $page = 'user';
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
         <section>
-            <table>
+            <table class="bookings">
                 <tr>
                     <th>#</th>
                     <th>Lokaal</th>

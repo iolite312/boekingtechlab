@@ -1,18 +1,20 @@
-table {
+.bookings {
   border-collapse: collapse;
   width: 100%;
 }
 
-tr:nth-of-type(odd) {
+.bookings tr:nth-of-type(odd) {
   background-color: var(--purple-dark);
 }
 
-td:last-child {
+.bookings td {
   width: fit-content;
   text-align: center;
+  padding-inline: 5px;
 }
 
-tr, td .button {
+tr,
+td .button {
   border: none;
 }
 
