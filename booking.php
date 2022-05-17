@@ -57,7 +57,7 @@ $page = 'reserveren'
 							<div class="contact">
 								<h3>Contact</h3>
 								<label for="organization_email">Email</label><br>
-								<input type="email" name="organization_email" placeholder="Email"><br>
+								<input type="email" name="organization_email" placeholder="Email" <?php if ($insertdata === "Yes") {echo 'value="'. $_SESSION['email'] .'"';}?>><br>
 								<label for="organization_tel">Telefoon</label><br>
 								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 								<label for="organization_name">Naam</label><br>
