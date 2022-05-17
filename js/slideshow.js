@@ -20,5 +20,5 @@ function showSlides() {
     
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setInterval(showSlides, 5000); // Change image every 5 seconds
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
