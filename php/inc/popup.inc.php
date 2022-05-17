@@ -13,7 +13,7 @@ if(isset($_SESSION['UId'])){
         <p>Het lijkt erop dat je al ingelogt bent, Wil je jouw gegevens invullen?</p>
         <div id="pop-up-buttons">
             <form id="pop-up-button" action="/php/popup-data.php" method="get">
-                <input type="button" id="pop-up-button-yes" class="pop-up-button" value="Yes">
+                <input type="submit" id="pop-up-button-yes" class="pop-up-button" value="Yes">
             </form>
             <button class="pop-up-button" onclick="ClosePopUp();">No</button>
         </div>
