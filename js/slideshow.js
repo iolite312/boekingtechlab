@@ -1,8 +1,7 @@
 let slideIndex = 0;
-var t;
 showSlides();
 
-function showSlides(i = 0) {
+function showSlides() {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -11,7 +10,6 @@ function showSlides(i = 0) {
     slides[i].style.display = "none";  
     }
 
-    slideIndex + i;
     slideIndex++;
 
     if (slideIndex > slides.length) { slideIndex = 1 };
@@ -22,10 +20,5 @@ function showSlides(i = 0) {
     
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    t = setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
-
-function manualSlide(movement = 0) {
-    clearTimeout(t)
-    showSlides(movement)
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
