@@ -19,6 +19,7 @@ $page = 'reserveren'
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/booking.css">
+	<link rel="stylesheet" href="/css/popup.css">
 
 	<!-- Scripts -->
 	<script src="/js/jquery.js" defer></script>
@@ -30,7 +31,21 @@ $page = 'reserveren'
 	<header>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
 	</header>
-
+	<!-- Pop Up -->
+	<div id="pop-up-container">
+        <div id="pop-up">
+            <div id="cross" onclick="ClosePopUp();">
+                <img src = "cross.svg" alt="My Happy SVG"/>
+            </div>
+            <p>It seems like your already logged in, Would you like to fill in your information?</p>
+            <div id="pop-up-buttons">
+                <form id="pop-up-button" action="pop-up-button-yes" method="get">
+                    <input type="button" id="pop-up-button-yes" class="pop-up-button" value="Yes">
+                </form>
+                <button class="pop-up-button" onclick="ClosePopUp();">No</button>
+            </div>
+        </div>
+    </div>
 	<main>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
