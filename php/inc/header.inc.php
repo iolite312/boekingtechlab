@@ -3,7 +3,7 @@
 	<a class="<?php if ($page == 'home') {echo 'active';} ?>" href="/index">Home</a>
 	<a class="<?php if ($page == 'reserveren') {echo 'active';} ?>" href="/booking">Reserveren</a>
 	<?php
-	if (!isset($_SESSION['first_name'])) {
+	if (!isset($_SESSION['UId'])) {
 		if ($page == 'login') $active = 'active';
 		echo "
 		<a class='$active'href='/loginpage'>Inloggen</a>
