@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_SESSION)) {
+	session_start();
+}
+
 if(isset($_SESSION['UId'])){
     echo '<div id="pop-up-container">
     <div id="pop-up">
