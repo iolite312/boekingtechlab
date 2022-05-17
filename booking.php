@@ -25,6 +25,7 @@ $page = 'reserveren'
 	<script src="/js/jquery.js" defer></script>
 	<script src="/js/materials.js" defer></script>
 	<script src="/js/messagestimer.js" defer></script>
+	<script src="/js/pop-up.js" defer></script>
 </head>
 
 <body>
