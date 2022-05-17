@@ -238,7 +238,6 @@ function fetchbooking()
     global $conn;
 
     $sql = "SELECT B.id, B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
-    $stmt = mysqli_stmt_init($conn);
 
     if ($row = mysqli_query($conn, $sql)) {
         return $row;
@@ -247,11 +246,20 @@ function fetchbooking()
         return $result;
     }
 
-    if (!mysqli_stmt_close($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #105.1'];
-        header('Location: /user');
-        mysqli_close($conn);
-        exit;
+    mysqli_close($conn);
+}
+
+function fetchmaterials()
+{
+    global $conn;
+
+    $sql = "SELECT * FROM materials";
+
+    if ($row = mysqli_query($conn, $sql)) {
+        return $row;
+    } else {
+        $result = false;
+        return $result;
     }
 
     mysqli_close($conn);
