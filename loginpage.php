@@ -46,7 +46,7 @@ $page = 'login'
 			<div class="login">
 				<h2>Inloggen</h2>
 				<form action="/php/login.php" method="post">
-					<input type="email" name="email" placeholder="Email" required>
+					<input type="email" name="email" placeholder="Email..." required>
 					<input id="Loginpassword" type="password" name="password" placeholder="Wachtwoord" required>
 					<div style="display:flex; flex-direction:row-reverse;">
 						<input type="checkbox" onclick="showPassword('Loginpassword')"><label for="ShowPassword">Toon wachtwoord</label>
