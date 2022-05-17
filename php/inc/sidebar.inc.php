@@ -1,5 +1,5 @@
 <nav class="AdminNavigation">
-    <a href="/admin/index" class="item <?php if($page=='admindashbord'){echo 'active';}?>">
+    <a href="/admin/index" class="item <?php if($page=='admindashboard'){echo 'active';}?>">
         <i class=""></i><span>Dashboard </span>
     </a>
     <a href="/admin/pages/booking" class="item <?php if($page=='adminbooking'){echo 'active';}?>">
