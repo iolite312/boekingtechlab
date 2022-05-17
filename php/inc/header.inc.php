@@ -6,7 +6,7 @@
 	if (!isset($_SESSION['first_name'])) {
 		if ($page == 'login') $active = 'active';
 		echo "
-		<a class='$active'href='/loginpage'>Login</a>
+		<a class='$active'href='/loginpage'>Inloggen</a>
 		";
 	} else {
 		if ($page == 'user' || $page == 'admin') $active = 'active';
