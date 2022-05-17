@@ -25,4 +25,65 @@ td .button {
   cursor: pointer;
 }
 
+html {
+  height: 100%;
+}
+
+main {
+  height: calc(100vh - 80px);
+}
+
+.AdminNavigation {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  flex-basis: 300px;
+  color: var(--color-light);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.AdminNavigation .item {
+  display: flex;
+  position: relative;
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  border-left: 5px solid transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+.AdminNavigation .item:hover {
+  background: var(--color-dark-hover);
+}
+
+.AdminNavigation .item::after {
+  font-family: "Material Icons";
+  content: "\e5cc";
+  visibility: hidden;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.AdminNavigation .item.active {
+  background: var(--color-dark-hover);
+}
+
+.AdminNavigation .item.active::after {
+  visibility: visible;
+}
+
+.page-content {
+  width: calc(100% - 200px);
+  height: 100%;
+  padding: 15px;
+  margin: 0 0 0 200px;
+  overflow-y: auto;
+}
+
 /*# sourceMappingURL=admin.css.map */
