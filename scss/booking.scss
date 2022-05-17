@@ -38,6 +38,12 @@ option {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 1220px) {
+    .userinput {
+        flex-direction: column;
+    }
+}
+
 .questions {
     display: flex;
     flex-direction: column;
@@ -56,12 +62,6 @@ option {
         h3 {
             text-align: center;
         }
-    }
-}
-
-@media only screen and (max-width: 1220px) {
-    .questions {
-        flex-direction: column;
     }
 }
 
