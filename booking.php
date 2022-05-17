@@ -34,9 +34,10 @@ $page = 'reserveren'
 	</header>
 		<!-- Pop Up -->
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/popup.inc.php' ?>
-	<main>
-		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
+		<!-- Alerts -->
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
+	<main>
 		<section class="booking">
 			<!-- booking Form Start -->
 			<div id="booking">
@@ -57,7 +58,7 @@ $page = 'reserveren'
 							<div class="contact">
 								<h3>Contact</h3>
 								<label for="organization_email">Email</label><br>
-								<input type="email" name="organization_email" placeholder="Email"><br>
+								<input type="email" name="organization_email" placeholder="Email" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION['email'] .'"';}?>><br>
 								<label for="organization_tel">Telefoon</label><br>
 								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 								<label for="organization_name">Naam</label><br>
