@@ -12,7 +12,7 @@ $page = 'reserveren'
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>booking</title>
+	<title>Booking</title>
 
 	<!-- Stylesheets -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -57,7 +57,7 @@ $page = 'reserveren'
 								<input type="email" name="organization_email" placeholder="Email"><br>
 								<label for="organization_tel">Telefoon</label><br>
 								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
-								<label for="organization_name">Name</label><br>
+								<label for="organization_name">Naam</label><br>
 								<input type="text" name="organization_name" placeholder="Naam"><br>
 							</div>
 						</div>
@@ -68,7 +68,7 @@ $page = 'reserveren'
 							<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.inc.php'; ?>
 						</div>
 					</div>
-					<input type="submit" name="submit" value="Send">
+					<input type="submit" name="submit" value="Versturen">
 				</form>
 			</div>
 			<!-- booking Form END -->

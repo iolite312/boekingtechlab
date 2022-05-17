@@ -23,7 +23,7 @@ if (isset($_POST["submit"])) {
         empty($email) ||
         empty($password)
     ) {
-        $_SESSION['messages'][] = ["warning", 'Please fill all required fields!'];
+        $_SESSION['messages'][] = ["warning", 'Vul alstublieft alle verplichte velden in!'];
         header('Location: /login');
         exit;
     }
@@ -36,14 +36,14 @@ if (isset($_POST["submit"])) {
 
     // Validate password strength
     if (!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8) {
-        $_SESSION['messages'][] = ["warning", 'Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character.'];
+        $_SESSION['messages'][] = ["warning", 'Wachtwoord voldoet niet aan alle eisen'];
         header('Location: /loginpage');
         exit;
     }
 
     //check if email is already in use
     if (uidExists($email) !== false) {
-        $_SESSION['messages'][] = ["warning", 'email used'];
+        $_SESSION['messages'][] = ["warning", 'Email is al gebruikt'];
         header('Location: /loginpage');
         exit;
     }

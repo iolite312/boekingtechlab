@@ -1,19 +1,19 @@
-<img class="logo" src="/assets/Techlab Logo.svg" alt="">
+<img class="logo" src="/assets/TechlabLogo.svg" alt="">
 <div class="btn">
 	<a class="<?php if ($page == 'home') {echo 'active';} ?>" href="/index">Home</a>
 	<a class="<?php if ($page == 'reserveren') {echo 'active';} ?>" href="/booking">Reserveren</a>
 	<?php
 	if (!isset($_SESSION['first_name'])) {
-		if ($page == 'login') {$active = 'active';}
+		if ($page == 'login') $active = 'active';
 		echo "
 		<a class='$active'href='/loginpage'>Login</a>
 		";
 	} else {
-		if ($page == 'user' || $page == 'admin') {$active = 'active';}
+		if ($page == 'user' || $page == 'admin') $active = 'active';
 		if ($page == 'user' || $page == 'admin') {
-			echo "<a class='$active'href='/php/logout'>Logout</a>";
+			echo "<a class='$active'href='/php/logout'>Uitloggen</a>";
 		} else {
-			echo "<a class='$active'href='/user'>User</a>";
+			echo "<a class='$active'href='/user'>Gebruiker</a>";
 		}
 	}
 	?>

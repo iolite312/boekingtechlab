@@ -67,7 +67,7 @@ function createuser($firstname, $infixes, $lastname, $email, $password)
     $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 10]);
 
     //send user data to database
-    $sql = "INSERT INTO users VALUES (NULL,?,?,?,?,?,DEFAULT,current_timestamp(),DEFAULT,NULL)";
+    $sql = "INSERT INTO users VALUES (NULL,?,?,?,?,?,DEFAULT,current_timestamp(),DEFAULT)";
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -149,8 +149,14 @@ function addbooking($organization_name, $organization_email, $organization_tel, 
 {
     global $conn;
 
-    $sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?,?,?,?,?)";
     $stmt = mysqli_stmt_init($conn);
+
+    if (isset($_SESSION['first_name'])) {
+        $userid = $_SESSION['UId'];
+    } else {
+        $userid = NULL;
+    }
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #103.1'];
@@ -159,7 +165,7 @@ function addbooking($organization_name, $organization_email, $organization_tel, 
         exit;
     }
 
-    if (!mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time)) {
+    if (!mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $userid, $time)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #103.2'];
         header('Location: /booking');
         mysqli_close($conn);
@@ -231,8 +237,7 @@ function fetchbooking()
 {
     global $conn;
 
-    $sql = "SELECT B.id B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id";
-    $stmt = mysqli_stmt_init($conn);
+    $sql = "SELECT B.id, B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
 
     if ($row = mysqli_query($conn, $sql)) {
         return $row;
@@ -241,11 +246,20 @@ function fetchbooking()
         return $result;
     }
 
-    if (!mysqli_stmt_close($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #101.4'];
-        header('Location: /user');
-        mysqli_close($conn);
-        exit;
+    mysqli_close($conn);
+}
+
+function fetchmaterials()
+{
+    global $conn;
+
+    $sql = "SELECT * FROM materials";
+
+    if ($row = mysqli_query($conn, $sql)) {
+        return $row;
+    } else {
+        $result = false;
+        return $result;
     }
 
     mysqli_close($conn);
