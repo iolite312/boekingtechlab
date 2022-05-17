@@ -7,7 +7,7 @@ if (!isset($_SESSION['first_name'])) {
         header('Location: /user');
     }
 }
-$page = 'admin'
+$page = 'adminbooking'
 ?>
 
 <!DOCTYPE html>
