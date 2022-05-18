@@ -1,3 +1,13 @@
+html {
+  height: 100%;
+}
+
+main {
+  height: calc(100vh - 80px);
+  margin: 0;
+  display: flex;
+}
+
 .bookings {
   border-collapse: collapse;
   width: 90%;
@@ -26,22 +36,12 @@ td .button {
   cursor: pointer;
 }
 
-html {
-  height: 100%;
-}
-
-main {
-  height: calc(100vh - 80px);
-  margin: 0;
-}
-
 .AdminNavigation {
-  width: fit-content;
+  min-width: fit-content;
   height: 100vh;
   position: sticky;
   top: 0;
   overflow-y: auto;
-  flex-basis: 300px;
   color: var(--text-color);
   z-index: 1;
   display: flex;
