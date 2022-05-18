@@ -36,6 +36,7 @@ $page = 'adminbooking'
     </header>
 
     <main>
+        <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
         <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/sidebar.inc.php' ?>
 
         <section>

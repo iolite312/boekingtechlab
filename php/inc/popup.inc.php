@@ -5,7 +5,7 @@ if (!isset($_SESSION)) {
 }
 
 if(isset($_SESSION['UId'])){
-    if(!$_SESSION['FillData'] === "Yes"){
+    if(!isset($_SESSION['FillData'])){
     echo '<div id="pop-up-container">
     <div id="pop-up">
         <div id="cross" onclick="ClosePopUp();">
