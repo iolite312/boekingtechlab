@@ -45,7 +45,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 1em;
+  margin-block: 1em 3em;
 }
 
 .logo {
