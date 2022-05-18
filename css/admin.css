@@ -48,7 +48,6 @@ td .button {
   flex-direction: column;
   background-color: green;
 }
-
 .AdminNavigation .item {
   display: flex;
   position: relative;
@@ -60,11 +59,9 @@ td .button {
   color: inherit;
   text-decoration: none;
 }
-
 .AdminNavigation .item:hover {
   background: var(--orange-dark);
 }
-
 .AdminNavigation .item::after {
   font-family: "Material Icons";
   content: "\e5cc";
@@ -72,12 +69,10 @@ td .button {
   margin-left: auto;
   font-size: 20px;
 }
-
 .AdminNavigation .item.active {
   background: var(--orange);
 }
-
-.AdminNavigation .item.active::after {
+.AdminNavigation .item.active:hover {
   visibility: visible;
 }
 
