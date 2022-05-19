@@ -50,7 +50,7 @@ function uidExists($email)
     }
 
     if (!mysqli_stmt_close($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #101.4'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #101.5'];
         header('Location: /loginpage');
         mysqli_close($conn);
         exit;
@@ -247,6 +247,51 @@ function fetchbooking()
     }
 
     mysqli_close($conn);
+}
+
+function addmaterials($name, $quantity_total, $take)
+{
+    global $conn;
+
+    $sql = "INSERT INTO materials VALUES (NULL,?,?,NULL,?)";
+    $stmt = mysqli_stmt_init($conn);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.1'];
+        header('Location: /booking');
+        mysqli_close($conn);
+        exit;
+    }
+
+    if (!mysqli_stmt_bind_param($stmt, "sii", $name, $quantity_total, $take)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.2'];
+        header('Location: /booking');
+        mysqli_close($conn);
+        exit;
+    }
+
+    if (!mysqli_stmt_execute($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.3'];
+        header('Location: /booking');
+        mysqli_close($conn);
+        exit;
+    }
+
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.4'];
+        header('Location: /booking');
+        mysqli_close($conn);
+        exit;
+    }
+
+    $_SESSION['messages'][] = ["success", 'Test123'];
+    header('Location: /booking');
+    mysqli_close($conn);
+    exit;
+}
+
+function removematerials()
+{
 }
 
 function fetchmaterials()

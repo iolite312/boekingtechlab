@@ -1,13 +1,13 @@
 <?php
 session_start();
-if (isset($_SESSION['first_name'])) {
-    if ($_SESSION['user_level'] === 1) {
-        header('Location: /admin');
-    }
-} else {
+if (!isset($_SESSION['first_name'])) {
     header('Location: /loginpage');
+} else {
+    if ($_SESSION['user_level'] === 0) {
+        header('Location: /user');
+    }
 }
-$page = 'user';
+$page = 'adminbooking'
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +18,10 @@ $page = 'user';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" /> -->
-    <title>Gebruikerspagina</title>
+    <title>Admin pagina</title>
 
     <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/images/placeholder.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/alerts.css">
     <link rel="stylesheet" href="/css/admin.css">
@@ -38,20 +37,24 @@ $page = 'user';
 
     <main>
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
+        <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/sidebar.inc.php' ?>
 
         <section>
             <table class="bookings">
                 <tr>
-                    <th>#</th>
+                    <th>ID</th>
+                    <th>Naam</th>
+                    <th>Email</th>
+                    <th>Telefoon</th>
+                    <th>Organisatie</th>
                     <th>Lokaal</th>
-                    <th>Materialen</th>
+                    <th>Materiaal</th>
                     <th>Tijd</th>
                     <th>Acties</th>
                 </tr>
-                <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importuserbookings.inc.php' ?>
+                <?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importbooking.inc.php" ?>
             </table>
         </section>
-
     </main>
 </body>
 
