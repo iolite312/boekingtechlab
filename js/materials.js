@@ -8,7 +8,8 @@ jQuery(document).ready(function () {
         // Get its current value
         var currentVal = parseInt($('input[name=' + fieldName + ']').val());
         // Get the max allowed value for this item
-        var maxVal = parseInt($(this).parent().attr('max').val());
+        var maxVal = parseInt($(this).parent().attr('max=').val());
+        console.log(maxVal);
         // If is not undefined
         if (!isNaN(currentVal) && currentVal < maxVal) {
             // Increment
