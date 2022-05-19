@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
         // Get the field name for the value of the button
         fieldName = $(this).attr('data-field');
         // Get the field name for the max value for the item
-        var maxValField = $(this).parent().attr('max=');
+        var maxValField = $(this).parent().attr('max');
         // Get its current value
         var currentVal = parseInt($('input[name=' + fieldName + ']').val());
         // Get the max allowed value for this item
