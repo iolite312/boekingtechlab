@@ -7,13 +7,13 @@ jQuery(document).ready(function () {
         fieldName = $(this).attr('data-field');
         // Get the field name for the max value for the item
         var maxValField = $(this).parent().siblings('.material-input').attr('max');
-        console.log('1# =' +maxValField);;
+        console.log('1# =' +maxValField);
         // Get its current value
         var currentVal = parseInt($('input[name=' + fieldName + ']').val());
         console.log(currentVal);
         console.log(fieldName);
         // Get the max allowed value for this item
-        var maxVal = parseInt($('input[name=' + maxValField + ']').val());
+        var maxVal = parseInt(maxValField.substring(1));
         console.log('2# =' +maxVal);
         // If is not undefined
         if (!isNaN(currentVal) && currentVal < maxVal) {
