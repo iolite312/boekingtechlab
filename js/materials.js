@@ -11,7 +11,7 @@ jQuery(document).ready(function () {
         // Get its current value
         var currentVal = parseInt($('input[name=' + fieldName + ']').val());
         console.log(currentVal);
-        console.log(fieldName);        )
+        console.log(fieldName);
         // Get the max allowed value for this item
         var maxVal = parseInt($('input[name=' + maxValField + ']').val());
         console.log('2# =' +maxVal);
