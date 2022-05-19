@@ -3,12 +3,14 @@ jQuery(document).ready(function () {
     $('[data-quantity="plus"]').click(function (e) {
         // Stop acting like a button
         e.preventDefault();
-        // Get the field name
+        // Get the field name for the value of the button
         fieldName = $(this).attr('data-field');
+        // Get the field name for the max value for the item
+        var maxValField = $(this).parent().attr('max=');
         // Get its current value
         var currentVal = parseInt($('input[name=' + fieldName + ']').val());
         // Get the max allowed value for this item
-        var maxVal = parseInt($(this).parent().attr('max=').val());
+        var maxVal = parseInt($('input[name =' + maxValField + ']').val());
         console.log(maxVal);
         // If is not undefined
         if (!isNaN(currentVal) && currentVal < maxVal) {
