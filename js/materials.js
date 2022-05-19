@@ -15,6 +15,8 @@ jQuery(document).ready(function () {
         if (!isNaN(currentVal) && currentVal < maxVal) {
             // Increment
             $('input[name=' + fieldName + ']').val(currentVal + 1);
+        } else if (currentVal == maxVal) {
+            alert("the max is " + maxVal);
         } else {
             // Otherwise put a 0 there
             $('input[name=' + fieldName + ']').val(0);
