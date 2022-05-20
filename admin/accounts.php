@@ -37,7 +37,7 @@ $page = 'adminaccounts'
     <main>
         <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/sidebar.inc.php' ?>
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-        <table>
+        <table class="bookings">
             <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importaccount.inc.php' ?>
         </table>
     </main>
