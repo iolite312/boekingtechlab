@@ -240,28 +240,28 @@ function removeaccount($accountID)
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #104.1'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.1'];
         header('Location: /admin/accounts');
         mysqli_close($conn);
         exit;
     }
 
-    if (!mysqli_stmt_bind_param($stmt, "i", $bookingID)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #104.2'];
+    if (!mysqli_stmt_bind_param($stmt, "i", $accountID)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.2'];
         header('Location: /admin/accounts');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_execute($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #104.3'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.3'];
         header('Location: /admin/accounts');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_close($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #104.4'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #105.4'];
         header('Location: /admin/accounts');
         mysqli_close($conn);
         exit;
@@ -297,28 +297,28 @@ function addmaterials($name, $quantity_total, $take)
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #105.1'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #106.1'];
         header('Location: /booking');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_bind_param($stmt, "sii", $name, $quantity_total, $take)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #105.2'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #106.2'];
         header('Location: /booking');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_execute($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #105.3'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #106.3'];
         header('Location: /booking');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_close($stmt)) {
-        $_SESSION['messages'][] = ["error", 'Error unknown #105.4'];
+        $_SESSION['messages'][] = ["error", 'Error unknown #106.4'];
         header('Location: /booking');
         mysqli_close($conn);
         exit;
