@@ -12,6 +12,6 @@ if (isset($_POST["submit"]) && $_SESSION['user_level'] === 1) {
     $accountID = $_POST['accountID'];
     removebooking($accountID);
 } else {
-    header("Location: /index");
+    header("Location: /admin/accounts");
     exit;
 }
