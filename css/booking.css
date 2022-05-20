@@ -25,6 +25,10 @@ input:not([type=radio]) {
   margin-top: 1em;
 }
 
+select {
+  width: 75%;
+}
+
 select,
 option {
   color: var(--text-color-neutral);
