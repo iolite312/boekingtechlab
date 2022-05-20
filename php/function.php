@@ -201,34 +201,74 @@ function removebooking($bookingID)
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #104.1'];
-        header('Location: /admin/index');
+        header('Location: /admin/booking');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_bind_param($stmt, "i", $bookingID)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #104.2'];
-        header('Location: /admin/index');
+        header('Location: /admin/booking');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_execute($stmt)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #104.3'];
-        header('Location: /admin/index');
+        header('Location: /admin/booking');
         mysqli_close($conn);
         exit;
     }
 
     if (!mysqli_stmt_close($stmt)) {
         $_SESSION['messages'][] = ["error", 'Error unknown #104.4'];
-        header('Location: /admin/index');
+        header('Location: /admin/booking');
         mysqli_close($conn);
         exit;
     }
 
     $_SESSION['messages'][] = ["success", 'your have successfully removed a booking!'];
-    header('Location: /admin/index');
+    header('Location: /admin/booking');
+    mysqli_close($conn);
+    exit;
+}
+function removeaccount($accountID)
+{
+    global $conn;
+
+    $sql = "DELETE FROM users WHERE id = ?";
+    $stmt = mysqli_stmt_init($conn);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #104.1'];
+        header('Location: /admin/accounts');
+        mysqli_close($conn);
+        exit;
+    }
+
+    if (!mysqli_stmt_bind_param($stmt, "i", $bookingID)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #104.2'];
+        header('Location: /admin/accounts');
+        mysqli_close($conn);
+        exit;
+    }
+
+    if (!mysqli_stmt_execute($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #104.3'];
+        header('Location: /admin/accounts');
+        mysqli_close($conn);
+        exit;
+    }
+
+    if (!mysqli_stmt_close($stmt)) {
+        $_SESSION['messages'][] = ["error", 'Error unknown #104.4'];
+        header('Location: /admin/accounts');
+        mysqli_close($conn);
+        exit;
+    }
+
+    $_SESSION['messages'][] = ["success", 'your have successfully removed a booking!'];
+    header('Location: /admin/accounts');
     mysqli_close($conn);
     exit;
 }

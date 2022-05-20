@@ -12,7 +12,7 @@ if (mysqli_num_rows($result) > 0) {
         echo "
             <form action='/php/removebooking.php' method='post'>
                 <tr>
-                    <input type='hidden' name='bookingID' value=" . $row['id'] . ">
+                    <input type='hidden' name='accountID' value=" . $row['id'] . ">
                     <td>" . $row['id'] . "</td>
                     <td>" . $row['firstname'] + $row['lastname'] . "</td>
                     <td>" . $row['email'] . "</td>
