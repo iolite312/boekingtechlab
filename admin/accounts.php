@@ -43,6 +43,7 @@ $page = 'adminaccounts'
                     <th>ID</th>
                     <th>Naam</th>
                     <th>Email</th>
+                    <th>Acties</th>
                 </tr>
                 <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importaccount.inc.php' ?>
             </table>
