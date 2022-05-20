@@ -14,7 +14,7 @@ if (mysqli_num_rows($result) > 0) {
                 <tr>
                     <input type='hidden' name='accountID' value=" . $row['id'] . ">
                     <td>" . $row['id'] . "</td>
-                    <td>" . $row['firstname'] + $row['lastname'] . "</td>
+                    <td>" . $row['firstname'],  $row['lastname'] . "</td>
                     <td>" . $row['email'] . "</td>
                     <td><input class='button' type='submit' name='submit' value='Verwijderen'></td> 
                 </tr>
