@@ -37,14 +37,16 @@ $page = 'adminaccounts'
     <main>
         <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/sidebar.inc.php' ?>
         <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-        <table class="bookings">
-            <tr>
-                <th>ID</th>
-                <th>Naam</th>
-                <th>Email</th>
-            </tr>
-            <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importaccount.inc.php' ?>
-        </table>
+        <section>
+            <table class="bookings">
+                <tr>
+                    <th>ID</th>
+                    <th>Naam</th>
+                    <th>Email</th>
+                </tr>
+                <?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importaccount.inc.php' ?>
+            </table>
+        </section>
     </main>
 </body>
 
