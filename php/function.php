@@ -267,7 +267,7 @@ function removeaccount($accountID)
         exit;
     }
 
-    $_SESSION['messages'][] = ["success", 'your have successfully removed a booking!'];
+    $_SESSION['messages'][] = ["success", 'your have successfully removed a account!'];
     header('Location: /admin/accounts');
     mysqli_close($conn);
     exit;
