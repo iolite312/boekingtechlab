@@ -10,7 +10,7 @@ if (isset($_POST["submit"]) && $_SESSION['user_level'] === 1) {
 
 
     $accountID = $_POST['accountID'];
-    removebooking($accountID);
+    removeaccount($accountID);
 } else {
     header("Location: /admin/accounts");
     exit;
