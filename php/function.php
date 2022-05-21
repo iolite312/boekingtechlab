@@ -126,7 +126,7 @@ function loginUser($email, $password)
 		$_SESSION['first_name'] = $uidExists["first_name"];
 		$_SESSION['infixes'] = $uidExists["infixes"];
 		$_SESSION['last_name'] = $uidExists["last_name"];
-		$_SESSION['full_name'] = $uidExists["first_name"] . " " . $uidExists["infixes"] . " " . $uidExists["last_name"];
+		$_SESSION['full_name'] = preg_replace('/\s+/', ' ', $uidExists["first_name"] . " " . $uidExists["infixes"] . " " . $uidExists["last_name"]);
 		$_SESSION['email'] = $uidExists["email"];
 		$_SESSION['user_level'] = $uidExists["user_level"];
 		$_SESSION['date_created'] = $uidExists["date_created"];
