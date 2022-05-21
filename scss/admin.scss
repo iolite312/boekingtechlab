@@ -1,84 +1,84 @@
 html {
-    height: 100%;
+	height: 100%;
 }
 
 main {
-    height: calc(100vh - 80px);
-    margin: 0;
-    display: flex;
+	height: calc(100vh - 80px);
+	margin: 0;
+	display: flex;
 }
 
 .bookings {
-    border-collapse: collapse;
-    width: 90%;
-    float: right;
+	border-collapse: collapse;
+	width: 90%;
+	float: right;
 }
 
 .bookings tr:nth-of-type(odd) {
-    background-color: var(--purple-dark);
+	background-color: var(--purple-dark);
 }
 
 .bookings td {
-    width: fit-content;
-    text-align: center;
-    padding-inline: 5px;
+	width: fit-content;
+	text-align: center;
+	padding-inline: 5px;
 }
 
 tr,
 td .button {
-    border: none
+	border: none
 }
 
 td .button {
-    background-color: hsl(0, 100%, 50%);
-    color: var(--text-color-neutral);
-    border-radius: 0.5em;
-    cursor: pointer;
+	background-color: hsl(0, 100%, 50%);
+	color: var(--text-color-neutral);
+	border-radius: 0.5em;
+	cursor: pointer;
 }
 
 .AdminNavigation {
-    min-width: fit-content;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
-    color: var(--text-color);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: green;
+	min-width: fit-content;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	overflow-y: auto;
+	color: var(--text-color);
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: green;
 
-    .item {
-        display: flex;
-        position: relative;
-        padding: 12px;
-        font-size: 20px;
-        cursor: pointer;
-        align-items: center;
-        border-left: 5px solid transparent;
-        color: inherit;
-        text-decoration: none;
+	.item {
+		display: flex;
+		position: relative;
+		padding: 12px;
+		font-size: 20px;
+		cursor: pointer;
+		align-items: center;
+		border-left: 5px solid transparent;
+		color: inherit;
+		text-decoration: none;
 
-        &:hover {
-            background: var(--orange-dark);
-        }
+		&:hover {
+			background: var(--orange-dark);
+		}
 
-        &::after {
-            font-family: "Material Icons";
-            content: "\e5cc";
-            visibility: hidden;
-            margin-left: auto;
-            font-size: 20px;
-        }
+		&::after {
+			font-family: "Material Icons";
+			content: "\e5cc";
+			visibility: hidden;
+			margin-left: auto;
+			font-size: 20px;
+		}
 
-        &.active {
-            background: var(--orange);
-        }
+		&.active {
+			background: var(--orange);
+		}
 
-        &.active:hover {
-            visibility: visible;
-        }
-    }
+		&.active:hover {
+			visibility: visible;
+		}
+	}
 }
 
 // .AdminNavigation .item {
@@ -114,9 +114,9 @@ td .button {
 // }
 
 .page-content {
-    width: calc(100% - 200px);
-    height: 100%;
-    padding: 15px;
-    margin: 0 0 0 200px;
-    overflow-y: auto;
+	width: calc(100% - 200px);
+	height: 100%;
+	padding: 15px;
+	margin: 0 0 0 200px;
+	overflow-y: auto;
 }

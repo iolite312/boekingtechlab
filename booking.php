@@ -33,12 +33,11 @@ $page = 'reserveren'
 	<header>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
 	</header>
-		<!-- Pop Up -->
-		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/popup.inc.php' ?>
+	<!-- Pop Up -->
+	<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/popup.inc.php' ?>
 
-		<!-- Alerts -->
-		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 	<main>
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 		<section class="booking">
 			<!-- booking Form Start -->
 			<div id="booking">
@@ -58,12 +57,12 @@ $page = 'reserveren'
 							</div>
 							<div class="contact">
 								<h3>Contact</h3>
-								<label for="organization_email">Email</label><br>
-								<input type="email" name="organization_email" placeholder="Email" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION["email"] .'"';}?>><br>
-								<label for="organization_tel">Telefoon</label><br>
-								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 								<label for="organization_name">Naam</label><br>
-								<input type="text" name="organization_name" placeholder="Naam" <?php if ($_SESSION['FillData'] === "Yes") {echo 'value="'. $_SESSION["first_name"] .' '. $_SESSION["last_name"] .'"';}?>><br>
+								<input type="text" name="organization_name" placeholder="Naam" value="<?php if (isset($_SESSION['UId'])) echo $_SESSION['full_name'] ?>"><br>
+								<label for="organization_email">Email</label><br>
+								<input type="email" name="organization_email" placeholder="Email" value=" <?php if (isset($_SESSION['UId'])) echo $_SESSION["email"] ?>"><br>
+								<label for=" organization_tel">Telefoon</label><br>
+								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
 							</div>
 						</div>
 					</div>
