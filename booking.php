@@ -34,7 +34,7 @@ $page = 'reserveren'
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
 	</header>
 	<!-- Pop Up -->
-	<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/popup.inc.php' ?>
+	<!-- require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/popup.inc.php'  -->
 
 	<main>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
