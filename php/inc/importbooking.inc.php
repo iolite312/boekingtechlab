@@ -1,9 +1,7 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
+require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
-$sql = "SELECT * FROM bookings";
-
-$result = mysqli_query($conn, $sql);
+$result = fetchbooking($result);
 
 if (mysqli_num_rows($result) > 0) {
 	//output data from every row selected and inserts it into the container

@@ -52,7 +52,7 @@ $page = 'adminbooking'
 					<th>Tijd</th>
 					<th>Acties</th>
 				</tr>
-				<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importuserbookings.inc.php" ?>
+				<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importbooking.inc.php" ?>
 			</table>
 		</section>
 	</main>
