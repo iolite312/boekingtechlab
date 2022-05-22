@@ -278,7 +278,7 @@ function fetchbooking()
 {
 	global $conn;
 	if ($_SESSION['UId'] === 1) {
-		$sql = "SELECT * FROM bookings AS B INNER JOIN users AS U ON B.account_id";
+		$sql = "SELECT B.id, B.name, B.email, B.tel, B.organization_name, B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id";
 	} else {
 		$sql = "SELECT B.id, B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
 	}
