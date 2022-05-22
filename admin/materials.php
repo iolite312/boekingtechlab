@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (!isset($_SESSION)) {
+	session_start();
+}
 if (!isset($_SESSION['UId'])) {
 	header('Location: /loginpage');
 } else {
@@ -35,8 +37,8 @@ $page = 'adminmaterials'
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
 	</header>
 	<main>
-		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/sidebar.inc.php' ?>
+		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 	</main>
 </body>
 
