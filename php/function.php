@@ -232,6 +232,7 @@ function removebooking($bookingID)
 	mysqli_close($conn);
 	exit;
 }
+
 function removeaccount($accountID)
 {
 	global $conn;
@@ -276,8 +277,12 @@ function removeaccount($accountID)
 function fetchbooking()
 {
 	global $conn;
+	if ($_SESSION['UId'] === 1) {
+		$sql = "SELECT * FROM bookings AS B INNER JOIN users AS U ON B.account_id";
+	} else {
+		$sql = "SELECT B.id, B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
+	}
 
-	$sql = "SELECT B.id, B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
 
 	if ($row = mysqli_query($conn, $sql)) {
 		return $row;
