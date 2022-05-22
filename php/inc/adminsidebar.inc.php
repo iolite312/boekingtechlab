@@ -1,4 +1,4 @@
-<nav class="AdminNavigation">
+<nav class="SideNavigation">
 	<a href="/admin/index" class="item <?php if($page=='admin'){echo 'active';}?>">
 		<i class=""></i><span>Dashboard </span>
 	</a>

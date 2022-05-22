@@ -36,7 +36,7 @@ td .button {
   cursor: pointer;
 }
 
-.AdminNavigation {
+.SideNavigation {
   min-width: fit-content;
   height: 100vh;
   position: sticky;
@@ -48,7 +48,7 @@ td .button {
   flex-direction: column;
   background-color: green;
 }
-.AdminNavigation .item {
+.SideNavigation .item {
   display: flex;
   position: relative;
   padding: 12px;
@@ -59,20 +59,20 @@ td .button {
   color: inherit;
   text-decoration: none;
 }
-.AdminNavigation .item:hover {
+.SideNavigation .item:hover {
   background: var(--orange-dark);
 }
-.AdminNavigation .item::after {
+.SideNavigation .item::after {
   font-family: "Material Icons";
   content: "\e5cc";
   visibility: hidden;
   margin-left: auto;
   font-size: 20px;
 }
-.AdminNavigation .item.active {
+.SideNavigation .item.active {
   background: var(--orange);
 }
-.AdminNavigation .item.active:hover {
+.SideNavigation .item.active:hover {
   visibility: visible;
 }
 

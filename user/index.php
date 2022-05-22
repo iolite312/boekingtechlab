@@ -39,6 +39,7 @@ $page = 'user';
 	</header>
 
 	<main>
+		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/usersidebar.inc.php' ?>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
 		<section>

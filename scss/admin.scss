@@ -36,7 +36,7 @@ td .button {
 	cursor: pointer;
 }
 
-.AdminNavigation {
+.SideNavigation {
 	min-width: fit-content;
 	height: 100vh;
 	position: sticky;
@@ -81,7 +81,7 @@ td .button {
 	}
 }
 
-// .AdminNavigation .item {
+// .SideNavigation .item {
 //     display: flex;
 //     position: relative;
 //     padding: 12px;
@@ -93,11 +93,11 @@ td .button {
 //     text-decoration: none;
 // }
 
-// .AdminNavigation .item:hover {
+// .SideNavigation .item:hover {
 //     background: var(--orange-dark);
 // }
 
-// .AdminNavigation .item::after {
+// .SideNavigation .item::after {
 //     font-family: "Material Icons";
 //     content: "\e5cc";
 //     visibility: hidden;
@@ -105,11 +105,11 @@ td .button {
 //     font-size: 20px;
 // }
 
-// .AdminNavigation .item.active {
+// .SideNavigation .item.active {
 //     background: var(--orange);
 // }
 
-// .AdminNavigation .item.active::after {
+// .SideNavigation .item.active::after {
 //     visibility: visible;
 // }
 
