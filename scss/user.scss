@@ -1,0 +1,19 @@
+.userinfo {
+	width: 100%;
+	padding-left: 50px;
+}
+
+.userinfoform {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 400px;
+}
+
+.userinfoform>label {
+	margin-block: 10px;
+}
+
+.userinfoform>input[type=submit] {
+	margin-top: 20px;
+}

@@ -27,7 +27,7 @@ $page = 'personal';
 	<link rel="shortcut icon" href="./assets/images/placeholder.png" type="image/x-icon">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
-	<link rel="stylesheet" href="/css/admin.css">
+	<link rel="stylesheet" href="/css/user.css">
 
 	<!-- Scripts -->
 	<script src="/js/messagestimer.js" defer></script>
@@ -42,8 +42,24 @@ $page = 'personal';
 		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/usersidebar.inc.php' ?>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
-		<section>
-
+		<section class="userinfo">
+			<div>
+				<form class="userinfoform" action="" method="post">
+					<label for="name">Naam</label>
+					<br>
+					<input type="text" name="name" id="name">
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email">
+					<br>
+					<label for="tel">Telefoonnummer</label>
+					<br>
+					<input type="tel" name="tel" id="tel">
+					<br>
+					<input type="submit">
+				</form>
+			</div>
 		</section>
 
 	</main>
