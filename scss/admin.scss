@@ -77,38 +77,6 @@ td .button {
 	}
 }
 
-// .SideNavigation .item {
-//     display: flex;
-//     position: relative;
-//     padding: 12px;
-//     font-size: 20px;
-//     cursor: pointer;
-//     align-items: center;
-//     border-left: 5px solid transparent;
-//     color: inherit;
-//     text-decoration: none;
-// }
-
-// .SideNavigation .item:hover {
-//     background: var(--orange-dark);
-// }
-
-// .SideNavigation .item::after {
-//     font-family: "Material Icons";
-//     content: "\e5cc";
-//     visibility: hidden;
-//     margin-left: auto;
-//     font-size: 20px;
-// }
-
-// .SideNavigation .item.active {
-//     background: var(--orange);
-// }
-
-// .SideNavigation .item.active::after {
-//     visibility: visible;
-// }
-
 .page-content {
 	width: calc(100% - 200px);
 	height: 100%;
