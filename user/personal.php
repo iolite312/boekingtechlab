@@ -28,6 +28,7 @@ $page = 'personal';
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/user.css">
+	<link rel="stylesheet" href="/css/admin.css">
 
 	<!-- Scripts -->
 	<script src="/js/messagestimer.js" defer></script>
