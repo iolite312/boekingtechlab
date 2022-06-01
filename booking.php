@@ -42,6 +42,7 @@ $page = 'reserveren'
 			<!-- booking Form Start -->
 			<div id="booking">
 				<form action="/php/booking.php" method="post" required>
+
 					<div class="questions">
 						<h1>Reserveren</h1>
 						<div class="userinput">
@@ -55,6 +56,7 @@ $page = 'reserveren'
 								<label for="anders">Vul in als u "anders" selecteerd</label><br>
 								<input type="text" name="anders" id="anders">
 							</div>
+
 							<div class="contact">
 								<h3>Contact</h3>
 								<label for="organization_name">Naam</label><br>
@@ -66,12 +68,20 @@ $page = 'reserveren'
 							</div>
 						</div>
 					</div>
+
+					<div class="timestamp">
+						<h3>Time</h3>
+						<input type="date">
+						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importtimes.inc.php'; ?>
+					</div>
+
 					<div class="material-wrap">
 						<h3>Materialen</h3>
 						<div class="materials">
 							<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/materials.inc.php'; ?>
 						</div>
 					</div>
+
 					<input type="submit" name="submit" value="Versturen">
 				</form>
 			</div>
