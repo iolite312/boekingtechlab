@@ -9,7 +9,7 @@ if (!isset($_SESSION['UId'])) {
 		header('Location: /user');
 	}
 }
-$page = 'adminbooking'
+$page = 'admintimes'
 ?>
 
 <!DOCTYPE html>
