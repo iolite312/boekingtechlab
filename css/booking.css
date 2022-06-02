@@ -80,7 +80,7 @@ option {
   justify-content: space-between;
   background-color: var(--purple-dark);
   padding: 2em;
-  margin: 30px;
+  margin-block: 30px;
   border-radius: 0.5em;
 }
 .schedule .timestamp {
@@ -89,8 +89,8 @@ option {
 }
 .schedule .timestamp .container {
   position: relative;
-  width: 150px;
-  height: 150px;
+  flex-grow: 1;
+  aspect-ratio: 1;
   margin: 5px;
 }
 .schedule .timestamp .container input {
@@ -102,6 +102,12 @@ option {
   top: 0;
   left: 0;
   cursor: pointer;
+}
+.schedule .timestamp .container input:checked ~ div::before {
+  content: "";
+  width: 90%;
+  height: 90%;
+  border: 5px solid #33004d;
 }
 .schedule .timestamp .container div {
   width: 100%;
