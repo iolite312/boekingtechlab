@@ -69,7 +69,7 @@ $page = 'reserveren'
 					<div class="schedule">
 						<h3>Time</h3>
 						<input id="dateselecter" type="date" value="<?php echo date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>">
-						<div class="timestamp">
+						<div class="timestamp" id="timestamp">
 						</div>
 					</div>
 
