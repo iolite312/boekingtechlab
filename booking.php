@@ -25,6 +25,7 @@ $page = 'reserveren'
 	<script src="/js/jquery.js" defer></script>
 	<script src="/js/materials.js" defer></script>
 	<script src="/js/messagestimer.js" defer></script>
+	<script src="/js/schedule.js" defer></script>
 </head>
 
 <body>
@@ -67,9 +68,8 @@ $page = 'reserveren'
 
 					<div class="schedule">
 						<h3>Time</h3>
-						<input type="date" value="<?php echo date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>">
+						<input id="dateselecter" type="date" value="<?php echo date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>">
 						<div class="timestamp">
-							<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importtimes.inc.php'; ?>
 						</div>
 					</div>
 
