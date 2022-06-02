@@ -354,19 +354,3 @@ function fetchmaterials()
 
 	mysqli_close($conn);
 }
-
-function fetchtimes()
-{
-	global $conn;
-
-	$sql = "SELECT * FROM `schedule`AS S INNER JOIN `days` AS D on S.day_id = D.id WHERE D.id = date('N',strtotime('04-12-2020'))";
-
-	if ($row = mysqli_query($conn, $sql)) {
-		return $row;
-	} else {
-		$result = false;
-		return $result;
-	}
-
-	mysqli_close($conn);
-}
