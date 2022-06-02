@@ -60,8 +60,8 @@
 	<span class="dot"></span>
 </div>
 
-<div>
-	<p>
-		Quick test ignore this thanks
-	</p>
+<div class="aanbod">
+	<h2>Wat heeft ons techlab aan te bieden?</h2>
+	<p>Test</p>
+	<p>Test 2</p>
 </div>
