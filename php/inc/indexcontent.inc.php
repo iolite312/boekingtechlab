@@ -62,6 +62,6 @@
 
 <div class="aanbod">
 	<h2>Wat heeft ons techlab aan te bieden?</h2>
-	<p>Test</p>
-	<p>Test 2</p>
+	<p>Photon Robots</p>
+	<p>LEGO Mindstorms</p>
 </div>
