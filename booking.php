@@ -20,21 +20,17 @@ $page = 'reserveren'
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/booking.css">
-	<link rel="stylesheet" href="/css/popup.css">
 
 	<!-- Scripts -->
 	<script src="/js/jquery.js" defer></script>
 	<script src="/js/materials.js" defer></script>
 	<script src="/js/messagestimer.js" defer></script>
-	<script src="/js/pop-up.js" defer></script>
 </head>
 
 <body>
 	<header>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/header.inc.php' ?>
 	</header>
-	<!-- Pop Up -->
-	<!-- require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/popup.inc.php'  -->
 
 	<main>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>

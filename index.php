@@ -19,7 +19,6 @@ $page = 'home'
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="shortcut icon" href="./assets/images/placeholder.png" type="image/x-icon">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/index.css">
 
 	<!-- Scripts -->
@@ -33,8 +32,6 @@ $page = 'home'
 	</header>
 
 	<main>
-		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
-
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/indexcontent.inc.php' ?>
 	</main>
 
