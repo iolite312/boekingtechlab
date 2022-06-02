@@ -3,7 +3,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
 $result = fetchadmintimes($result);
 
-$days = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+$days = [ 1 => "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
 $i = 0;
 if (mysqli_num_rows($result) > 0) {
 	//output data from every row selected and inserts it into the container
