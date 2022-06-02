@@ -108,7 +108,7 @@ option {
   width: 90%;
   height: 90%;
   border: 5px solid #33004d;
-  animation: animate 2s linear infinite;
+  animation: animate 2s linear infinite alternate;
 }
 .schedule .timestamp .container div {
   width: 100%;
@@ -129,9 +129,6 @@ option {
   }
   100% {
     border: 5px solid rgba(51, 0, 77, 0.1882352941);
-  }
-  0% {
-    border: 5px solid #33004d;
   }
 }
 .material-wrap {

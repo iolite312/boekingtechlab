@@ -111,7 +111,7 @@ option {
 					width: 90%;
 					height: 90%;
 					border: 5px solid #33004d;
-					animation: animate 2s linear infinite
+					animation: animate 2s linear infinite alternate;
 				}
 			}
 
@@ -138,10 +138,6 @@ option {
 
 	100% {
 		border: 5px solid #33004d30;
-	}
-
-	0% {
-		border: 5px solid #33004d;
 	}
 }
 
