@@ -42,17 +42,7 @@ $page = 'admintimes'
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
 		<section>
-			<table class="bookings">
-				<tr>
-					<th>ID</th>
-					<th>periode</th>
-					<th>Vanaf</th>
-					<th>Tot</th>
-					<th>soort periode</th>
-					<th>Actie</th>
-				</tr>
-				<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importadmintimes.inc.php" ?>
-			</table>
+			<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importadmintimes.inc.php" ?>
 		</section>
 	</main>
 </body>

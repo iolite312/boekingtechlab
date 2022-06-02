@@ -1,33 +1,102 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
+require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
 
-$result = fetchadmintimes($result);
+$days = [1 => "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
 
-$days = [ 1 => "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
 
-$i = 1;
-if (mysqli_num_rows($result) > 0) {
-	//output data from every row selected and inserts it into the container
-	while ($row = mysqli_fetch_assoc($result)) {
-        echo 
-        "<h3>" . $days[$i] . " </h3>
-            <form action='' method='post'>
-                <tr>
-                    <input type='hidden' name='timeID' value=" . $row['id'] . ">
-                    <td>" . $row['id'] . "</td>
-                    <td>" . $row['period'] . "</td>
-                    <td>" . date("H:i", strtotime($row['time-from'])) . "</td>
-                    <td>" . date("H:i", strtotime($row['time-until'])) . "</td>
-                    <td>" . $row['period_type'] . "</td>
-                    <td></td>
-                </tr>
-            </form>
-        ";
-        $i++;
+foreach ($days as $i => $day) {
+	$sql = "SELECT S.`id`, S.`period`, S.`time-from`, S.`time-until`, S.`period_type` FROM schedule AS S INNER JOIN days AS D on S.day_id = D.id WHERE D.id = $i";
+
+	if ($row = mysqli_query($conn, $sql)) {
+		$result = $row;
+	} else {
+		$result = false;
 	}
-    
+	echo "<h3>" . $day . " </h3>";
+	echo "
+	<table class='bookings'>
+		<tr>
+			<th>ID</th>
+			<th>periode</th>
+			<th>Vanaf</th>
+			<th>Tot</th>
+			<th>soort periode</th>
+			<th>Actie</th>
+		</tr>
+	";
+	if (mysqli_num_rows($result) > 0) {
+		//output data from every row selected and inserts it into the container
+		while ($row = mysqli_fetch_assoc($result)) {
+			echo "
+				<tr>
+					<input type='hidden' name='timeID' value=" . $row['id'] . ">
+					<td>" . $row['id'] . "</td>
+					<td>" . $row['period'] . "</td>
+					<td>" . date("H:i", strtotime($row['time-from'])) . "</td>
+					<td>" . date("H:i", strtotime($row['time-until'])) . "</td>
+					<td>" . $row['period_type'] . "</td>
+					<td></td>
+				</tr>
+			";
+		}
+	}
+	echo "</table>";
 }
+
 
 mysqli_close($conn);
 
 
+// <table class="bookings">
+// 	<tr>
+// 		<th>ID</th>
+// 		<th>periode</th>
+// 		<th>Vanaf</th>
+// 		<th>Tot</th>
+// 		<th>soort periode</th>
+// 		<th>Actie</th>
+// 	</tr>
+// </table>
+
+
+
+
+// <?php
+// require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
+
+// global $conn;
+
+// $sql = "SELECT S.`id`, S.`period`, S.`time-from`, S.`time-until`, S.`period_type` FROM schedule AS S INNER JOIN days AS D on S.day_id = D.id";
+
+// if ($row = mysqli_query($conn, $sql)) {
+// 	$result = $row;
+// } else {
+// 	$result = false;
+// }
+
+
+// $days = [1 => "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+
+// $i = 1;
+// if (mysqli_num_rows($result) > 0) {
+// 	//output data from every row selected and inserts it into the container
+// 	while ($row = mysqli_fetch_assoc($result)) {
+// 		echo
+// 		"<h3>" . $days[$i] . " </h3>
+//             <form action='' method='post'>
+//                 <tr>
+//                     <input type='hidden' name='timeID' value=" . $row['id'] . ">
+//                     <td>" . $row['id'] . "</td>
+//                     <td>" . $row['period'] . "</td>
+//                     <td>" . date("H:i", strtotime($row['time-from'])) . "</td>
+//                     <td>" . date("H:i", strtotime($row['time-until'])) . "</td>
+//                     <td>" . $row['period_type'] . "</td>
+//                     <td></td>
+//                 </tr>
+//             </form>
+//         ";
+// 		$i++;
+// 	}
+// }
+
+// mysqli_close($conn);

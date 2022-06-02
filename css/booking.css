@@ -86,6 +86,7 @@ option {
 .schedule .timestamp {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .schedule .timestamp .container {
   position: relative;

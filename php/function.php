@@ -370,19 +370,3 @@ function fetchtimes()
 
 	mysqli_close($conn);
 }
-
-function fetchadmintimes()
-{
-	global $conn;
-
-	$sql = "SELECT S.`id`, S.`period`, S.`time-from`, S.`time-until`, S.`period_type` FROM schedule AS S INNER JOIN days AS D on S.day_id = D.id";
-
-	if ($row = mysqli_query($conn, $sql)) {
-		return $row;
-	} else {
-		$result = false;
-		return $result;
-	}
-
-	mysqli_close($conn);
-}

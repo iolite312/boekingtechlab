@@ -89,6 +89,7 @@ option {
 	.timestamp {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 
 		.container {
 			position: relative;
