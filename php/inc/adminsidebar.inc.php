@@ -12,6 +12,6 @@
 		<i class=""></i><span>Materialen</span>
 	</a>
 	<a href="/admin/times" class="item <?php if($page=='admintimes'){echo 'active';}?>">
-		<i class=""></i><span>times</span>
+		<i class=""></i><span>Times</span>
 	</a>
 </nav>
