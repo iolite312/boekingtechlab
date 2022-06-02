@@ -71,7 +71,7 @@ $page = 'reserveren'
 
 					<div class="schedule">
 						<h3>Time</h3>
-						<input type="date">
+						<input type="date" value="<?php echo date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>">
 						<div class="timestamp">
 							<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importtimes.inc.php'; ?>
 						</div>
