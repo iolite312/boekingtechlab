@@ -13,8 +13,8 @@ if (mysqli_num_rows($result) > 0) {
 		echo "
             <form action='' method='post'>
                 <tr>
-                    <input type='hidden' name='timeID' value=" . $row['id'] . ">
-                    <td>" . $row['id'] . "</td>
+                    <input type='hidden' name='timeID' value=" . $row['S.id'] . ">
+                    <td>" . $row['S.id'] . "</td>
                     <td>" . $row['period'] . "</td>
                     <td>" . date("H:i", strtotime($row['time-from'])) . "</td>
                     <td>" . date("H:i", strtotime($row['time-until'])) . "</td>
