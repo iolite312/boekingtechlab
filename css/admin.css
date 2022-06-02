@@ -84,4 +84,18 @@ td .button {
   overflow-y: auto;
 }
 
+.time {
+  border-collapse: collapse;
+  width: 90%;
+  float: right;
+}
+
+.time-open {
+  display: block;
+  height: 100px;
+  transition-property: height;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*# sourceMappingURL=admin.css.map */
