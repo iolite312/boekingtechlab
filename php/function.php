@@ -375,7 +375,7 @@ function fetchadmintimes()
 {
 	global $conn;
 
-	$sql = "SELECT * FROM schedule AS S INNER JOIN days AS D on S.day_id = D.id WHERE D.id = '1'";
+	$sql = "SELECT S.`id`, S.`period`, S.`time-from`, S.`time-until`, S.`period_type` FROM schedule AS S INNER JOIN days AS D on S.day_id = D.id";
 
 	if ($row = mysqli_query($conn, $sql)) {
 		return $row;
