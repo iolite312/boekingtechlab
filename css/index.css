@@ -107,5 +107,8 @@ img {
     font-size: 11px;
   }
 }
+.aanbod {
+  display: flex;
+}
 
 /*# sourceMappingURL=index.css.map */
