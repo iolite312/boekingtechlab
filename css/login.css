@@ -13,7 +13,8 @@ input[required]::after {
   justify-content: space-evenly;
 }
 
-.signup, .login {
+.signup,
+.login {
   background-color: var(--green);
   box-shadow: 0.75em 0.75em var(--green-dark);
   padding: 1em;
