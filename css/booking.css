@@ -59,6 +59,7 @@ option {
   justify-content: space-between;
   background-color: var(--purple-dark);
   padding: 2em;
+  margin-block: 30px;
   border-radius: 0.5em;
 }
 .questions .organisation,
@@ -71,6 +72,44 @@ option {
 .questions .organisation h3,
 .questions .contact h3 {
   text-align: center;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--purple-dark);
+  padding: 2em;
+  margin: 30px;
+  border-radius: 0.5em;
+}
+.schedule .timestamp {
+  display: flex;
+  flex-direction: row;
+}
+.schedule .timestamp .container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.schedule .timestamp .container input {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.schedule .timestamp .container div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #440066;
 }
 
 .material-wrap {

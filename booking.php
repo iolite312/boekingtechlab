@@ -69,10 +69,12 @@ $page = 'reserveren'
 						</div>
 					</div>
 
-					<div class="timestamp">
+					<div class="schedule">
 						<h3>Time</h3>
 						<input type="date">
-						<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importtimes.inc.php'; ?>
+						<div class="timestamp">
+							<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importtimes.inc.php'; ?>
+						</div>
 					</div>
 
 					<div class="material-wrap">

@@ -359,7 +359,7 @@ function fetchtimes()
 {
 	global $conn;
 
-	$sql = "SELECT * FROM openinghours";
+	$sql = "SELECT * FROM `date`";
 
 	if ($row = mysqli_query($conn, $sql)) {
 		return $row;
