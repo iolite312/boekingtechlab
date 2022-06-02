@@ -61,6 +61,7 @@ option {
 	justify-content: space-between;
 	background-color: var(--purple-dark);
 	padding: 2em;
+	margin-block: 30px;
 	border-radius: .5em;
 
 	.organisation,
@@ -72,6 +73,48 @@ option {
 
 		h3 {
 			text-align: center;
+		}
+	}
+}
+
+.schedule {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--purple-dark);
+	padding: 2em;
+	margin: 30px;
+	border-radius: 0.5em;
+
+	.timestamp {
+		display: flex;
+		flex-direction: row;
+
+		.container {
+			position: relative;
+			width: 150px;
+			height: 150px;
+			margin: 5px;
+
+			input {
+				opacity: 0;
+				position: absolute;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				cursor: pointer;
+			}
+
+			div {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #440066;
+			}
 		}
 	}
 }
