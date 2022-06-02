@@ -12,8 +12,8 @@ if (mysqli_num_rows($result) > 0) {
                     <input type='hidden' name='bookingID' value=" . $row['id'] . ">
                     <td>" . $row['id'] . "</td>
                     <td>" . $row['period'] . "</td>
-                    <td>" . date("H-i", strtotime($row['time-from'])) . "</td>
-                    <td>" . date("H-i", strtotime($row['time-until'])) . "</td>
+                    <td>" . date("H:i", strtotime($row['time-from'])) . "</td>
+                    <td>" . date("H:i", strtotime($row['time-until'])) . "</td>
                     <td>" . $row['period_type'] . "</td>
                     <td></td>
                 </tr>
