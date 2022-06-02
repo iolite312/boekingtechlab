@@ -92,7 +92,7 @@ option {
 
 		.container {
 			position: relative;
-			flex-grow: 1;
+			width: 150px;
 			aspect-ratio: 1;
 			margin: 5px;
 
@@ -111,6 +111,7 @@ option {
 					width: 90%;
 					height: 90%;
 					border: 5px solid #33004d;
+					animation: animate 2s linear infinite
 				}
 			}
 
@@ -120,9 +121,23 @@ option {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background-color: #440066;
+				background-color: #660099;
 			}
 		}
+	}
+}
+
+.pulse:after {
+	animation-delay: 1s;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.2;
 	}
 }
 
