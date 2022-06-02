@@ -133,11 +133,15 @@ option {
 
 @keyframes animate {
 	0% {
-		opacity: 1;
+		border: 5px solid #33004d;
 	}
 
 	100% {
-		opacity: 0.2;
+		border: 5px solid #33004d30;
+	}
+
+	0% {
+		border: 5px solid #33004d;
 	}
 }
 
