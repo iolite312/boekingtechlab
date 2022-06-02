@@ -106,6 +106,7 @@ option {
 }
 .schedule .timestamp .container input:checked ~ div::before {
   content: "";
+  position: absolute;
   width: 90%;
   height: 90%;
   border: 5px solid #33004d;
@@ -119,6 +120,9 @@ option {
   align-items: center;
   flex-direction: column;
   background-color: #660099;
+}
+.schedule .timestamp .container div > * {
+  margin: 0;
 }
 
 .pulse:after {

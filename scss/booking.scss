@@ -109,6 +109,7 @@ option {
 
 				&:checked~div::before {
 					content: "";
+					position: absolute;
 					width: 90%;
 					height: 90%;
 					border: 5px solid #33004d;
@@ -124,6 +125,10 @@ option {
 				align-items: center;
 				flex-direction: column;
 				background-color: #660099;
+
+				&>* {
+					margin: 0;
+				}
 			}
 		}
 	}
