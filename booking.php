@@ -25,7 +25,6 @@ $page = 'reserveren'
 	<script src="/js/jquery.js" defer></script>
 	<script src="/js/materials.js" defer></script>
 	<script src="/js/messagestimer.js" defer></script>
-	<script src="/js/schedule.js" defer></script>
 </head>
 
 <body>
@@ -38,10 +37,10 @@ $page = 'reserveren'
 		<section class="booking">
 			<!-- booking Form Start -->
 			<div id="booking">
-				<form action="/php/booking.php" method="post" required>
 
+				<form action="/php/booking.php" method="post" required>
 					<div class="questions">
-						<h1>Reserveren</h1>
+						<h1>Reserveren V23</h1>
 						<div class="userinput">
 							<div class="organisation">
 								<h3>Organisatie</h3>
@@ -70,6 +69,7 @@ $page = 'reserveren'
 						<h3>Time</h3>
 						<input id="dateselecter" type="date" value="<?php echo date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>">
 						<div class="timestamp" id="timestamp">
+							<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/php/inc/importtimes.inc.php' ?>
 						</div>
 					</div>
 
@@ -82,6 +82,7 @@ $page = 'reserveren'
 
 					<input type="submit" name="submit" value="Versturen">
 				</form>
+
 			</div>
 			<!-- booking Form END -->
 		</section>
@@ -89,6 +90,21 @@ $page = 'reserveren'
 	<footer>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/footer.inc.php' ?>
 	</footer>
+
+	<script>
+		const input = document.getElementById('dateselecter');
+		if (localStorage.getItem("dateselecter")) {
+			input.value = localStorage.getItem("dateselecter");
+		};
+
+		input.addEventListener('change', function() {
+			localStorage.setItem("dateselecter", input.value);
+			var url = new URL(window.location.href);
+			url.searchParams.set('date', input.value)
+			window.location.href = url;
+		});
+	</script>
+
 </body>
 
 </html>

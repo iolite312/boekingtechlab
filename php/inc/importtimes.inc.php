@@ -3,8 +3,8 @@
 
 require_once $_SERVER["DOCUMENT_ROOT"] . '/database/db_connection.php';
 
-
-$dayofweek = date('N', strtotime('02-12-2020'));
+$date = strtotime(isset($_GET['date']) ? $_GET['date'] : date("Y-m-d"));
+$dayofweek = date('N', $date);
 $sql = "SELECT * FROM `schedule`AS S INNER JOIN `days` AS D on S.day_id = D.id WHERE D.id = $dayofweek";
 
 if ($row = mysqli_query($conn, $sql)) {
@@ -20,13 +20,12 @@ if (mysqli_num_rows($result) > 0) {
 				<input type='checkbox'>
 				<div>
 					<h3>" . $row['name'] . "</h3>
+					<h3>" . date('d/m/Y', $date) . "</h3>
 					<p>" . $row['period'] . "</p>
 					<p>From: " . $row['time-from'] . "</p>
-					<p>From: " . $row['time-until'] . "</p>
+					<p>until: " . $row['time-until'] . "</p>
 				</div>
 			</article>
         ";
 	}
 }
-
-mysqli_close($conn);
