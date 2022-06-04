@@ -44,23 +44,23 @@ $page = 'reserveren'
 						<div class="userinput">
 							<div class="organisation">
 								<h3>Organisatie</h3>
-								<select name="organisatie" id="organisatie">
-									<option value="">Regius College</option>
-									<option value="">ROC Kop van Noord-Holland</option>
-									<option value="">Anders</option>
+								<select name="organisatie" id="organisatie" class="someinput">
+									<option value="1">Regius College</option>
+									<option value="2">ROC Kop van Noord-Holland</option>
+									<option value="3">Anders</option>
 								</select><br>
 								<label for="anders">Vul in als u "anders" selecteerd</label><br>
-								<input type="text" name="anders" id="anders">
+								<input type="text" name="anders" id="anders" class="someinput">
 							</div>
 
 							<div class="contact">
 								<h3>Contact</h3>
 								<label for="organization_name">Naam</label><br>
-								<input type="text" name="organization_name" placeholder="Naam" value="<?php if (isset($_SESSION['UId'])) echo $_SESSION['full_name'] ?>"><br>
+								<input type="text" name="organization_name" class="someinput" placeholder="Naam" value="<?php if (isset($_SESSION['UId'])) echo $_SESSION['full_name'] ?>"><br>
 								<label for="organization_email">Email</label><br>
-								<input type="email" name="organization_email" placeholder="Email" value=" <?php if (isset($_SESSION['UId'])) echo $_SESSION["email"] ?>"><br>
+								<input type="email" name="organization_email" class="someinput" placeholder="Email" value=" <?php if (isset($_SESSION['UId'])) echo $_SESSION["email"] ?>"><br>
 								<label for=" organization_tel">Telefoon</label><br>
-								<input type="tel" name="organization_tel" placeholder="Telefoon nummer"><br>
+								<input type="tel" name="organization_tel" class="someinput" placeholder="Telefoon nummer"><br>
 							</div>
 						</div>
 					</div>
@@ -101,6 +101,9 @@ $page = 'reserveren'
 			localStorage.setItem("dateselecter", input.value);
 			var url = new URL(window.location.href);
 			url.searchParams.set('date', input.value)
+			// url.searchParams.set('date', input.value)
+			// url.searchParams.set('date', input.value)
+			// url.searchParams.set('date', input.value)
 			window.location.href = url;
 		});
 	</script>
