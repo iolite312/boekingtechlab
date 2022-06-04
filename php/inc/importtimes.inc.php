@@ -28,4 +28,17 @@ if (mysqli_num_rows($result) > 0) {
 			</article>
         ";
 	}
+} else {
+	echo "
+		<article class='container'>
+			<input type='checkbox'>
+			<div>
+				<h3>Error</h3>
+				<h3>Error</h3>
+				<p>Error</p>
+				<p>From: Error</p>
+				<p>until: Error</p>
+			</div>
+		</article>
+    ";
 }
