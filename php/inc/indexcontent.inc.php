@@ -62,11 +62,9 @@
 
 <div class="aanbod">
 	<h2>Wat heeft ons techlab aan te bieden?</h2>
-	<div style="display: flex;flex-direction:row">
-		<h3>Robotica</h3>
-		<p>Photon Robots</p>
-		<p>LEGO Mindstorms</p>
-	</div>
+	<h3>Robotica</h3>
+	<p>Photon Robots</p>
+	<p>LEGO Mindstorms</p>
 	<h3>3D ontwerpen</h3>
 	<p>3D pen</p>
 	<p>3D printer</p>
