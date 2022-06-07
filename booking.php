@@ -98,7 +98,7 @@ $page = 'reserveren'
 		};
 
 		input.addEventListener('change', function() {
-			localStorage.setItem("dateselecter", input.value);
+			sessionStorage.setItem("dateselecter", input.value);
 			var url = new URL(window.location.href);
 			url.searchParams.set('date', input.value)
 			// url.searchParams.set('date', input.value)
