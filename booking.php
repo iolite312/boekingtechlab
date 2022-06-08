@@ -55,22 +55,31 @@ $page = 'reserveren'
 
 							<div class="contact">
 								<h3>Contact</h3>
-								<label for="organization_name">Naam</label><br>
-								<input type="text" name="organization_name" class="someinput" placeholder="Naam" value="<?php if (isset($_SESSION['UId'])) echo $_SESSION['full_name'] ?>"><br>
-								<label for="organization_email">Email</label><br>
-								<input type="email" name="organization_email" class="someinput" placeholder="Email" value=" <?php if (isset($_SESSION['UId'])) echo $_SESSION["email"] ?>"><br>
-								<label for=" organization_tel">Telefoon</label><br>
-								<input type="tel" name="organization_tel" class="someinput" placeholder="Telefoon nummer"><br>
+								<label for="name">Naam</label><br>
+								<input type="text" name="name" class="someinput" placeholder="Naam" value="<?php if (isset($_SESSION['UId'])) echo $_SESSION['full_name'] ?>"><br>
+								<label for="email">Email</label><br>
+								<input type="email" name="email" class="someinput" placeholder="Email" value=" <?php if (isset($_SESSION['UId'])) echo $_SESSION["email"] ?>"><br>
+								<label for="tel">Telefoon</label><br>
+								<input type="tel" name="tel" class="someinput" placeholder="Telefoon nummer"><br>
 							</div>
 						</div>
 					</div>
 
 					<div class="schedule">
 						<h3>Time</h3>
-						<input id="dateselecter" type="date" value="<?php echo date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>">
+						<input type="date" name="dateselecter" id="dateselecter" class="someinput" value="<?php echo date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>">
 						<div class="timestamp" id="timestamp">
 							<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/php/inc/importtimes.inc.php' ?>
 						</div>
+					</div>
+
+					<div class="room">
+						<h3>Time</h3>
+						<select name="room" id="room" class="someinput">
+							<option value="1">room 1</option>
+							<option value="2">room 2</option>
+							<option value="3">room 3</option>
+						</select><br>
 					</div>
 
 					<div class="material-wrap">
@@ -93,19 +102,40 @@ $page = 'reserveren'
 
 	<script>
 		const input = document.getElementById('dateselecter');
-		if (localStorage.getItem("dateselecter")) {
-			input.value = localStorage.getItem("dateselecter");
+		const someinput = document.getElementsByClassName('someinput');
+
+		for (let i = 0; i < someinput.length; i++) {
+			someinput[i].addEventListener('change', updatevalues);
+		}
+
+		if (sessionStorage.getItem("dateselecter")) {
+			input.value = sessionStorage.getItem("dateselecter");
 		};
 
-		input.addEventListener('change', function() {
-			sessionStorage.setItem("dateselecter", input.value);
-			var url = new URL(window.location.href);
-			url.searchParams.set('date', input.value)
-			// url.searchParams.set('date', input.value)
-			// url.searchParams.set('date', input.value)
-			// url.searchParams.set('date', input.value)
-			window.location.href = url;
-		});
+		function updatevalues(event) {
+			sessionStorage.setItem(event.target.name, event.target.value);
+			if (event.target.name == 'dateselecter') {
+				var url = new URL(window.location.href);
+				url.searchParams.set('date', input.value)
+				window.location.href = url;
+			}
+		}
+
+		for (let i = 0; i < someinput.length; i++) {
+			if (sessionStorage.getItem(someinput[i].name)) {
+				someinput[i].value = sessionStorage.getItem(someinput[i].name)
+			}
+		}
+
+		// input.addEventListener('change', function() {
+		// 	sessionStorage.setItem("dateselecter", input.value);
+		// 	var url = new URL(window.location.href);
+		// 	url.searchParams.set('date', input.value)
+		// 	url.searchParams.set('date', input.value)
+		// 	url.searchParams.set('date', input.value)
+		// 	url.searchParams.set('date', input.value)
+		// 	window.location.href = url;
+		// });
 	</script>
 
 </body>

@@ -9,7 +9,7 @@ if (!isset($_SESSION['UId'])) {
 		header('Location: /user');
 	}
 }
-$page = 'admintimes'
+$page = 'adminschedule'
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +27,7 @@ $page = 'admintimes'
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/admin.css">
+	<link rel="stylesheet" href="/css/schedule.css">
 
 	<!-- Scripts -->
 	<script src="/js/messagestimer.js" defer></script>

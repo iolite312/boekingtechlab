@@ -11,7 +11,7 @@
 	<a href="/admin/materials" class="item <?php if($page=='adminmaterials'){echo 'active';}?>">
 		<i class=""></i><span>Materialen</span>
 	</a>
-	<a href="/admin/times" class="item <?php if($page=='admintimes'){echo 'active';}?>">
-		<i class=""></i><span>Times</span>
+	<a href="/admin/schedule" class="item <?php if($page=='adminschedule'){echo 'active';}?>">
+		<i class=""></i><span>rooster</span>
 	</a>
 </nav>
