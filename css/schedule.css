@@ -1,0 +1,12 @@
+.schedule > div {
+  height: 44px;
+  overflow: hidden;
+}
+.schedule > div > div {
+  display: flex;
+  padding-right: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=schedule.css.map */

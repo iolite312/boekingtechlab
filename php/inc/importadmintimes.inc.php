@@ -12,8 +12,14 @@ foreach ($days as $i => $day) {
 	} else {
 		$result = false;
 	}
-	echo "<div>";
-	echo "<div><h3>" . $day . " </h3></div>";
+
+	echo "
+		<div>
+			<div>
+				<h3>" . $day . " </h3>
+				<span class='material-icons md-48'>expand_more</span>
+			</div>
+	";
 	echo "
 	<table class='bookings'>
 		<tr>

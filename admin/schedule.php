@@ -42,7 +42,7 @@ $page = 'adminschedule'
 		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/adminsidebar.inc.php' ?>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
-		<section>
+		<section class="schedule">
 			<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importadmintimes.inc.php" ?>
 		</section>
 	</main>
