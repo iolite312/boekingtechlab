@@ -1,13 +1,27 @@
 .schedule {
 	>div {
-		height: 44px;
+		max-height: 44px;
 		overflow: hidden;
+		transition: max-height 0.5s ease-in-out;
 
 		>div {
 			display: flex;
 			padding-right: 35px;
 			align-items: center;
 			justify-content: space-between;
+
+			>span {
+				transform: rotate(0deg);
+				transition: transform .3s ease-in;
+			}
 		}
 	}
+}
+
+.rotate180 {
+	transform: rotate(180deg) !important;
+}
+
+.expanded {
+	max-height: 40% !important;
 }

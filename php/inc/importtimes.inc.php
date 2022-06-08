@@ -15,15 +15,20 @@ if ($row = mysqli_query($conn, $sql)) {
 
 if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
+		if ($row['period'] == 'pauze') {
+			$period = "";
+		} else {
+			$period = "<input type='checkbox'>";
+		}
 		echo "
 			<article class='container'>
-				<input type='checkbox'>
+				" . $period . "
 				<div>
 					<h3>" . $row['name'] . "</h3>
 					<h3>" . date('d/m/Y', $date) . "</h3>
-					<p>" . $row['period'] . "</p>
-					<p>From: " . $row['time-from'] . "</p>
-					<p>until: " . $row['time-until'] . "</p>
+					<p> periode: " . $row['period'] . "</p>
+					<p>From: " . date('H:i', strtotime($row['time-from'])) . "</p>
+					<p>until: " . date('H:i', strtotime($row['time-until'])) . "</p>
 				</div>
 			</article>
         ";
@@ -31,7 +36,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
 	echo "
 		<article class='container'>
-			<input type='checkbox'>
 			<div>
 				<h3>Error</h3>
 				<h3>Error</h3>

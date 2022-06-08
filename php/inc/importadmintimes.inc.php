@@ -17,7 +17,7 @@ foreach ($days as $i => $day) {
 		<div>
 			<div>
 				<h3>" . $day . " </h3>
-				<span class='material-icons md-48'>expand_more</span>
+				<span onclick='toggleexpand(event)' class='material-icons md-48'>expand_more</span>
 			</div>
 	";
 	echo "

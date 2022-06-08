@@ -31,6 +31,7 @@ $page = 'adminschedule'
 
 	<!-- Scripts -->
 	<script src="/js/messagestimer.js" defer></script>
+	<script src="/js/expand_date.js" defer></script>
 </head>
 
 <body>
