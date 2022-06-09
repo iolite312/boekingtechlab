@@ -9,9 +9,9 @@ if (isset($_POST["submit"]) && $_SESSION['user_level'] === 1) {
 	require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
 
-	$bookingID = $_POST['bookingID'];
-	removebooking($bookingID);
+	$accountID = $_POST['accountID'];
+	removeaccount($accountID);
 } else {
-	header("Location: /index");
+	header("Location: /admin/accounts");
 	exit;
 }

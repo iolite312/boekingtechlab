@@ -2,7 +2,7 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
-if (isset($_SESSION['first_name'])) {
+if (isset($_SESSION['UId'])) {
 	if ($_SESSION['user_level'] === 0) {
 		header('Location: /user');
 	} else {

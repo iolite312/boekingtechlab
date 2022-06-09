@@ -23,7 +23,8 @@ img {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -45,7 +46,8 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -104,6 +106,11 @@ img {
   .text {
     font-size: 11px;
   }
+}
+.aanbod {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,13 +1,12 @@
 <?php
-//start database connection
 require_once $_SERVER["DOCUMENT_ROOT"] . '/php/function.php';
 
 $result = fetchmaterials($result);
 
 if (mysqli_num_rows($result) > 0) {
-    //output data from every row selected and inserts it into the container
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "
+	//output data from every row selected and inserts it into the container
+	while ($row = mysqli_fetch_assoc($result)) {
+		echo "
         <div class='item'>
             <h3>" . $row['name'] . "</h3>
             <img src='/assets/images/placeholder.png' alt=''>
@@ -30,5 +29,5 @@ if (mysqli_num_rows($result) > 0) {
             </div>
         </div>
         ";
-    }
+	}
 }

@@ -2,14 +2,14 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
-if (!isset($_SESSION['UId'])) {
-	header('Location: /loginpage');
-} else {
-	if ($_SESSION['user_level'] === 0) {
-		header('Location: /user');
+if (isset($_SESSION['UId'])) {
+	if ($_SESSION['user_level'] === 1) {
+		header('Location: /admin');
 	}
+} else {
+	header('Location: /loginpage');
 }
-$page = 'adminbooking'
+$page = 'user';
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +20,11 @@ $page = 'adminbooking'
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" /> -->
-	<title>Admin pagina</title>
+	<title>Gebruikerspagina</title>
 
 	<!-- Stylesheets -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="./assets/images/placeholder.png" type="image/x-icon">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
 	<link rel="stylesheet" href="/css/admin.css">
@@ -38,25 +39,22 @@ $page = 'adminbooking'
 	</header>
 
 	<main>
-		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/adminsidebar.inc.php' ?>
+		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/usersidebar.inc.php' ?>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
 		<section>
 			<table class="bookings">
 				<tr>
-					<th>ID</th>
-					<th>Naam</th>
-					<th>Email</th>
-					<th>Telefoon</th>
-					<th>Organisatie</th>
+					<th>#</th>
 					<th>Lokaal</th>
-					<th>Materiaal</th>
+					<th>Materialen</th>
 					<th>Tijd</th>
 					<th>Acties</th>
 				</tr>
-				<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importbooking.inc.php" ?>
+				<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/importuserbookings.inc.php' ?>
 			</table>
 		</section>
+
 	</main>
 </body>
 

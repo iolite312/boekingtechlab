@@ -1,37 +1,38 @@
 input {
-    color: var(--text-color-neutral);
-    border: none;
+	color: var(--text-color-neutral);
+	border: none;
 }
 
 input[required]::after {
-    content: "*";
+	content: "*";
 }
 
 .loginpage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-.signup, .login {
-    background-color: var(--green);
-    box-shadow: .75em .75em var(--green-dark);
-    padding: 1em;
-    padding-left: 3em;
-    padding-right: 3em;
-    border-radius: .5em;
-    width: 20vw;
+.signup,
+.login {
+	background-color: var(--green);
+	box-shadow: .75em .75em var(--green-dark);
+	padding: 1em;
+	padding-left: 3em;
+	padding-right: 3em;
+	border-radius: .5em;
+	width: 20vw;
 }
 
 form input:not([type=submit])~#passReq {
-    overflow: hidden;
-    max-height: 0px;
-    transition: max-height 0.5s ease-in-out;
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height 0.5s ease-in-out;
 }
 
 input[name=password]:not([type=submit]):hover~#passReq,
 input[name=password]:not([type=submit]):focus~#passReq,
 input[name=password]:not([type=submit]):active~#passReq {
-    max-height: 150px;
-    transition: max-height 0.5s ease-in-out;
+	max-height: 150px;
+	transition: max-height 0.5s ease-in-out;
 }

@@ -5,11 +5,11 @@ if (!isset($_SESSION)) {
 if (!isset($_SESSION['UId'])) {
 	header('Location: /loginpage');
 } else {
-	if ($_SESSION['user_level'] === 0) {
-		header('Location: /user');
+	if ($_SESSION['user_level'] === 1) {
+		header('Location: /admin');
 	}
 }
-$page = 'adminbooking'
+$page = 'personal';
 ?>
 
 <!DOCTYPE html>
@@ -20,12 +20,14 @@ $page = 'adminbooking'
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="icon" type="image/png" href="/assets/logo/LOGO.png" /> -->
-	<title>Admin pagina</title>
+	<title>Gebruikerspagina</title>
 
 	<!-- Stylesheets -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="./assets/images/placeholder.png" type="image/x-icon">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/alerts.css">
+	<link rel="stylesheet" href="/css/user.css">
 	<link rel="stylesheet" href="/css/admin.css">
 
 	<!-- Scripts -->
@@ -38,25 +40,29 @@ $page = 'adminbooking'
 	</header>
 
 	<main>
-		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/adminsidebar.inc.php' ?>
+		<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/usersidebar.inc.php' ?>
 		<?php require_once $_SERVER["DOCUMENT_ROOT"] . '/php/inc/messages.inc.php' ?>
 
-		<section>
-			<table class="bookings">
-				<tr>
-					<th>ID</th>
-					<th>Naam</th>
-					<th>Email</th>
-					<th>Telefoon</th>
-					<th>Organisatie</th>
-					<th>Lokaal</th>
-					<th>Materiaal</th>
-					<th>Tijd</th>
-					<th>Acties</th>
-				</tr>
-				<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importbooking.inc.php" ?>
-			</table>
+		<section class="userinfo">
+			<div>
+				<form class="userinfoform" action="" method="post">
+					<label for="name">Naam</label>
+					<br>
+					<input type="text" name="name" id="name">
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email">
+					<br>
+					<label for="tel">Telefoonnummer</label>
+					<br>
+					<input type="tel" name="tel" id="tel">
+					<br>
+					<input type="submit">
+				</form>
+			</div>
 		</section>
+
 	</main>
 </body>
 

@@ -59,6 +59,7 @@ option {
   justify-content: space-between;
   background-color: var(--purple-dark);
   padding: 2em;
+  margin-block: 30px;
   border-radius: 0.5em;
 }
 .questions .organisation,
@@ -73,6 +74,70 @@ option {
   text-align: center;
 }
 
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--purple-dark);
+  padding: 2em;
+  margin-block: 30px;
+  border-radius: 0.5em;
+}
+.schedule .timestamp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.schedule .timestamp .container {
+  position: relative;
+  width: 150px;
+  aspect-ratio: 1;
+  margin: 5px;
+}
+.schedule .timestamp .container input {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.schedule .timestamp .container input:checked ~ div::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border: 5px solid #33004d;
+  animation: animate 1s linear 0.5s infinite alternate;
+}
+.schedule .timestamp .container div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #660099;
+}
+.schedule .timestamp .container div > * {
+  margin: 0;
+}
+
+.pulse:after {
+  animation-delay: 1s;
+}
+
+@keyframes animate {
+  0% {
+    border: 5px solid #33004d;
+  }
+  100% {
+    border: 5px solid rgba(51, 0, 77, 0.4392156863);
+  }
+}
 .material-wrap {
   display: flex;
   text-align: center;

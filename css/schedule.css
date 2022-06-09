@@ -1,0 +1,25 @@
+.schedule > div {
+  max-height: 44px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+.schedule > div > div {
+  display: flex;
+  padding-right: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+.schedule > div > div > span {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in;
+}
+
+.rotate180 {
+  transform: rotate(180deg) !important;
+}
+
+.expanded {
+  max-height: 40% !important;
+}
+
+/*# sourceMappingURL=schedule.css.map */
