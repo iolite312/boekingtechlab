@@ -145,11 +145,11 @@ function loginUser($email, $password)
 }
 
 
-function addbooking($organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $time)
+function addbooking($organization, $name, $email, $tel, $period, $room)
 {
 	global $conn;
 
-	$sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?,?,?,?,?)";
+	$sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?)";
 	$stmt = mysqli_stmt_init($conn);
 
 	if (isset($_SESSION['UId'])) {
@@ -165,7 +165,7 @@ function addbooking($organization_name, $organization_email, $organization_tel, 
 		exit;
 	}
 
-	if (!mysqli_stmt_bind_param($stmt, "ssississs", $organization_name, $organization_email, $organization_tel, $name, $email, $tel, $classroompart, $material, $userid, $time)) {
+	if (!mysqli_stmt_bind_param($stmt, "sssissi", $organization, $name, $email, $tel, $period, $room, $userid)) {
 		$_SESSION['messages'][] = ["error", 'Error unknown #103.2'];
 		header('Location: /booking');
 		mysqli_close($conn);

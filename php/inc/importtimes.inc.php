@@ -18,7 +18,7 @@ if (mysqli_num_rows($result) > 0) {
 		if ($row['period'] == 'pauze') {
 			$period = "";
 		} else {
-			$period = "<input type='checkbox'>";
+			$period = "<input type='checkbox' name='period[]' value='" . date('d/m/Y', $date) . ',' . $row['period'] . ',' . date('H:i', strtotime($row['time-from'])) . ',' . date('H:i', strtotime($row['time-until'])) . "'>";
 		}
 		echo "
 			<article class='container'>

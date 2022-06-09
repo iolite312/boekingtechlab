@@ -12,6 +12,7 @@
 
 			>span {
 				transform: rotate(0deg);
+				user-select: none;
 				transition: transform .3s ease-in;
 			}
 		}
