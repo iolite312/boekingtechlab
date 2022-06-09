@@ -1,7 +1,7 @@
 <?php
 $servername = 'localhost';
-$username = 'boekingtechlab';
-$password = 'OieMVT]Om)-(TD5c';
+$username = 'root';
+$password = '';
 $dbname = 'boekingtechlab';
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 //check that connection happend
