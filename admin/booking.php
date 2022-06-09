@@ -49,8 +49,10 @@ $page = 'adminbooking'
 					<th>Email</th>
 					<th>Telefoon</th>
 					<th>Organisatie</th>
-					<th>Lokaal</th>
-					<th>Materiaal</th>
+					<th>Periode</th>
+					<th>Van</th>
+					<th>Tot</th>
+					<th>lokaal</th>
 					<th>Tijd</th>
 					<th>Acties</th>
 				</tr>
