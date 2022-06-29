@@ -53,7 +53,6 @@ $page = 'adminbooking'
 					<th>Van</th>
 					<th>Tot</th>
 					<th>lokaal</th>
-					<th>Tijd</th>
 					<th>Acties</th>
 				</tr>
 				<?php include $_SERVER["DOCUMENT_ROOT"] . "/php/inc/importbooking.inc.php" ?>

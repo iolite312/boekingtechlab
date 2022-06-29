@@ -14,7 +14,7 @@ if (isset($_POST["submit"])) {
 	$email = $_POST['email'];
 	$tel = $_POST['tel'];
 	$period = $_POST['period'];
-	$room = $_POST['room'];
+	$roomselecter = $_POST['roomselecter'];
 
 	if (
 		empty($organization) ||
@@ -22,14 +22,16 @@ if (isset($_POST["submit"])) {
 		empty($email) ||
 		empty($tel) ||
 		empty($period) ||
-		empty($room)
+		empty($roomselecter)
 	) {
 		$_SESSION['messages'][] = ["warning", 'Please fill all required fields!'];
 		header('Location: /booking');
 		exit;
 	}
-
-	addbooking($organization, $name, $email, $tel, $period, $room);
+	echo $period;
+	echo '<br>';
+	print_r($period);
+	// addbooking($organization, $name, $email, $tel, $period, $room);
 } else {
 	header("Location: /booking");
 	exit;

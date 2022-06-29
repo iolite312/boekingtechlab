@@ -14,10 +14,11 @@ if (mysqli_num_rows($result) > 0) {
                     <td>" . $row['name'] . "</td>
                     <td>" . $row['email'] . "</td>
                     <td>" . $row['tel'] . "</td>
-                    <td>" . $row['organization_name'] . "</td>
-                    <td>" . $row['classroompart'] . "</td>
-                    <td>" . $row['material'] . "</td>
-                    <td>" . $row['time'] . "</td>
+                    <td>" . $row['organization'] . "</td>
+                    <td>" . $row['period'] . "</td>
+                    <td>" . $row['period'] . "</td>
+                    <td>" . $row['period'] . "</td>
+                    <td>" . $row['room'] . "</td>
                     <td><input class='button' type='submit' name='submit' value='Verwijderen'></td> 
                 </tr>
             </form>

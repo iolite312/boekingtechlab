@@ -149,7 +149,7 @@ function addbooking($organization, $name, $email, $tel, $period, $room)
 {
 	global $conn;
 
-	$sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?)";
+	$sql = "INSERT INTO bookings VALUES (NULL,?,?,?,?,?,?,?)";
 	$stmt = mysqli_stmt_init($conn);
 
 	if (isset($_SESSION['UId'])) {
@@ -280,7 +280,7 @@ function fetchbooking()
 	if ($_SESSION['UId'] === 1) {
 		$sql = "SELECT * FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id";
 	} else {
-		$sql = "SELECT B.id, B.classroompart, B.material, B.time FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
+		$sql = "SELECT * FROM bookings AS B INNER JOIN users AS U ON B.account_id = U.id WHERE U.id = $_SESSION[UId]";
 	}
 
 

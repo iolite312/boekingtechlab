@@ -6,14 +6,14 @@
 	if (!isset($_SESSION['UId'])) {
 		$page == 'login' ? $active = 'active' : $active = "";
 		echo "
-		<a class='$active'href='/loginpage'>Inloggen</a>
+		<a class='$active' href='/loginpage'>Inloggen</a>
 		";
 	} else {
 		if ($page == 'user' || $page == 'admin') {
 			$active = 'active';
-			echo "<a class='$active'href='/php/logout'>Uitloggen</a>";
+			echo "<a class='$active' href='/php/logout'>Uitloggen</a>";
 		} else {
-			echo "<a class='$active'href='/user'>Gebruiker</a>";
+			echo "<a class='$active' href='/user'>Gebruiker</a>";
 		}
 	}
 	?>

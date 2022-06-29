@@ -44,10 +44,10 @@ $page = 'reserveren'
 						<div class="userinput">
 							<div class="organisation">
 								<h3>Organisatie</h3>
-								<select name="organisatie" id="organisatie" class="someinput">
-									<option value="1">Regius College</option>
-									<option value="2">ROC Kop van Noord-Holland</option>
-									<option value="3">Anders</option>
+								<select name="organization" id="organization" class="someinput">
+									<option value="Regius College">Regius College</option>
+									<option value="ROC Kop van Noord-Holland">ROC Kop van Noord-Holland</option>
+									<option value="Anders">Anders</option>
 								</select><br>
 								<label for="anders">Vul in als u "anders" selecteerd</label><br>
 								<input type="text" name="anders" id="anders" class="someinput">
@@ -126,16 +126,6 @@ $page = 'reserveren'
 				someinput[i].value = sessionStorage.getItem(someinput[i].name)
 			}
 		}
-
-		// input.addEventListener('change', function() {
-		// 	sessionStorage.setItem("dateselecter", input.value);
-		// 	var url = new URL(window.location.href);
-		// 	url.searchParams.set('date', input.value)
-		// 	url.searchParams.set('date', input.value)
-		// 	url.searchParams.set('date', input.value)
-		// 	url.searchParams.set('date', input.value)
-		// 	window.location.href = url;
-		// });
 	</script>
 
 </body>
